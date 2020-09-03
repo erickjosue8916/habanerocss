@@ -3,7 +3,7 @@ Framework CSS
 
 # Integrantes
 - Keny Lisbeth Chavez Torrez
-- Gema Emperatris Manzano Machuca
-- Edgar 
-- Cordero
-- Erick
+- Gema Emperatriz Manzano Machuca
+- Edgar Antonio Reyes Ceron
+- Carlos Enrique Cordero Linares
+- Erick Josue Saravia Aragon

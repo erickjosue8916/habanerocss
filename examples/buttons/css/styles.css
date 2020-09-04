@@ -1,0 +1,259 @@
+.button{
+  display: inline-block;
+  padding: 6px 20px;
+  margin: 5px;
+  cursor: pointer;/*We change the cursor shape to the pointer*/
+  border: 1px solid #bbb;
+  overflow: visible;/*In case the text overfloxs it will show it outside the button*/
+  font: bold 13px helvetica, sans-serif;
+  text-decoration: none;/*In case an unwanted tipe of text decoration appears on the text*/
+  color: #000;
+  background-color: #ddd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));/*Adds the color gradient*/
+  transition: background-color .5s ease-out;/*States what will change, how it will change and the time it will take*/
+  background-clip: padding-box;
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  user-select: none;
+  min-width: auto;
+  min-height: auto;
+}
+.button:hover{/*When the cursor goes over the button*/
+  background-color: #eee;
+  color: #555;
+}
+.button:active{/*When the cursor click the button*/
+  background: #e9e9e9;
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+/*Start types of sizes*/
+.button__small{
+  padding: 4px 12px;
+}
+
+.button__medium{
+  padding: 8px 20px;
+}
+
+.button__large{
+  padding: 12px 30px;
+  text-transform: uppercase;
+}
+.button__large:active{
+  top: 2px;
+}
+
+.button__xlarge{
+  padding: 20px 40px;
+  text-transform: uppercase;
+}
+.button__xlarge:active{
+  top: 3px;
+}
+/*End types of sizes*/
+
+/*Start Default Colors*/
+.button__green{
+  background-color: #57a957;
+  border-color: #57a957;
+  color: rgb(39, 23, 23);
+}
+.button__green:hover{
+  background-color: #2e8f2e;
+  color: rgb(78, 45, 45);
+}
+.button__green:active{
+  background: #57a957;
+}
+
+.button__yellow{
+  background-color: #dae639;
+  border-color: #dae639;
+  color: rgb(39, 23, 23);
+}
+.button__yellow:hover{
+  background-color: #afb920;
+  color: rgb(78, 45, 45);
+}
+.button__yellow:active{
+  background: #dae639;
+}
+
+.button__orange{
+  background-color: #ee9e35;
+  border-color: #ee9e35;
+  color: rgb(39, 23, 23);
+}
+.button__orange:hover{
+  background-color: #d37f12;
+  color: rgb(78, 45, 45);
+}
+.button__orange:active{
+  background: #ee9e35;
+}
+
+.button__purple{
+  background-color: #a826c8;
+  border-color: #a826c8;
+  color: rgb(39, 23, 23);
+}
+.button__purple:hover{
+  background-color: #751e8b;
+  color: rgb(78, 45, 45);
+}
+.button__purple:active{
+  background: #a826c8;
+}
+
+.button__blue{
+  background-color: #4e44da;
+  border-color: #4e44da;
+  color: rgb(39, 23, 23);
+}
+.button__blue:hover{
+  background-color: #27217a;
+  color: rgb(78, 45, 45);
+}
+.button__blue:active{
+  background: #4e44da;
+}
+
+.button__brown{
+  background-color: #7c4d10;
+  border-color: #7c4d10;
+  color: rgb(51, 51, 51);
+}
+.button__brown:hover{
+  background-color: #52330b;
+  color: rgb(78, 45, 45);
+}
+.button__brown:active{
+  background: #7c4d10;
+}
+
+.button__red{
+  background-color: #e42c2c;
+  border-color: #e42c2c;
+  color: rgb(51, 51, 51);
+}
+.button__red:hover{
+  background-color: #9b2020;
+  color: rgb(78, 45, 45);
+}
+.button__red:active{
+  background: #e42c2c;
+}
+
+.button__black{
+  background-color: #000000;
+  border-color: #000000;
+  color: rgb(185, 185, 185);
+}
+.button__black:hover{
+  background-color: #313131;
+  color: rgb(218, 218, 218);
+}
+.button__black:active{
+  background: #000000;
+}
+/*End Default Colors*/
+
+/*Start Shapes*/
+.button__circle{
+  border-radius: 50%;
+}
+.button__square{
+  border-radius: 0px;
+}
+
+.button__trapezoid{
+  border-radius: 30px 5px;
+}
+/*End Shapes*/
+
+/*Start Line button*/
+.button__line{
+  background-color: #ffffff;
+  color: #000;
+  border: #000 1px solid;
+  box-shadow: none;
+  background-image: none;
+  
+}
+.button__line:hover{
+  background-color: rgb(0, 0, 0);
+  border: #000 1px solid;
+  color: rgb(255, 255, 255);
+  
+}
+  /*Start Line Colors*/
+      .button__line__green{
+        background-color: #ffffff;
+        border-color: #57a957;
+    }
+    .button__line__green:hover{
+      background-color: #57a957;
+      border-color: #57a957;
+    }
+    
+    .button__line__yellow{
+        background-color: #ffffff;
+        border-color: #dae639;
+    }
+    .button__line__yellow:hover{
+      background-color: #dae639;
+      border-color: #dae639;
+    }
+    
+    .button__line__orange{
+        background-color: #ffffff;
+        border-color: #ee9e35;
+    }
+    .button__line__orange:hover{
+      background-color: #ee9e35;
+      border-color: #ee9e35;
+    }
+
+    .button__line__purple{
+        background-color: #ffffff;
+        border-color: #a826c8;
+    }
+    .button__line__purple:hover{
+      background-color: #a826c8;
+      border-color: #a826c8;
+    }
+
+    .button__line__blue{
+        background-color: #ffffff;
+        border-color: #4e44da;
+    }
+    .button__line__blue:hover{
+      background-color: #4e44da;
+      border-color: #4e44da;
+    }
+
+    .button__line__brown{
+        background-color: #ffffff;
+        border-color: #7c4d10;
+    }
+    .button__line__brown:hover{
+      background-color: #7c4d10;
+      border-color: #7c4d10;
+    }
+
+    .button__line__red{
+        background-color: #ffffff;
+        border-color: #e42c2c;
+    }
+    .button__line__red:hover{
+      background-color: #e42c2c;
+      border-color: #e42c2c;
+    }
+  /*End Line Colors*/
+
+/*End of types of buttons*/

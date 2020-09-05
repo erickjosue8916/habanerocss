@@ -14,19 +14,7 @@
 	font-family: 'PT sans';
 	src:url(../fonts/PTSans-Regular.ttf);
 }
-/*Configuracion variables globales*/
-:root {
-    --font-prederm:PT sans;
-    --font-lobster:Lobster-Regular;
-    --font-advent: AdventPro-Regular;
-    --font-monserrat:Montserrart;
-    --t-pequeño:12px;
-    --t-mediano:28px;
-    --t-grande:46px;
-    --t-ExGrande:88px;
 
-}
-/* Configuracion de variables globales para el framework */
 *{
     font-family: 'PT sans';
     background-color: rgb(214, 211, 197);

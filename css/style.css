@@ -1,0 +1,63 @@
+@font-face{
+	font-family: 'Lobster-Regular';
+	src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+	font-family: 'AdventPro-Regular';
+	src:url(../fonts/AdventPro-Regular.ttf);
+}
+@font-face{
+	font-family: 'Montserrat';
+	src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: 'PT sans';
+	src:url(../fonts/PTSans-Regular.ttf);
+}
+/*Configuracion variables globales*/
+:root {
+    --font-prederm:PT sans;
+    --font-lobster:Lobster-Regular;
+    --font-advent: AdventPro-Regular;
+    --font-monserrat:Montserrart;
+    --t-pequeño:12px;
+    --t-mediano:28px;
+    --t-grande:46px;
+    --t-ExGrande:88px;
+
+}
+/* Configuracion de variables globales para el framework */
+*{
+    font-family: var(--font-prederm);
+    background-color: cornflowerblue;
+}
+h1{font-weight:bold;}
+h2{font-weight:bold;}
+h3{font-weight:bold;}
+h4{font-weight:bold;}
+h5{font-weight:bold;}
+h6{font-weight:bold;}
+a{font-style:italic;}
+.negrita{font-weight:bold;}
+.cursiva{font-style:italic;}
+.tamPequeño{font-size:var(--t-pequeño) ;}
+.tamMediano{font-size:var(--t-mediano)  ;}
+.tamGrande{font-size:var(--t-grande)  ;}
+.tamExGrande{font-size:var(--t-ExGrande)  ;}
+/*CLASES FUENTES*/
+.text-Lobster{font-family: var(--font-lobster);}
+.text-AdventPro{font-family: var(--font-advent);}
+.text-Montserrart{font-family: var(--font-monserrat);}
+
+/*CLASES COLORES*/
+.text-white{color:white;}
+.text-black{color:black;}
+.text-rojo{color:red;}
+.text-amarillo{color:yellow;}
+.text-verdelimon{color:greenyellow;}
+.text-verde{color: green;}
+.text-azul{color:blue;}
+.text-purple{color:purple;}
+.text-pink{color:pink}
+
+    

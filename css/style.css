@@ -8,7 +8,7 @@
 }
 
 .container{
-    background-color:whitesmoke;
+    display: grid;
     width: 100%;
     height: auto;
     margin: auto;
@@ -21,6 +21,7 @@
 }
 [class*="col"] 
     {
+        display: grid;
     float: left;
     height: auto;
     width: 100%;
@@ -30,7 +31,7 @@
 
  /*large*/
  @media screen and (min-width: 1024px){
-     .container{ max-width: 960px; }
+     
     .col.lg-1 {width: 8.33%;}
     .col.lg-2 {width: 16.66%;}
     .col.lg-3 {width: 24.99%;}
@@ -78,8 +79,6 @@
     .col.sm-11 {width: 91.63%;}
     .col.sm-12 {width: 99.96%;}
 }
-
-
 /* end grid styles */
 
 /* start utility styles */
@@ -134,5 +133,3 @@
 .close-alert{
     display: none;
 }
-
-/* end utility styles */

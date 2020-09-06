@@ -132,13 +132,14 @@
 .close-alert{
     display: none;
 }
-/* Clases para Tipografia*/
+/* ------------------INICIO DE CLASES PARA TIPOGRAFIA----------*/
 .negrita{
     font-weight:bold;
 }
 .cursiva{
     font-style:italic;
 }
+/*TAMAÑOS*/
 .tamPequeño{
     font-size:12px;
 }
@@ -151,26 +152,22 @@
 .tamExGrande{
     font-size:88px;
 }
-.under {
+.sub-lineaDebajo{
     text-decoration: underline;
 }
-.over {
+.sub-lineaArriba{
     text-decoration: overline;
 }
-.line {
+.sub-lineaAtravez {
     text-decoration: line-through;
 }
-.blink {
-    text-decoration: blink;
-}
-.none {
+.sub-none {
     text-decoration: none;
 }
-.underover {
+.sub-ArribaDebajo {
     text-decoration: underline overline;
 }
-
-
+/*FIN TAMAÑOS*/
 /*CLASES COLORES*/
 .text-white{
     color:white;
@@ -193,13 +190,13 @@
 .text-azul{
     color:blue;
 }
-.text-purple{
+.text-morado{
     color:purple;
 }
-.text-pink{
+.text-rosa{
     color:palevioletred;
 }
-/*Aling text*/
+/*Clases para alineacion de texto*/
 .text-center {
     text-align: center;
   }
@@ -211,3 +208,66 @@
 .text-right {
     text-align: right;
   }
+/* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
+/* ------------------INICIO DE FUENTES------------------*/
+/*Definiendo fuentes*/
+@font-face{
+	font-family: 'Lobster-Regular';
+	src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+	font-family: 'AdventPro-Regular';
+	src:url(../fonts/AdventPro-Regular.ttf);
+}
+@font-face{
+	font-family: 'Montserrat';
+	src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: 'PT sans';
+	src:url(../fonts/PTSans-Regular.ttf);
+}
+/*FUENTE PREDETERMINADA*/
+*{
+    font-family: 'PT sans';
+}
+
+/*CLASES FUENTES*/
+.text-Lobster{
+    font-family:'Lobster-Regular';
+}
+.text-AdventPro{
+    font-family: 'AdventPro-Regular';
+}
+.text-Montserrart{
+    font-family: 'Montserrat';
+}
+/*ESTABLECER ESTILO A ELEMENTOS*/
+h1{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+h3{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+h4{
+    font-family:'Montserrat';
+    font-weight:bold;
+}
+h5{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+h6{
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+a{
+    font-style:italic;
+}
+/* ------------------FIN DE FUENTES------------------*/

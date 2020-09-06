@@ -1,4 +1,3 @@
-
 /* Start grid styles*/
 *{
     margin: 0;
@@ -133,3 +132,82 @@
 .close-alert{
     display: none;
 }
+/* Clases para Tipografia*/
+.negrita{
+    font-weight:bold;
+}
+.cursiva{
+    font-style:italic;
+}
+.tamPequeño{
+    font-size:12px;
+}
+.tamMediano{
+    font-size:28px;
+}
+.tamGrande{
+    font-size:46px;
+}
+.tamExGrande{
+    font-size:88px;
+}
+.under {
+    text-decoration: underline;
+}
+.over {
+    text-decoration: overline;
+}
+.line {
+    text-decoration: line-through;
+}
+.blink {
+    text-decoration: blink;
+}
+.none {
+    text-decoration: none;
+}
+.underover {
+    text-decoration: underline overline;
+}
+
+
+/*CLASES COLORES*/
+.text-white{
+    color:white;
+}
+.text-black{
+    color:black;
+}
+.text-rojo{
+    color:red;
+}
+.text-amarillo{
+    color:yellow;
+}
+.text-verdelimon{
+    color:greenyellow;
+}
+.text-verde{
+    color: green;
+}
+.text-azul{
+    color:blue;
+}
+.text-purple{
+    color:purple;
+}
+.text-pink{
+    color:palevioletred;
+}
+/*Aling text*/
+.text-center {
+    text-align: center;
+  }
+  
+.text-left {
+    text-align: left;
+  }
+  
+.text-right {
+    text-align: right;
+  }

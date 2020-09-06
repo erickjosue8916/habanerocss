@@ -1,3 +1,186 @@
+:root{
+/******Start button variables******/
+      --button-display: inline-block;
+      --button-padding: 6px 20px;
+      --button-margin: 5px;
+      --button-border: 1px solid #bbb;
+      --button-font: bold 13px helvetica, sans-serif;
+      --button-txtColor: #000;
+      --button-bgcolor: #ddd;
+      --button-boderRadius:5px;
+      --button-hover-bgcolor: #eee;
+      --button-hover-txtcolor: #555;
+      --button-active-bgcolor: #e9e9e9;
+      --button-size-small: 4px 12px;
+      --button-size-medium:8px 20px;
+      --button-size-large: 12px 30px;
+      --button-size-xlarge: 20px 40px;
+      /*******************************/
+      --button-color-green-bgcolor: #57a957;
+      --button-color-green-txtcolor: rgb(39, 23, 23);
+      --button-color-green-border: #57a957;
+      --button-color-green-hover-bgcolor: #2e8f2e;
+      --button-color-green-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-green-active-bgcolor: #57a957;
+    
+      --button-color-yellow-bgcolor: #dae639;
+      --button-color-yellow-txtcolor: rgb(39, 23, 23);
+      --button-color-yellow-border: #dae639;
+      --button-color-yellow-hover-bgcolor: #afb920;
+      --button-color-yellow-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-yellow-active-bgcolor: #dae639;
+    
+      --button-color-orange-bgcolor: #ee9e35;
+      --button-color-orange-txtcolor: rgb(39, 23, 23);
+      --button-color-orange-border: #ee9e35;
+      --button-color-orange-hover-bgcolor: #d37f12;
+      --button-color-orange-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-orange-active-bgcolor: #ee9e35;
+    
+      --button-color-purple-bgcolor: #a826c8;
+      --button-color-purple-txtcolor: rgb(39, 23, 23);
+      --button-color-purple-border: #a826c8;
+      --button-color-purple-hover-bgcolor: #751e8b;
+      --button-color-purple-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-purple-active-bgcolor: #a826c8;
+    
+      --button-color-blue-bgcolor: #4e44da;
+      --button-color-blue-txtcolor: rgb(39, 23, 23);
+      --button-color-blue-border: #4e44da;
+      --button-color-blue-hover-bgcolor: #27217a;
+      --button-color-blue-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-blue-active-bgcolor: #4e44da;
+    
+      --button-color-brown-bgcolor: #7c4d10;
+      --button-color-brown-txtcolor: rgb(51, 51, 51);
+      --button-color-brown-border: #7c4d10;
+      --button-color-brown-hover-bgcolor: #52330b;
+      --button-color-brown-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-brown-active-bgcolor: #7c4d10;
+    
+      --button-color-red-bgcolor: #e42c2c;
+      --button-color-red-txtcolor: rgb(51, 51, 51);
+      --button-color-red-border: #e42c2c;
+      --button-color-red-hover-bgcolor: #9b2020;
+      --button-color-red-hover-txtcolor: rgb(78, 45, 45);
+      --button-color-red-active-bgcolor: #e42c2c;
+    
+      --button-color-black-bgcolor: black;
+      --button-color-black-txtcolor: rgb(185, 185, 185);
+      --button-color-black-border: black;
+      --button-color-black-hover-bgcolor: #313131;
+      --button-color-black-hover-txtcolor: rgb(218, 218, 218);
+      --button-color-black-active-bgcolor: black;
+      /************************************************/
+      --button-shape-circle: 50%;
+      --button-shape-square: 0px;
+      --button-shape-trapezoid: 30px 5px;
+      /************************************************/
+      --button-line-bgcolor: white;
+      --button-line-txtcolor: #000;
+      --button-line-border: #000 1px solid;
+      --button-line-hover-bgcolor: rgb(0, 0, 0);
+      --button-line-hover-border: #000 1px solid;
+      --button-line-hover-txtcolor: rgb(255, 255, 255);
+      /************************************************/
+      --button-line-color-green-border: #57a957;
+      --button-line-color-green-hover-bgcolor: #57a957;
+      --button-line-color-green-hover-border: #57a957;
+    
+      --button-line-color-yellow-border: #dae639;
+      --button-line-color-yellow-hover-bgcolor: #dae639;
+      --button-line-color-yellow-hover-border: #dae639;
+    
+      --button-line-color-orange-border: #ee9e35;
+      --button-line-color-orange-hover-bgcolor: #ee9e35;
+      --button-line-color-orange-hover-border: ##ee9e35;
+    
+      --button-line-color-purple-border: #a826c8;
+      --button-line-color-purple-hover-bgcolor: #a826c8;
+      --button-line-color-purple-hover-border: #a826c8;
+    
+      --button-line-color-blue-border: #4e44da;
+      --button-line-color-blue-hover-bgcolor: #4e44da;
+      --button-line-color-blue-hover-border: #4e44da;
+    
+      --button-line-color-brown-border: #7c4d10;
+      --button-line-color-brown-hover-bgcolor: #7c4d10;
+      --button-line-color-brown-hover-border: #7c4d10;
+    
+      --button-line-color-red-border: #e42c2c;
+      --button-line-color-red-hover-bgcolor: #e42c2c;
+      --button-line-color-red-hover-border: #e42c2c;
+/******End button variables******/
+
+/******Start form variables******/
+    --form-box-margin: 15px;
+    --form-box-padding: 10px;
+    /***************************/
+    --form-textObjects-border: 1px solid rgb(134, 133, 133);
+    --form-textObjects-bgcolor: rgb(194, 194, 194);
+    --form-textObjects-margin: 5px;
+    --form-textObjects-padding: 5px;
+    --form-textObjects-width: 100%;
+    --form-textObjects-focusbgcolor: rgb(134, 133, 133);
+    /***************************/
+    --form-textObjects-color-green-border: 1px solid rgb(53, 194, 45);
+    --form-textObjects-color-green-bgcolor: rgb(117, 233, 111);
+    --form-textObjects-color-green-focusbgcolor: rgb(71, 190, 65);
+
+    --form-textObjects-color-yellow-border:  1px solid rgb(233, 251, 72);
+    --form-textObjects-color-yellow-bgcolor: rgb(240, 251, 138);
+    --form-textObjects-color-yellow-focusbgcolor: rgb(233, 251, 72);
+
+    --form-textObjects-color-orange-border:  1px solid rgb(255, 207, 96);
+    --form-textObjects-color-orange-bgcolor: rgb(255, 222, 145);
+    --form-textObjects-color-orange-focusbgcolor: rgb(255, 207, 96);
+
+    --form-textObjects-color-purple-border: 1px solid rgb(189, 101, 221);
+    --form-textObjects-color-purple-bgcolor: rgb(207, 140, 231);
+    --form-textObjects-color-purple-focusbgcolor: rgb(189, 101, 221);
+
+    --form-textObjects-color-blue-border: 1px solid rgb(111, 101, 255);
+    --form-textObjects-color-blue-bgcolor: rgb(161, 160, 255);
+    --form-textObjects-color-blue-focusbgcolor: rgb(111, 101, 255);
+
+    --form-textObjects-color-brown-border: 1px solid rgb(219, 138, 72);
+    --form-textObjects-color-brown-bgcolor: rgb(231, 160, 103);
+    --form-textObjects-color-brown-focusbgcolor: rgb(219, 138, 72);
+
+    --form-textObjects-color-red-border: 1px solid rgb(221, 102, 102);
+    --form-textObjects-color-red-bgcolor: rgb(233, 145, 145);
+    --form-textObjects-color-red-focusbgcolor: rgb(221, 102, 102);
+
+    --form-textObjects-color-white-border: 1px solid rgb(255, 255, 255);
+    --form-textObjects-color-white-bgcolor: rgb(234, 225, 218);
+    --form-textObjects-color-white-focusbgcolor: rgb(255, 255, 255);
+
+    --form-textObjects-color-black-border: 1px solid rgb(39, 39, 39);
+    --form-textObjects-color-black-bgcolor: rgb(0, 0, 0);
+    --form-textObjects-color-black-txtcolor: white;
+    --form-textObjects-color-black-focusbgcolor: rgb(39, 39, 39);
+    /***************************/
+    --form-textObjects-smallPadding: 3px;
+    --form-textObjects-mediumPadding: 7px;
+    --form-textObjects-largePadding: 9px;
+    --form-textObjects-xlargePadding: 10px;
+    /***************************/
+    --form-textObjects-halfLengh: 50%;
+    --form-textObjects-quarterLength: 25%;
+    --form-textObjects-narrowLengh: 10%;
+    /***************************/
+    --form__checkObjects-block: block;
+    --form__checkObjects-inline: inline;
+    --form__checkObjects-inlineBlock: inline-block;
+/******End form variables******/
+    }
+
+
+
+
+
+
+
 /* Start grid styles*/
 *{
     margin: 0;
@@ -208,6 +391,7 @@
 .text-right {
     text-align: right;
   }
+
 /* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
 /* ------------------INICIO DE FUENTES------------------*/
 /*Definiendo fuentes*/
@@ -271,3 +455,421 @@ a{
     font-style:italic;
 }
 /* ------------------FIN DE FUENTES------------------*/
+/* end utility styles */
+
+
+
+
+/******Start button classes******/
+.button{
+    display: var(--button-display);
+    padding: var(--button-padding);
+    margin: var(--button-margin);
+    cursor: pointer;/*We change the cursor shape to the pointer*/
+    border: var(--button-border);
+    overflow: visible;/*In case the text overfloxs it will show it outside the button*/
+    font: var(--button-font);
+    text-decoration: none;/*In case an unwanted tipe of text decoration appears on the text*/
+    color: var(--button-txtColor);
+    background-color: var(--button-bgcolor);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));/*Adds the color gradient*/
+    transition: background-color .5s ease-out;/*States what will change, how it will change and the time it will take*/
+    background-clip: padding-box;
+    border-radius: var(--button-boderRadius);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+    text-shadow: 0 1px 0 rgba(255,255,255, .9);
+    user-select: none;
+    min-width: auto;
+    min-height: auto;
+  }
+  .button:hover{/*When the cursor goes over the button*/
+    background-color: var(--button-hover-bgcolor);
+    color: var(--button-hover-txtcolor);
+  }
+  .button:active{/*When the cursor click the button*/
+    background: var(--button-active-bgcolor);
+    position: relative;
+    top: 1px;
+    text-shadow: none;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+  }
+  
+  /*Start types of sizes*/
+  .button__small{
+    padding: var(--button-size-small);
+  }
+  
+  .button__medium{
+    padding: var(--button-size-medium);
+  }
+  
+  .button__large{
+    padding: var(--button-size-large);
+    text-transform: uppercase;
+  }
+  .button__large:active{
+    top: 2px;
+  }
+  
+  .button__xlarge{
+    padding: var(--button-size-xlarge);
+    text-transform: uppercase;
+  }
+  .button__xlarge:active{
+    top: 3px;
+  }
+  /*End types of sizes*/
+  
+  /*Start Default Colors*/
+  .button__green{
+    background-color: var(--button-color-green-bgcolor);
+    border-color: var(--button-color-green-border);
+    color: var(--button-color-green-txtcolor);
+  }
+  .button__green:hover{
+    background-color: var(--button-color-green-hover-bgcolor);
+    color: var(--button-color-green-hover-txtcolor);
+  }
+  .button__green:active{
+    background: var(--button-color-green-active-bgcolor);
+  }
+  
+  .button__yellow{
+    background-color: var(--button-color-yellow-bgcolor);
+    border-color: var(--button-color-yellow-border);
+    color: var(--button-color-yellow-txtcolor);
+  }
+  .button__yellow:hover{
+    background-color: var(--button-color-yellow-hover-bgcolor);
+    color: var(--button-color-yellow-hover-border);
+  }
+  .button__yellow:active{
+    background: var(--button-color-yellow-active-bgcolor);
+  }
+  
+  .button__orange{
+    background-color: var(--button-color-orange-bgcolor);
+    border-color: var(--button-color-orange-border);
+    color: var(--button-color-orange-txtcolor);
+  }
+  .button__orange:hover{
+    background-color: var(--button-color-orange-hover-bgcolor);
+    color: var(--button-color-orange-hover-txtcolor);
+  }
+  .button__orange:active{
+    background: var(--button-color-orange-active-bgcolor);
+  }
+  
+  .button__purple{
+    background-color: var(--button-color-purple-bgcolor);
+    border-color: var(--button-color-purple-border);
+    color: var(--button-color-purple-txtcolor);
+  }
+  .button__purple:hover{
+    background-color: var(--button-color-purple-hover-bgcolor);
+    color: var(--button-color-purple-hover-txtcolor);
+  }
+  .button__purple:active{
+    background: var(--button-color-purple-active-bgcolor);
+  }
+  
+  .button__blue{
+    background-color: var(--button-color-blue-bgcolor);
+    border-color: var(--button-color-blue-border);
+    color: var(--button-color-blue-txtcolor);
+  }
+  .button__blue:hover{
+    background-color: var(--button-color-blue-hover-bgcolor);
+    color: var(--button-color-blue-hover-txtcolor);
+  }
+  .button__blue:active{
+    background: var(--button-color-blue-active-bgcolor);
+  }
+  
+  .button__brown{
+    background-color: var(--button-color-brown-bgcolor);
+    border-color: var(--button-color-brown-border);
+    color: var(--button-color-brown-txtcolor);
+  }
+  .button__brown:hover{
+    background-color: var(--button-color-brown-hover-bgcolor);
+    color: var(--button-color-brown-hover-txtcolor);
+  }
+  .button__brown:active{
+    background: var(--button-color-brown-active-bgcolor);
+  }
+  
+  .button__red{
+    background-color: var(--button-color-red-bgcolor);
+    border-color: var(--button-color-red-border);
+    color: var(--button-color-red-txtcolor);
+  }
+  .button__red:hover{
+    background-color: var(--button-color-red-hover-bgcolor);
+    color: var(--button-color-red-hover-txtcolor);
+  }
+  .button__red:active{
+    background: var(--button-color-red-active-bgcolor);
+  }
+  
+  .button__black{
+    background-color: var(--button-color-black-bgcolor);
+    border-color: var(--button-color-black-border);
+    color: var(--button-color-black-txtcolor);
+  }
+  .button__black:hover{
+    background-color: var(--button-color-black-hover-bgcolor);
+    color: var(--button-color-black-hover-txtcolor);
+  }
+  .button__black:active{
+    background: var(--button-color-black-active-bgcolor);
+  }
+  /*End Default Colors*/
+  
+  /*Start Shapes*/
+  .button__circle{
+    border-radius: var(--button-shape-circle);
+  }
+  .button__square{
+    border-radius: var(--button-shape-square);
+  }
+  
+  .button__trapezoid{
+    border-radius: var(--button-shape-trapezoid);
+  }
+  /*End Shapes*/
+  
+   /*Start Line button*/
+  .button__line{
+    background-color: var(--button-line-bgcolor);
+    color: var(--button-line-txtcolor);
+    border: var(--button-line-border);
+    box-shadow: none;
+    background-image: none;
+    
+  }
+  .button__line:hover{
+    background-color: var(--button-line-hover-bgcolor);
+    border: var(--button-line-hover-border);
+    color: var(--button-line-hover-txtcolor);
+    
+  }
+    /*Start Line Colors*/
+      .button__line__green{
+          background-color: var(--button-line-bgcolor);
+          border-color: var(--button-line-color-green-border);
+      }
+      .button__line__green:hover{
+        background-color: var(--button-line-color-green-hover-bgcolor);
+        border-color: var(--button-line-color-green-hover-border);
+      }
+      
+      .button__line__yellow{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-yellow-border);
+      }
+      .button__line__yellow:hover{
+        background-color: var(--button-line-color-yellow-hover-bgcolor);
+        border-color: var(--button-line-color-yellow-hover-border);
+      }
+  
+      .button__line__orange{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-orange-border);
+      }
+      .button__line__orange:hover{
+        background-color: var(--button-line-color-orange-hover-bgcolor);
+        border-color: var(--button-line-color-orange-hover-border);
+      }
+  
+      .button__line__purple{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-purple-border);
+      }
+      .button__line__purple:hover{
+        background-color: var(--button-line-color-purple-hover-bgcolor);
+        border-color: var(--button-line-color-purple-hover-border);
+      }
+  
+      .button__line__blue{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-blue-border);
+      }
+      .button__line__blue:hover{
+        background-color: var(--button-line-color-blue-hover-bgcolor);
+        border-color: var(--button-line-color-blue-hover-border);
+      }
+  
+      .button__line__brown{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-brown-border);
+      }
+      .button__line__brown:hover{
+        background-color: var(--button-line-color-brown-hover-bgcolor);
+        border-color: var(--button-line-color-brown-hover-border);
+      }
+  
+      .button__line__red{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-red-border);
+      }
+      .button__line__red:hover{
+        background-color: var(--button-line-color-red-hover-bgcolor);
+        border-color: var(--button-line-color-red-hover-border);
+      }
+    /*End Line Colors*/
+  
+   /*End of types of buttons*/
+  /******End button classes******/
+  
+  
+
+
+/******Start form classes******/
+.form__box{
+    display: block;
+    margin: var(--form-box-margin);
+    padding: var(--form-box-padding);
+}
+
+.form__box__center{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Start TextBoxes CSS*/
+    .form__textObjects{
+        border: var(--form-textObjects-border);
+        background-color: var(--form-textObjects-bgcolor);
+        border-radius: 5px;
+        padding: var(--form-textObjects-padding);
+        margin: var(--form-textObjects-margin);
+        width: var(--form-textObjects-width);
+    }
+    .form__textObjects:focus{
+        background-color: var(--form-textObjects-hover-bgcolor);
+        position: relative;
+        top: 2px;
+        text-shadow: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    }
+
+    /*Start Default Colors*/
+    .form__textObjects__green{
+        border: var(--form-textObjects-color-green-border);
+        background-color: rgb(117, 233, 111);
+    }
+    .form__textObjects__green:focus{
+        background-color: rgb(71, 190, 65);
+    }
+
+    .form__textObjects__yellow{
+        border: var(--form-textObjects-color-yellow-border);
+        background-color: var(--form-textObjects-color-yellow-bgcolor);
+    }
+    .form__textObjects__yellow:focus{
+        background-color: var(--form-textObjects-color-yellow-focusbgcolor);
+    }
+
+    .form__textObjects__orange{
+        border: var(--form-textObjects-color-orange-border);
+        background-color: var(--form-textObjects-color-orange-bgcolor);
+    }
+    .form__textObjects__orange:focus{
+        background-color: var(--form-textObjects-color-orange-focusbgcolor);
+    }
+
+    .form__textObjects__purple{
+        border: var(--form-textObjects-color-purple-border);
+        background-color: var(--form-textObjects-color-purple-bgcolor);
+    }
+    .form__textObjects__purple:focus{
+        background-color: var(--form-textObjects-color-purple-focusbgcolor);
+    }
+
+    .form__textObjects__blue{
+        border: var(--form-textObjects-color-blue-border);
+        background-color: var(--form-textObjects-color-blue-bgcolor);
+    }
+    .form__textObjects__blue:focus{
+        background-color: var(--form-textObjects-color-blue-focusbgcolor);
+    }
+
+    .form__textObjects__brown{
+        border: var(--form-textObjects-color-brown-border);
+        background-color: var(--form-textObjects-color-brown-bgcolor);
+    }
+    .form__textObjects__brown:focus{
+        background-color: var(--form-textObjects-color-brown-focusbgcolor);
+    }
+
+    .form__textObjects__red{
+        border: var(--form-textObjects-color-red-border);
+        background-color: var(--form-textObjects-color-red-bgcolor);
+    }
+    .form__textObjects__red:focus{
+        background-color: var(--form-textObjects-color-red-focusbgcolor);
+    }
+
+    .form__textObjects__white{
+        border: var(--form-textObjects-color-white-border);
+        background-color: var(--form-textObjects-color-white-bgcolor);
+    }
+    .form__textObjects__white:focus{
+        background-color: var(--form-textObjects-color-white-focusbgcolor);
+    }
+
+    .form__textObjects__black{
+        border: var(--form-textObjects-color-black-border);
+        background-color: var(--form-textObjects-color-black-bgcolor);
+        color: var(--form-textObjects-color-black-txtcolor);
+    }
+    .form__textObjects__black:focus{
+        background-color: var(--form-textObjects-color-black-focusbgcolor);
+    }
+    /*End Default Colors*/
+
+    /*Start Sizes*/
+    .form__textObjects__small{
+        padding: var(--form-textObjects-smallPadding);
+    }
+
+    .form__textObjects__medium{
+        padding: var(--form-textObjects-mediumPadding);
+    }
+
+    .form__textObjects__large{
+        padding: var(--form-textObjects-largePadding);
+    }
+
+    .form__textObjects__xlarge{
+        padding: var(--form-textObjects-xlargePadding);
+    }
+    /*End Sizes*/
+
+    /*Start widths*/
+    .form__textObjects__halfLength{
+        width: var(--form-textObjects-halfLengh);
+    }
+    .form__textObjects__quarterLength{
+        width: var(--form-textObjects-quarterLength);
+    }
+    .form__textObjects__narrowLength{
+        width: var(--form-textObjects-narrowLengh);
+    }
+    /*End widths*/
+/*End TextBoxes CSS*/
+
+/*Start CheckBoxes CSS*/
+.form__checkObjects{
+    display: var(--form__checkObjects-block);
+}
+.form__checkObjects__inline{
+    display: var(--form__checkObjects-inline);
+}
+.form__checkObjects__inlineBlock{
+    display: var(--form__checkObjects-inlineBlock);
+}
+ /*End CheckBoxes CSS*/
+/******End form classes******/

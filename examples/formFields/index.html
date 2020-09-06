@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Fields</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        .separator{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+
+        <div class="form__box">
+            <h1>Default:</h1>
+            <label for="txt1">Default color/shape:</label>
+            <input class="form__textObjects" type="text" name="txt1" id="txt1">
+        </div>
+
+        <div class="form__box">
+            <h1>Colors</h1>
+            <label for="txt1">Green:</label>
+            <input class="form__textObjects form__textObjects__green" type="text" name="txt1" id="txt1">
+            <label for="txt">Yellow:</label>
+            <input class="form__textObjects form__textObjects__yellow" type="text" name="txt" id="txt">
+            <label for="txt">Orange:</label>
+            <input class="form__textObjects form__textObjects__orange" type="text" name="txt" id="txt">
+            <label for="txt">Purple:</label>
+            <input class="form__textObjects form__textObjects__purple" type="text" name="txt" id="txt">
+            <label for="txt">Blue:</label>
+            <input class="form__textObjects form__textObjects__blue" type="text" name="txt" id="txt">
+            <label for="txt">Brown:</label>
+            <input class="form__textObjects form__textObjects__brown" type="text" name="txt" id="txt">
+            <label for="txt">Red:</label>
+            <input class="form__textObjects form__textObjects__red" type="text" name="txt" id="txt">
+            <label for="txt">White:</label>
+            <input class="form__textObjects form__textObjects__white" type="text" name="txt" id="txt">
+            <label for="txt">Black:</label>
+            <input class="form__textObjects form__textObjects__black" type="text" name="txt" id="txt">
+        </div>
+
+        <div class="form__box">
+            <h1>Sizes:</h1>
+            <label for="txt">Small:</label>
+            <input class="form__textObjects form__textObjects__small" type="text" name="txt" id="txt">
+            <label for="txt">Medium:</label>
+            <input class="form__textObjects form__textObjects__medium" type="text" name="txt" id="txt">
+            <label for="txt">Large:</label>
+            <input class="form__textObjects form__textObjects__large" type="text" name="txt" id="txt">
+            <label for="txt">Extra large:</label>
+            <input class="form__textObjects form__textObjects__xlarge" type="text" name="txt" id="txt">
+        </div>
+
+        <div class="form__box">
+            <h1>Widths:</h1>
+            <label for="txt">Half wid</label>
+            <input class="form__textObjects form__textObjects__halfLength" type="text" name="txt" id="txt">
+            <span class="separator"></span>
+            <label for="txt">Quarter:</label>
+            <input class="form__textObjects form__textObjects__quarterLength" type="text" name="txt" id="txt">
+            <span class="separator"></span>
+            <label for="txt">Narrow:</label>
+            <input class="form__textObjects form__textObjects__narrowLength" type="text" name="txt" id="txt">
+        </div>
+
+        <div class="form__box">
+            <h1>Other kinds of text form objects:</h1>
+            <select class="form__textObjects form__textObjects__blue form__textObjects__medium form__textObjects__narrowLength" id="exampleFormControlSelect1">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+                <option>E</option>
+            </select>
+            <select class="form__textObjects form__textObjects__blue form__textObjects__medium form__textObjects__halfLength" multiple class="form-control" id="exampleFormControlSelect2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+        </div>
+
+        <div class="form__box">
+            <h1>Checkboxes</h1>
+            <input class="form__checkObjects" type="checkbox" name="" id="default"><label for="default">Block Checkbox</label>
+            <span class="separator"></span>
+            <input class="form__checkObjects form__checkObjects__inline" type="checkbox" name="" id="">Block Checkbox
+            <input class="form__checkObjects form__checkObjects__inline" type="checkbox" name="" id="">Block Checkbox
+            <input class="form__checkObjects form__checkObjects__inlineBlock" type="checkbox" name="" id="">Block Checkbox
+
+        </div>
+    </form>
+</body>
+</html>

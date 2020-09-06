@@ -1,4 +1,5 @@
 :root{
+/******Start form variables******/
     --form-box-margin: 15px;
     --form-box-padding: 10px;
 /***************************/
@@ -58,9 +59,10 @@
     --form__checkObjects-block: block;
     --form__checkObjects-inline: inline;
     --form__checkObjects-inlineBlock: inline-block;
+/******End form variables******/
 }
 
-
+/******Start form classes******/
 .form__box{
     display: block;
     margin: var(--form-box-margin);
@@ -206,4 +208,5 @@
 .form__checkObjects__inlineBlock{
     display: var(--form__checkObjects-inlineBlock);
 }
-/*End CheckBoxes CSS*/
+ /*End CheckBoxes CSS*/
+/******End form classes******/

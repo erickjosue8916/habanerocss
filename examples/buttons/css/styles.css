@@ -1,4 +1,5 @@
 :root{
+/******Start button variables******/
   --button-display: inline-block;
   --button-padding: 6px 20px;
   --button-margin: 5px;
@@ -109,9 +110,10 @@
   --button-line-color-red-border: #e42c2c;
   --button-line-color-red-hover-bgcolor: #e42c2c;
   --button-line-color-red-hover-border: #e42c2c;
-
+/******End button variables******/
 }
 
+/******Start button classes******/
 .button{
   display: var(--button-display);
   padding: var(--button-padding);
@@ -290,7 +292,7 @@
 }
 /*End Shapes*/
 
-/*Start Line button*/
+ /*Start Line button*/
 .button__line{
   background-color: var(--button-line-bgcolor);
   color: var(--button-line-txtcolor);
@@ -370,4 +372,6 @@
     }
   /*End Line Colors*/
 
-/*End of types of buttons*/
+ /*End of types of buttons*/
+/******End button classes******/
+

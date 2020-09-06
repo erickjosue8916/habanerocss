@@ -1,0 +1,33 @@
+*{
+    margin: 5px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*background alerts, and border colors*/
+    --bg-danger:#ea5455;
+    --bg-success:#79d70f;
+    --bg-warning:#ffcd3c;
+    --bg-secondary:#35d0ba;
+    --bg-info:#848ccf;
+    /*background alerts, and border colors*/
+}
+
+/*start style: backgroud colors*/
+.bg-danger{
+    background-color: var(--bg-danger);
+}
+.bg-success{
+    background-color: var(--bg-success);
+}
+.bg-warning{
+    background-color: var(--bg-warning);
+}
+.bg-secondary{
+    background-color: var(--bg-secondary);
+}
+.bg-info{
+    background-color: var(--bg-info);
+}
+/*end style: backgroud colors*/

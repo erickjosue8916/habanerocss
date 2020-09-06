@@ -1,11 +1,13 @@
-function closeAlert() {
-    let alert = document.getElementById("alert");
-    alert.classList.add("close-alert");
-}
-   
 function load() { 
-    var el = document.getElementById("close"); 
-    el.addEventListener("click", closeAlert, false); 
-} 
+    var el = document.querySelectorAll(".fa-window-close");
+
+    el.forEach((element, i) => {
+        element.addEventListener( "click",
+            () => {
+                document.getElementsByClassName("alert")[i].classList.add("close-alert");
+            }
+        );
+    });
+}
   
 document.addEventListener("DOMContentLoaded", load, false);

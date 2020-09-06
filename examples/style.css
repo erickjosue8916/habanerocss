@@ -1,0 +1,16 @@
+*{
+    background-color: rgb(214, 211, 197);
+}
+
+td,th {
+    border: black 5px solid;
+  }
+.tabla{
+    size: 10px;
+    border-width: 12px;
+    width: 100%;
+}
+.encapsular{
+    background-color: white;
+}
+

@@ -1,18 +1,132 @@
+:root{
+  --button-display: inline-block;
+  --button-padding: 6px 20px;
+  --button-margin: 5px;
+  --button-border: 1px solid #bbb;
+  --button-font: bold 13px helvetica, sans-serif;
+  --button-txtColor: #000;
+  --button-bgcolor: #ddd;
+  --button-boderRadius:5px;
+  --button-hover-bgcolor: #eee;
+  --button-hover-txtcolor: #555;
+  --button-active-bgcolor: #e9e9e9;
+  --button-size-small: 4px 12px;
+  --button-size-medium:8px 20px;
+  --button-size-large: 12px 30px;
+  --button-size-xlarge: 20px 40px;
+  /*******************************/
+  --button-color-green-bgcolor: #57a957;
+  --button-color-green-txtcolor: rgb(39, 23, 23);
+  --button-color-green-border: #57a957;
+  --button-color-green-hover-bgcolor: #2e8f2e;
+  --button-color-green-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-green-active-bgcolor: #57a957;
+
+  --button-color-yellow-bgcolor: #dae639;
+  --button-color-yellow-txtcolor: rgb(39, 23, 23);
+  --button-color-yellow-border: #dae639;
+  --button-color-yellow-hover-bgcolor: #afb920;
+  --button-color-yellow-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-yellow-active-bgcolor: #dae639;
+
+  --button-color-orange-bgcolor: #ee9e35;
+  --button-color-orange-txtcolor: rgb(39, 23, 23);
+  --button-color-orange-border: #ee9e35;
+  --button-color-orange-hover-bgcolor: #d37f12;
+  --button-color-orange-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-orange-active-bgcolor: #ee9e35;
+
+  --button-color-purple-bgcolor: #a826c8;
+  --button-color-purple-txtcolor: rgb(39, 23, 23);
+  --button-color-purple-border: #a826c8;
+  --button-color-purple-hover-bgcolor: #751e8b;
+  --button-color-purple-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-purple-active-bgcolor: #a826c8;
+
+  --button-color-blue-bgcolor: #4e44da;
+  --button-color-blue-txtcolor: rgb(39, 23, 23);
+  --button-color-blue-border: #4e44da;
+  --button-color-blue-hover-bgcolor: #27217a;
+  --button-color-blue-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-blue-active-bgcolor: #4e44da;
+
+  --button-color-brown-bgcolor: #7c4d10;
+  --button-color-brown-txtcolor: rgb(51, 51, 51);
+  --button-color-brown-border: #7c4d10;
+  --button-color-brown-hover-bgcolor: #52330b;
+  --button-color-brown-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-brown-active-bgcolor: #7c4d10;
+
+  --button-color-red-bgcolor: #e42c2c;
+  --button-color-red-txtcolor: rgb(51, 51, 51);
+  --button-color-red-border: #e42c2c;
+  --button-color-red-hover-bgcolor: #9b2020;
+  --button-color-red-hover-txtcolor: rgb(78, 45, 45);
+  --button-color-red-active-bgcolor: #e42c2c;
+
+  --button-color-black-bgcolor: black;
+  --button-color-black-txtcolor: rgb(185, 185, 185);
+  --button-color-black-border: black;
+  --button-color-black-hover-bgcolor: #313131;
+  --button-color-black-hover-txtcolor: rgb(218, 218, 218);
+  --button-color-black-active-bgcolor: black;
+  /************************************************/
+  --button-shape-circle: 50%;
+  --button-shape-square: 0px;
+  --button-shape-trapezoid: 30px 5px;
+  /************************************************/
+  --button-line-bgcolor: white;
+  --button-line-txtcolor: #000;
+  --button-line-border: #000 1px solid;
+  --button-line-hover-bgcolor: rgb(0, 0, 0);
+  --button-line-hover-border: #000 1px solid;
+  --button-line-hover-txtcolor: rgb(255, 255, 255);
+  /************************************************/
+  --button-line-color-green-border: #57a957;
+  --button-line-color-green-hover-bgcolor: #57a957;
+  --button-line-color-green-hover-border: #57a957;
+
+  --button-line-color-yellow-border: #dae639;
+  --button-line-color-yellow-hover-bgcolor: #dae639;
+  --button-line-color-yellow-hover-border: #dae639;
+
+  --button-line-color-orange-border: #ee9e35;
+  --button-line-color-orange-hover-bgcolor: #ee9e35;
+  --button-line-color-orange-hover-border: ##ee9e35;
+
+  --button-line-color-purple-border: #a826c8;
+  --button-line-color-purple-hover-bgcolor: #a826c8;
+  --button-line-color-purple-hover-border: #a826c8;
+
+  --button-line-color-blue-border: #4e44da;
+  --button-line-color-blue-hover-bgcolor: #4e44da;
+  --button-line-color-blue-hover-border: #4e44da;
+
+  --button-line-color-brown-border: #7c4d10;
+  --button-line-color-brown-hover-bgcolor: #7c4d10;
+  --button-line-color-brown-hover-border: #7c4d10;
+
+  --button-line-color-red-border: #e42c2c;
+  --button-line-color-red-hover-bgcolor: #e42c2c;
+  --button-line-color-red-hover-border: #e42c2c;
+
+}
+
 .button{
-  display: inline-block;
-  padding: 6px 20px;
-  margin: 5px;
+  display: var(--button-display);
+  padding: var(--button-padding);
+  margin: var(--button-margin);
   cursor: pointer;/*We change the cursor shape to the pointer*/
-  border: 1px solid #bbb;
+  border: var(--button-border);
   overflow: visible;/*In case the text overfloxs it will show it outside the button*/
-  font: bold 13px helvetica, sans-serif;
+  font: var(--button-font);
   text-decoration: none;/*In case an unwanted tipe of text decoration appears on the text*/
-  color: #000;
-  background-color: #ddd;
+  color: var(--button-txtColor);
+  background-color: var(--button-bgcolor);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));/*Adds the color gradient*/
   transition: background-color .5s ease-out;/*States what will change, how it will change and the time it will take*/
   background-clip: padding-box;
-  border-radius: 5px;
+  border-radius: var(--button-boderRadius);
   box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
   text-shadow: 0 1px 0 rgba(255,255,255, .9);
   user-select: none;
@@ -20,11 +134,11 @@
   min-height: auto;
 }
 .button:hover{/*When the cursor goes over the button*/
-  background-color: #eee;
-  color: #555;
+  background-color: var(--button-hover-bgcolor);
+  color: var(--button-hover-txtcolor);
 }
 .button:active{/*When the cursor click the button*/
-  background: #e9e9e9;
+  background: var(--button-active-bgcolor);
   position: relative;
   top: 1px;
   text-shadow: none;
@@ -33,15 +147,15 @@
 
 /*Start types of sizes*/
 .button__small{
-  padding: 4px 12px;
+  padding: var(--button-size-small);
 }
 
 .button__medium{
-  padding: 8px 20px;
+  padding: var(--button-size-medium);
 }
 
 .button__large{
-  padding: 12px 30px;
+  padding: var(--button-size-large);
   text-transform: uppercase;
 }
 .button__large:active{
@@ -49,7 +163,7 @@
 }
 
 .button__xlarge{
-  padding: 20px 40px;
+  padding: var(--button-size-xlarge);
   text-transform: uppercase;
 }
 .button__xlarge:active{
@@ -59,200 +173,200 @@
 
 /*Start Default Colors*/
 .button__green{
-  background-color: #57a957;
-  border-color: #57a957;
-  color: rgb(39, 23, 23);
+  background-color: var(--button-color-green-bgcolor);
+  border-color: var(--button-color-green-border);
+  color: var(--button-color-green-txtcolor);
 }
 .button__green:hover{
-  background-color: #2e8f2e;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-green-hover-bgcolor);
+  color: var(--button-color-green-hover-txtcolor);
 }
 .button__green:active{
-  background: #57a957;
+  background: var(--button-color-green-active-bgcolor);
 }
 
 .button__yellow{
-  background-color: #dae639;
-  border-color: #dae639;
-  color: rgb(39, 23, 23);
+  background-color: var(--button-color-yellow-bgcolor);
+  border-color: var(--button-color-yellow-border);
+  color: var(--button-color-yellow-txtcolor);
 }
 .button__yellow:hover{
-  background-color: #afb920;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-yellow-hover-bgcolor);
+  color: var(--button-color-yellow-hover-border);
 }
 .button__yellow:active{
-  background: #dae639;
+  background: var(--button-color-yellow-active-bgcolor);
 }
 
 .button__orange{
-  background-color: #ee9e35;
-  border-color: #ee9e35;
-  color: rgb(39, 23, 23);
+  background-color: var(--button-color-orange-bgcolor);
+  border-color: var(--button-color-orange-border);
+  color: var(--button-color-orange-txtcolor);
 }
 .button__orange:hover{
-  background-color: #d37f12;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-orange-hover-bgcolor);
+  color: var(--button-color-orange-hover-txtcolor);
 }
 .button__orange:active{
-  background: #ee9e35;
+  background: var(--button-color-orange-active-bgcolor);
 }
 
 .button__purple{
-  background-color: #a826c8;
-  border-color: #a826c8;
-  color: rgb(39, 23, 23);
+  background-color: var(--button-color-purple-bgcolor);
+  border-color: var(--button-color-purple-border);
+  color: var(--button-color-purple-txtcolor);
 }
 .button__purple:hover{
-  background-color: #751e8b;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-purple-hover-bgcolor);
+  color: var(--button-color-purple-hover-txtcolor);
 }
 .button__purple:active{
-  background: #a826c8;
+  background: var(--button-color-purple-active-bgcolor);
 }
 
 .button__blue{
-  background-color: #4e44da;
-  border-color: #4e44da;
-  color: rgb(39, 23, 23);
+  background-color: var(--button-color-blue-bgcolor);
+  border-color: var(--button-color-blue-border);
+  color: var(--button-color-blue-txtcolor);
 }
 .button__blue:hover{
-  background-color: #27217a;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-blue-hover-bgcolor);
+  color: var(--button-color-blue-hover-txtcolor);
 }
 .button__blue:active{
-  background: #4e44da;
+  background: var(--button-color-blue-active-bgcolor);
 }
 
 .button__brown{
-  background-color: #7c4d10;
-  border-color: #7c4d10;
-  color: rgb(51, 51, 51);
+  background-color: var(--button-color-brown-bgcolor);
+  border-color: var(--button-color-brown-border);
+  color: var(--button-color-brown-txtcolor);
 }
 .button__brown:hover{
-  background-color: #52330b;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-brown-hover-bgcolor);
+  color: var(--button-color-brown-hover-txtcolor);
 }
 .button__brown:active{
-  background: #7c4d10;
+  background: var(--button-color-brown-active-bgcolor);
 }
 
 .button__red{
-  background-color: #e42c2c;
-  border-color: #e42c2c;
-  color: rgb(51, 51, 51);
+  background-color: var(--button-color-red-bgcolor);
+  border-color: var(--button-color-red-border);
+  color: var(--button-color-red-txtcolor);
 }
 .button__red:hover{
-  background-color: #9b2020;
-  color: rgb(78, 45, 45);
+  background-color: var(--button-color-red-hover-bgcolor);
+  color: var(--button-color-red-hover-txtcolor);
 }
 .button__red:active{
-  background: #e42c2c;
+  background: var(--button-color-red-active-bgcolor);
 }
 
 .button__black{
-  background-color: #000000;
-  border-color: #000000;
-  color: rgb(185, 185, 185);
+  background-color: var(--button-color-black-bgcolor);
+  border-color: var(--button-color-black-border);
+  color: var(--button-color-black-txtcolor);
 }
 .button__black:hover{
-  background-color: #313131;
-  color: rgb(218, 218, 218);
+  background-color: var(--button-color-black-hover-bgcolor);
+  color: var(--button-color-black-hover-txtcolor);
 }
 .button__black:active{
-  background: #000000;
+  background: var(--button-color-black-active-bgcolor);
 }
 /*End Default Colors*/
 
 /*Start Shapes*/
 .button__circle{
-  border-radius: 50%;
+  border-radius: var(--button-shape-circle);
 }
 .button__square{
-  border-radius: 0px;
+  border-radius: var(--button-shape-square);
 }
 
 .button__trapezoid{
-  border-radius: 30px 5px;
+  border-radius: var(--button-shape-trapezoid);
 }
 /*End Shapes*/
 
 /*Start Line button*/
 .button__line{
-  background-color: #ffffff;
-  color: #000;
-  border: #000 1px solid;
+  background-color: var(--button-line-bgcolor);
+  color: var(--button-line-txtcolor);
+  border: var(--button-line-border);
   box-shadow: none;
   background-image: none;
   
 }
 .button__line:hover{
-  background-color: rgb(0, 0, 0);
-  border: #000 1px solid;
-  color: rgb(255, 255, 255);
+  background-color: var(--button-line-hover-bgcolor);
+  border: var(--button-line-hover-border);
+  color: var(--button-line-hover-txtcolor);
   
 }
   /*Start Line Colors*/
-      .button__line__green{
-        background-color: #ffffff;
-        border-color: #57a957;
+    .button__line__green{
+        background-color: var(--button-line-bgcolor);
+        border-color: var(--button-line-color-green-border);
     }
     .button__line__green:hover{
-      background-color: #57a957;
-      border-color: #57a957;
+      background-color: var(--button-line-color-green-hover-bgcolor);
+      border-color: var(--button-line-color-green-hover-border);
     }
     
     .button__line__yellow{
-        background-color: #ffffff;
-        border-color: #dae639;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-yellow-border);
     }
     .button__line__yellow:hover{
-      background-color: #dae639;
-      border-color: #dae639;
+      background-color: var(--button-line-color-yellow-hover-bgcolor);
+      border-color: var(--button-line-color-yellow-hover-border);
     }
-    
+
     .button__line__orange{
-        background-color: #ffffff;
-        border-color: #ee9e35;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-orange-border);
     }
     .button__line__orange:hover{
-      background-color: #ee9e35;
-      border-color: #ee9e35;
+      background-color: var(--button-line-color-orange-hover-bgcolor);
+      border-color: var(--button-line-color-orange-hover-border);
     }
 
     .button__line__purple{
-        background-color: #ffffff;
-        border-color: #a826c8;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-purple-border);
     }
     .button__line__purple:hover{
-      background-color: #a826c8;
-      border-color: #a826c8;
+      background-color: var(--button-line-color-purple-hover-bgcolor);
+      border-color: var(--button-line-color-purple-hover-border);
     }
 
     .button__line__blue{
-        background-color: #ffffff;
-        border-color: #4e44da;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-blue-border);
     }
     .button__line__blue:hover{
-      background-color: #4e44da;
-      border-color: #4e44da;
+      background-color: var(--button-line-color-blue-hover-bgcolor);
+      border-color: var(--button-line-color-blue-hover-border);
     }
 
     .button__line__brown{
-        background-color: #ffffff;
-        border-color: #7c4d10;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-brown-border);
     }
     .button__line__brown:hover{
-      background-color: #7c4d10;
-      border-color: #7c4d10;
+      background-color: var(--button-line-color-brown-hover-bgcolor);
+      border-color: var(--button-line-color-brown-hover-border);
     }
 
     .button__line__red{
-        background-color: #ffffff;
-        border-color: #e42c2c;
+      background-color: var(--button-line-bgcolor);
+      border-color: var(--button-line-color-red-border);
     }
     .button__line__red:hover{
-      background-color: #e42c2c;
-      border-color: #e42c2c;
+      background-color: var(--button-line-color-red-hover-bgcolor);
+      border-color: var(--button-line-color-red-hover-border);
     }
   /*End Line Colors*/
 

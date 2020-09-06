@@ -1,7 +1,70 @@
+:root{
+    --form-box-margin: 15px;
+    --form-box-padding: 10px;
+/***************************/
+    --form-textObjects-border: 1px solid rgb(134, 133, 133);
+    --form-textObjects-bgcolor: rgb(194, 194, 194);
+    --form-textObjects-margin: 5px;
+    --form-textObjects-padding: 5px;
+    --form-textObjects-width: 100%;
+    --form-textObjects-focusbgcolor: rgb(134, 133, 133);
+/***************************/
+    --form-textObjects-color-green-border: 1px solid rgb(53, 194, 45);
+    --form-textObjects-color-green-bgcolor: rgb(117, 233, 111);
+    --form-textObjects-color-green-focusbgcolor: rgb(71, 190, 65);
+
+    --form-textObjects-color-yellow-border:  1px solid rgb(233, 251, 72);
+    --form-textObjects-color-yellow-bgcolor: rgb(240, 251, 138);
+    --form-textObjects-color-yellow-focusbgcolor: rgb(233, 251, 72);
+
+    --form-textObjects-color-orange-border:  1px solid rgb(255, 207, 96);
+    --form-textObjects-color-orange-bgcolor: rgb(255, 222, 145);
+    --form-textObjects-color-orange-focusbgcolor: rgb(255, 207, 96);
+
+    --form-textObjects-color-purple-border: 1px solid rgb(189, 101, 221);
+    --form-textObjects-color-purple-bgcolor: rgb(207, 140, 231);
+    --form-textObjects-color-purple-focusbgcolor: rgb(189, 101, 221);
+
+    --form-textObjects-color-blue-border: 1px solid rgb(111, 101, 255);
+    --form-textObjects-color-blue-bgcolor: rgb(161, 160, 255);
+    --form-textObjects-color-blue-focusbgcolor: rgb(111, 101, 255);
+
+    --form-textObjects-color-brown-border: 1px solid rgb(219, 138, 72);
+    --form-textObjects-color-brown-bgcolor: rgb(231, 160, 103);
+    --form-textObjects-color-brown-focusbgcolor: rgb(219, 138, 72);
+
+    --form-textObjects-color-red-border: 1px solid rgb(221, 102, 102);
+    --form-textObjects-color-red-bgcolor: rgb(233, 145, 145);
+    --form-textObjects-color-red-focusbgcolor: rgb(221, 102, 102);
+
+    --form-textObjects-color-white-border: 1px solid rgb(255, 255, 255);
+    --form-textObjects-color-white-bgcolor: rgb(234, 225, 218);
+    --form-textObjects-color-white-focusbgcolor: rgb(255, 255, 255);
+
+    --form-textObjects-color-black-border: 1px solid rgb(39, 39, 39);
+    --form-textObjects-color-black-bgcolor: rgb(0, 0, 0);
+    --form-textObjects-color-black-txtcolor: white;
+    --form-textObjects-color-black-focusbgcolor: rgb(39, 39, 39);
+/***************************/
+    --form-textObjects-smallPadding: 3px;
+    --form-textObjects-mediumPadding: 7px;
+    --form-textObjects-largePadding: 9px;
+    --form-textObjects-xlargePadding: 10px;
+/***************************/
+    --form-textObjects-halfLengh: 50%;
+    --form-textObjects-quarterLength: 25%;
+    --form-textObjects-narrowLengh: 10%;
+/***************************/
+    --form__checkObjects-block: block;
+    --form__checkObjects-inline: inline;
+    --form__checkObjects-inlineBlock: inline-block;
+}
+
+
 .form__box{
     display: block;
-    margin: 15px;
-    padding: 10px;
+    margin: var(--form-box-margin);
+    padding: var(--form-box-padding);
 }
 
 .form__box__center{
@@ -12,15 +75,15 @@
 
 /*Start TextBoxes CSS*/
     .form__textObjects{
-        border: 1px solid rgb(134, 133, 133);
-        background-color: rgb(194, 194, 194);
+        border: var(--form-textObjects-border);
+        background-color: var(--form-textObjects-bgcolor);
         border-radius: 5px;
-        padding: 5px;
-        margin: 5px;
-        width: 100%;
+        padding: var(--form-textObjects-padding);
+        margin: var(--form-textObjects-margin);
+        width: var(--form-textObjects-width);
     }
     .form__textObjects:focus{
-        background-color: rgb(134, 133, 133);
+        background-color: var(--form-textObjects-hover-bgcolor);
         position: relative;
         top: 2px;
         text-shadow: none;
@@ -29,7 +92,7 @@
 
     /*Start Default Colors*/
     .form__textObjects__green{
-        border: 1px solid rgb(53, 194, 45);
+        border: var(--form-textObjects-color-green-border);
         background-color: rgb(117, 233, 111);
     }
     .form__textObjects__green:focus{
@@ -37,110 +100,110 @@
     }
 
     .form__textObjects__yellow{
-        border: 1px solid rgb(233, 251, 72);
-        background-color: rgb(240, 251, 138);
+        border: var(--form-textObjects-color-yellow-border);
+        background-color: var(--form-textObjects-color-yellow-bgcolor);
     }
     .form__textObjects__yellow:focus{
-        background-color: rgb(233, 251, 72);
+        background-color: var(--form-textObjects-color-yellow-focusbgcolor);
     }
 
     .form__textObjects__orange{
-        border: 1px solid rgb(255, 207, 96);
-        background-color: rgb(255, 222, 145);
+        border: var(--form-textObjects-color-orange-border);
+        background-color: var(--form-textObjects-color-orange-bgcolor);
     }
     .form__textObjects__orange:focus{
-        background-color: rgb(255, 207, 96);
+        background-color: var(--form-textObjects-color-orange-focusbgcolor);
     }
 
     .form__textObjects__purple{
-        border: 1px solid rgb(189, 101, 221);
-        background-color: rgb(207, 140, 231);
+        border: var(--form-textObjects-color-purple-border);
+        background-color: var(--form-textObjects-color-purple-bgcolor);
     }
     .form__textObjects__purple:focus{
-        background-color: rgb(189, 101, 221);
+        background-color: var(--form-textObjects-color-purple-focusbgcolor);
     }
 
     .form__textObjects__blue{
-        border: 1px solid rgb(111, 101, 255);
-        background-color: rgb(161, 160, 255);
+        border: var(--form-textObjects-color-blue-border);
+        background-color: var(--form-textObjects-color-blue-bgcolor);
     }
     .form__textObjects__blue:focus{
-        background-color: rgb(111, 101, 255);
+        background-color: var(--form-textObjects-color-blue-focusbgcolor);
     }
 
     .form__textObjects__brown{
-        border: 1px solid rgb(219, 138, 72);
-        background-color: rgb(231, 160, 103);
+        border: var(--form-textObjects-color-brown-border);
+        background-color: var(--form-textObjects-color-brown-bgcolor);
     }
     .form__textObjects__brown:focus{
-        background-color: rgb(219, 138, 72);
+        background-color: var(--form-textObjects-color-brown-focusbgcolor);
     }
 
     .form__textObjects__red{
-        border: 1px solid rgb(221, 102, 102);
-        background-color: rgb(233, 145, 145);
+        border: var(--form-textObjects-color-red-border);
+        background-color: var(--form-textObjects-color-red-bgcolor);
     }
     .form__textObjects__red:focus{
-        background-color: rgb(221, 102, 102);
+        background-color: var(--form-textObjects-color-red-focusbgcolor);
     }
 
     .form__textObjects__white{
-        border: 1px solid rgb(255, 255, 255);
-        background-color: rgb(234, 225, 218);
+        border: var(--form-textObjects-color-white-border);
+        background-color: var(--form-textObjects-color-white-bgcolor);
     }
     .form__textObjects__white:focus{
-        background-color: rgb(255, 255, 255);
+        background-color: var(--form-textObjects-color-white-focusbgcolor);
     }
 
     .form__textObjects__black{
-        border: 1px solid rgb(39, 39, 39);
-        background-color: rgb(0, 0, 0);
-        color: white;
+        border: var(--form-textObjects-color-black-border);
+        background-color: var(--form-textObjects-color-black-bgcolor);
+        color: var(--form-textObjects-color-black-txtcolor);
     }
     .form__textObjects__black:focus{
-        background-color: rgb(39, 39, 39);
+        background-color: var(--form-textObjects-color-black-focusbgcolor);
     }
     /*End Default Colors*/
 
     /*Start Sizes*/
     .form__textObjects__small{
-        padding: 3px;
+        padding: var(--form-textObjects-smallPadding);
     }
 
     .form__textObjects__medium{
-        padding: 7px;
+        padding: var(--form-textObjects-mediumPadding);
     }
 
     .form__textObjects__large{
-        padding: 9px;
+        padding: var(--form-textObjects-largePadding);
     }
 
     .form__textObjects__xlarge{
-        padding: 10px;
+        padding: var(--form-textObjects-xlargePadding);
     }
     /*End Sizes*/
 
     /*Start widths*/
     .form__textObjects__halfLength{
-        width: 50%;
+        width: var(--form-textObjects-halfLengh);
     }
     .form__textObjects__quarterLength{
-        width: 25%;
+        width: var(--form-textObjects-quarterLength);
     }
     .form__textObjects__narrowLength{
-        width: 10%;
+        width: var(--form-textObjects-narrowLengh);
     }
     /*End widths*/
 /*End TextBoxes CSS*/
 
 /*Start CheckBoxes CSS*/
 .form__checkObjects{
-    display: block;
+    display: var(--form__checkObjects-block);
 }
 .form__checkObjects__inline{
-    display: inline;
+    display: var(--form__checkObjects-inline);
 }
 .form__checkObjects__inlineBlock{
-    display: inline-block;
+    display: var(--form__checkObjects-inlineBlock);
 }
 /*End CheckBoxes CSS*/

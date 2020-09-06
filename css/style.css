@@ -114,16 +114,16 @@
     grid-column: 2;
     justify-self: start;
 }
-.alert-error{
+.alert-danger{
     background-color: #ea5455;
 }
-.alert-message{
+.alert-info{
     background-color: #848ccf;
 }
-.alert-information{
+.alert-secondary{
     background-color: #35d0ba;
 }
-.alert-succesfully{
+.alert-success{
     background-color: #79d70f;
 }
 .alert-warning{

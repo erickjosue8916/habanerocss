@@ -1,0 +1,88 @@
+*{
+    margin: 5px 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /*background alerts, and border colors*/
+    --bg-danger:#ea5455;
+    --bg-success:#79d70f;
+    --bg-warning:#ffcd3c;
+    --bg-secondary:#35d0ba;
+    --bg-info:#848ccf;
+    /*background alerts, and border colors*/
+}
+
+/*start style: borders*/
+.bd-default-solid{
+    border: 2px solid black;
+}
+.bd-danger-solid{
+    border: 2px solid var(--bg-danger);
+}
+.bd-success-solid{
+    border: 2px solid var(--bg-success);
+}
+.bd-warning-solid{
+    border: 2px solid var(--bg-warning);
+}
+.bd-secondary-solid{
+    border: 2px solid var(--bg-secondary);
+}
+.bd-info-solid{
+    border: 2px solid var(--bg-info);
+}
+/*------------------------------*/
+.bd-default-dotted{
+    border: 2px dotted black;
+}
+.bd-danger-dotted{
+    border: 2px dotted var(--bg-danger);
+}
+.bd-success-dotted{
+    border: 2px dotted var(--bg-success);
+}
+.bd-warning-dotted{
+    border: 2px dotted var(--bg-warning);
+}
+.bd-secondary-dotted{
+    border: 2px dotted var(--bg-secondary);
+}
+.bd-info-dotted{
+    border: 2px dotted var(--bg-info);
+}
+/*-------------------------------------*/
+.bd-default-dashed{
+    border: 2px dashed black;
+}
+.bd-danger-dashed{
+    border: 2px dashed var(--bg-danger);
+}
+.bd-success-dashed{
+    border: 2px dashed var(--bg-success);
+}
+.bd-warning-dashed{
+    border: 2px dashed var(--bg-warning);
+}
+.bd-secondary-dashed{
+    border: 2px dashed var(--bg-secondary);
+}
+.bd-info-dashed{
+    border: 2px dashed var(--bg-info);
+}
+/*end style: borders*/
+
+/*start style: rounded borders*/
+.border-rounded-xs{
+    border-radius: 6px;
+}
+.border-rounded-sm{
+    border-radius: 12px;
+}
+.border-rounded-lg{
+    border-radius: 24px;
+}
+.border-rounded-xl{
+    border-radius: 48px;
+}
+/*end style: rounded borderd*/

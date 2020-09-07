@@ -10,39 +10,30 @@
     --form-textObjects-width: 100%;
     --form-textObjects-focusbgcolor: rgb(134, 133, 133);
 /***************************/
-    --form-textObjects-color-green-border: 1px solid rgb(53, 194, 45);
     --form-textObjects-color-green-bgcolor: rgb(117, 233, 111);
-    --form-textObjects-color-green-focusbgcolor: rgb(71, 190, 65);
+    --form-textObjects-color-green-focusbgcolor: rgb(53, 194, 45);
 
-    --form-textObjects-color-yellow-border:  1px solid rgb(233, 251, 72);
     --form-textObjects-color-yellow-bgcolor: rgb(240, 251, 138);
     --form-textObjects-color-yellow-focusbgcolor: rgb(233, 251, 72);
 
-    --form-textObjects-color-orange-border:  1px solid rgb(255, 207, 96);
     --form-textObjects-color-orange-bgcolor: rgb(255, 222, 145);
     --form-textObjects-color-orange-focusbgcolor: rgb(255, 207, 96);
 
-    --form-textObjects-color-purple-border: 1px solid rgb(189, 101, 221);
     --form-textObjects-color-purple-bgcolor: rgb(207, 140, 231);
     --form-textObjects-color-purple-focusbgcolor: rgb(189, 101, 221);
 
-    --form-textObjects-color-blue-border: 1px solid rgb(111, 101, 255);
     --form-textObjects-color-blue-bgcolor: rgb(161, 160, 255);
     --form-textObjects-color-blue-focusbgcolor: rgb(111, 101, 255);
 
-    --form-textObjects-color-brown-border: 1px solid rgb(219, 138, 72);
     --form-textObjects-color-brown-bgcolor: rgb(231, 160, 103);
     --form-textObjects-color-brown-focusbgcolor: rgb(219, 138, 72);
 
-    --form-textObjects-color-red-border: 1px solid rgb(221, 102, 102);
     --form-textObjects-color-red-bgcolor: rgb(233, 145, 145);
     --form-textObjects-color-red-focusbgcolor: rgb(221, 102, 102);
 
-    --form-textObjects-color-white-border: 1px solid rgb(255, 255, 255);
     --form-textObjects-color-white-bgcolor: rgb(234, 225, 218);
     --form-textObjects-color-white-focusbgcolor: rgb(255, 255, 255);
 
-    --form-textObjects-color-black-border: 1px solid rgb(39, 39, 39);
     --form-textObjects-color-black-bgcolor: rgb(0, 0, 0);
     --form-textObjects-color-black-txtcolor: white;
     --form-textObjects-color-black-focusbgcolor: rgb(39, 39, 39);
@@ -92,17 +83,16 @@
         box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
     }
 
-    /*Start Default Colors*/
     .form__textObjects__green{
-        border: var(--form-textObjects-color-green-border);
-        background-color: rgb(117, 233, 111);
+        border: 1px solid var(--form-textObjects-color-green-focusbgcolor);
+        background-color: var(--form-textObjects-color-green-bgcolor);
     }
     .form__textObjects__green:focus{
-        background-color: rgb(71, 190, 65);
+        background-color: var(--form-textObjects-color-green-focusbgcolor);
     }
 
     .form__textObjects__yellow{
-        border: var(--form-textObjects-color-yellow-border);
+        border: 1px solid var(--form-textObjects-color-yellow-focusbgcolor);
         background-color: var(--form-textObjects-color-yellow-bgcolor);
     }
     .form__textObjects__yellow:focus{
@@ -110,7 +100,7 @@
     }
 
     .form__textObjects__orange{
-        border: var(--form-textObjects-color-orange-border);
+        border: 1px solid var(--form-textObjects-color-orange-focusbgcolor);
         background-color: var(--form-textObjects-color-orange-bgcolor);
     }
     .form__textObjects__orange:focus{
@@ -118,7 +108,7 @@
     }
 
     .form__textObjects__purple{
-        border: var(--form-textObjects-color-purple-border);
+        border: 1px solid var(--form-textObjects-color-purple-focusbgcolor);
         background-color: var(--form-textObjects-color-purple-bgcolor);
     }
     .form__textObjects__purple:focus{
@@ -126,7 +116,7 @@
     }
 
     .form__textObjects__blue{
-        border: var(--form-textObjects-color-blue-border);
+        border: 1px solid var(--form-textObjects-color-blue-focusbgcolor);
         background-color: var(--form-textObjects-color-blue-bgcolor);
     }
     .form__textObjects__blue:focus{
@@ -134,7 +124,7 @@
     }
 
     .form__textObjects__brown{
-        border: var(--form-textObjects-color-brown-border);
+        border: 1px solid var(--form-textObjects-color-brown-focusbgcolor);
         background-color: var(--form-textObjects-color-brown-bgcolor);
     }
     .form__textObjects__brown:focus{
@@ -142,7 +132,7 @@
     }
 
     .form__textObjects__red{
-        border: var(--form-textObjects-color-red-border);
+        border: 1px solid var(--form-textObjects-color-red-focusbgcolor);
         background-color: var(--form-textObjects-color-red-bgcolor);
     }
     .form__textObjects__red:focus{
@@ -150,7 +140,7 @@
     }
 
     .form__textObjects__white{
-        border: var(--form-textObjects-color-white-border);
+        border: 1px solid var(--form-textObjects-color-white-focusbgcolor);
         background-color: var(--form-textObjects-color-white-bgcolor);
     }
     .form__textObjects__white:focus{
@@ -158,7 +148,7 @@
     }
 
     .form__textObjects__black{
-        border: var(--form-textObjects-color-black-border);
+        border: 1px solid var(--form-textObjects-color-black-focusbgcolor);
         background-color: var(--form-textObjects-color-black-bgcolor);
         color: var(--form-textObjects-color-black-txtcolor);
     }

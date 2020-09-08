@@ -161,34 +161,19 @@
 /*End of Variables background alerts, and border colors*/
 
 }
-/***** Star of definicion de fuentes *****/
-/*Definiendo fuentes*/
-@font-face{
-	font-family: 'Lobster-Regular';
-	src: url(../fonts/Lobster-Regular.ttf);
-}
-@font-face{
-	font-family: 'AdventPro-Regular';
-	src:url(../fonts/AdventPro-Regular.ttf);
-}
-@font-face{
-	font-family: 'Montserrat';
-	src:url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face{
-	font-family: 'PT sans';
-	src:url(../fonts/PTSans-Regular.ttf);
-}
-/********* End of definicion de fuentes *******/
+
+
+
+
+
+
 
 /* Start grid styles*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT sans';
-    font-size: 24px;
-    color: black;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .container{
@@ -345,10 +330,6 @@
 .cursiva{
     font-style:italic;
 }
-.nc{
-  font-weight:bold;
-  font-style:italic;
-}
 /*TAMAÑOS*/
 .tamPequeño{
     font-size:12px;
@@ -362,8 +343,6 @@
 .tamExGrande{
     font-size:88px;
 }
-/*FIN TAMAÑOS*/
-/*Inicio subrayado**/
 .sub-lineaDebajo{
     text-decoration: underline;
 }
@@ -379,7 +358,7 @@
 .sub-ArribaDebajo {
     text-decoration: underline overline;
 }
-/**fin subrayado**/
+/*FIN TAMAÑOS*/
 /*CLASES COLORES*/
 .text-white{
     color:white;
@@ -423,6 +402,28 @@
 
 /* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
 /* ------------------INICIO DE FUENTES------------------*/
+/*Definiendo fuentes*/
+@font-face{
+	font-family: 'Lobster-Regular';
+	src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+	font-family: 'AdventPro-Regular';
+	src:url(../fonts/AdventPro-Regular.ttf);
+}
+@font-face{
+	font-family: 'Montserrat';
+	src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: 'PT sans';
+	src:url(../fonts/PTSans-Regular.ttf);
+}
+/*FUENTE PREDETERMINADA*/
+*{
+    font-family: 'PT sans';
+}
+
 /*CLASES FUENTES*/
 .text-Lobster{
     font-family:'Lobster-Regular';
@@ -434,63 +435,35 @@
     font-family: 'Montserrat';
 }
 /*ESTABLECER ESTILO A ELEMENTOS*/
-h1,h2,h3,h4,h5,h6{
+h1{
     font-family: 'Montserrat';
     font-weight:bold;
 }
-h1{
-  font-size:36px;
-}
 h2{
-  font-size:32px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h3{
-  font-size:28px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h4{
-  font-size:24px;
+    font-family:'Montserrat';
+    font-weight:bold;
 }
 h5{
-  font-size:20px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h6{
-  font-size:16px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 a{
+    font-style:italic;
     text-decoration: none;
     color:#555;
 }
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1px;
-  margin-block-end: 1px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1px;
-    margin-block-end: 1px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-a:hover {
-  color: #66bfbf;
-}
-.romanos_mayuscula{
-  list-style-type:upper-roman;
-}
-.romanos_minuscula{
-  list-style-type:lower-roman;
-}
-.l-cuadrado{
-  list-style-type:square;
-}
-
 
 /* ------------------FIN DE FUENTES------------------*/
 /* end utility styles */

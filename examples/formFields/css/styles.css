@@ -1,0 +1,214 @@
+:root{
+/******Start form variables******/
+    --form-box-margin: 15px;
+    --form-box-padding: 10px;
+/***************************/
+    --form-textObjects-border: 1px solid rgb(134, 133, 133);
+    --form-textObjects-bgcolor: rgb(194, 194, 194);
+    --form-textObjects-margin: 5px;
+    --form-textObjects-padding: 5px;
+    --form-textObjects-width: 100%;
+    --form-textObjects-focusbgcolor: rgb(134, 133, 133);
+/***************************/
+    --form-textObjects-color-success-bgcolor: #79d70f;
+    --form-textObjects-color-success-focusbgcolor: rgb(39, 160, 33);
+
+    --form-textObjects-color-warning-bgcolor: #ffcd3c;
+    --form-textObjects-color-warning-focusbgcolor: #efb60b;
+
+    --form-textObjects-color-habanero-bgcolor: #ff9234;
+    --form-textObjects-color-habanero-focusbgcolor: #e57d21;
+
+    --form-textObjects-color-purple-bgcolor: rgb(207, 140, 231);
+    --form-textObjects-color-purple-focusbgcolor: rgb(189, 101, 221);
+
+    --form-textObjects-color-secondary-bgcolor: #0779e4;
+    --form-textObjects-color-secondary-focusbgcolor: #0960b1;
+
+    --form-textObjects-color-brown-bgcolor: rgb(231, 160, 103);
+    --form-textObjects-color-brown-focusbgcolor: rgb(219, 138, 72);
+
+    --form-textObjects-color-danger-bgcolor: #ea5455;
+    --form-textObjects-color-danger-focusbgcolor: rgb(188, 55, 55);
+
+    --form-textObjects-color-white-bgcolor: rgb(234, 225, 218);
+    --form-textObjects-color-white-focusbgcolor: rgb(255, 255, 255);
+
+    --form-textObjects-color-black-bgcolor: rgb(0, 0, 0);
+    --form-textObjects-color-black-txtcolor: white;
+    --form-textObjects-color-black-focusbgcolor: rgb(39, 39, 39);
+
+    --form-textObjects-color-info-bgcolor: #848ccf;
+    --form-textObjects-color-info-focusbgcolor: #525dc5;
+    
+/***************************/
+    --form-textObjects-smallPadding: 3px;
+    --form-textObjects-mediumPadding: 7px;
+    --form-textObjects-largePadding: 9px;
+    --form-textObjects-xlargePadding: 10px;
+/***************************/
+    --form-textObjects-halfLengh: 50%;
+    --form-textObjects-quarterLength: 25%;
+    --form-textObjects-narrowLengh: 10%;
+/***************************/
+    --form__checkObjects-block: block;
+    --form__checkObjects-inline: inline;
+    --form__checkObjects-inlineBlock: inline-block;
+/******End form variables******/
+}
+
+/******Start form classes******/
+.form__box{
+    display: block;
+    margin: var(--form-box-margin);
+    padding: var(--form-box-padding);
+}
+
+.form__box__center{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Start TextBoxes CSS*/
+    .form__textObjects{
+        border: var(--form-textObjects-border);
+        background-color: var(--form-textObjects-bgcolor);
+        border-radius: 5px;
+        padding: var(--form-textObjects-padding);
+        margin: var(--form-textObjects-margin);
+        width: var(--form-textObjects-width);
+    }
+    .form__textObjects:focus{
+        background-color: var(--form-textObjects-hover-bgcolor);
+        position: relative;
+        top: 2px;
+        text-shadow: none;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+    }
+
+    .form__textObjects__success{
+        border: 1px solid var(--form-textObjects-color-success-focusbgcolor);
+        background-color: var(--form-textObjects-color-success-bgcolor);
+    }
+    .form__textObjects__success:focus{
+        background-color: var(--form-textObjects-color-success-focusbgcolor);
+    }
+
+    .form__textObjects__warning{
+        border: 1px solid var(--form-textObjects-color-warning-focusbgcolor);
+        background-color: var(--form-textObjects-color-warning-bgcolor);
+    }
+    .form__textObjects__warning:focus{
+        background-color: var(--form-textObjects-color-warning-focusbgcolor);
+    }
+
+    .form__textObjects__habanero{
+        border: 1px solid var(--form-textObjects-color-habanero-focusbgcolor);
+        background-color: var(--form-textObjects-color-habanero-bgcolor);
+    }
+    .form__textObjects__habanero:focus{
+        background-color: var(--form-textObjects-color-habanero-focusbgcolor);
+    }
+
+    .form__textObjects__purple{
+        border: 1px solid var(--form-textObjects-color-purple-focusbgcolor);
+        background-color: var(--form-textObjects-color-purple-bgcolor);
+    }
+    .form__textObjects__purple:focus{
+        background-color: var(--form-textObjects-color-purple-focusbgcolor);
+    }
+
+    .form__textObjects__secondary{
+        border: 1px solid var(--form-textObjects-color-secondary-focusbgcolor);
+        background-color: var(--form-textObjects-color-secondary-bgcolor);
+    }
+    .form__textObjects__secondary:focus{
+        background-color: var(--form-textObjects-color-secondary-focusbgcolor);
+    }
+
+    .form__textObjects__brown{
+        border: 1px solid var(--form-textObjects-color-brown-focusbgcolor);
+        background-color: var(--form-textObjects-color-brown-bgcolor);
+    }
+    .form__textObjects__brown:focus{
+        background-color: var(--form-textObjects-color-brown-focusbgcolor);
+    }
+
+    .form__textObjects__danger{
+        border: 1px solid var(--form-textObjects-color-danger-focusbgcolor);
+        background-color: var(--form-textObjects-color-danger-bgcolor);
+    }
+    .form__textObjects__danger:focus{
+        background-color: var(--form-textObjects-color-danger-focusbgcolor);
+    }
+
+    .form__textObjects__white{
+        border: 1px solid var(--form-textObjects-color-white-focusbgcolor);
+        background-color: var(--form-textObjects-color-white-bgcolor);
+    }
+    .form__textObjects__white:focus{
+        background-color: var(--form-textObjects-color-white-focusbgcolor);
+    }
+
+    .form__textObjects__black{
+        border: 1px solid var(--form-textObjects-color-black-focusbgcolor);
+        background-color: var(--form-textObjects-color-black-bgcolor);
+        color: var(--form-textObjects-color-black-txtcolor);
+    }
+    .form__textObjects__black:focus{
+        background-color: var(--form-textObjects-color-black-focusbgcolor);
+    }
+
+    .form__textObjects__info{
+        border: 1px solid var(--form-textObjects-color-info-focusbgcolor);
+        background-color: var(--form-textObjects-color-info-bgcolor);
+    }
+    .form__textObjects__info:focus{
+        background-color: var(--form-textObjects-color-info-focusbgcolor);
+    }
+    /*End Default Colors*/
+
+    /*Start Sizes*/
+    .form__textObjects__small{
+        padding: var(--form-textObjects-smallPadding);
+    }
+
+    .form__textObjects__medium{
+        padding: var(--form-textObjects-mediumPadding);
+    }
+
+    .form__textObjects__large{
+        padding: var(--form-textObjects-largePadding);
+    }
+
+    .form__textObjects__xlarge{
+        padding: var(--form-textObjects-xlargePadding);
+    }
+    /*End Sizes*/
+
+    /*Start widths*/
+    .form__textObjects__halfLength{
+        width: var(--form-textObjects-halfLengh);
+    }
+    .form__textObjects__quarterLength{
+        width: var(--form-textObjects-quarterLength);
+    }
+    .form__textObjects__narrowLength{
+        width: var(--form-textObjects-narrowLengh);
+    }
+    /*End widths*/
+/*End TextBoxes CSS*/
+
+/*Start CheckBoxes CSS*/
+.form__checkObjects{
+    display: var(--form__checkObjects-block);
+}
+.form__checkObjects__inline{
+    display: var(--form__checkObjects-inline);
+}
+.form__checkObjects__inlineBlock{
+    display: var(--form__checkObjects-inlineBlock);
+}
+ /*End CheckBoxes CSS*/
+/******End form classes******/

@@ -1,0 +1,40 @@
+.header{
+    margin: 5px;
+    background-color: violet;
+    height: 100px;
+}
+h1{
+    align-content: center;
+    padding-top: 25px;
+}
+.content{
+    
+    background-color: turquoise;
+    height: 25px;
+    margin: 5px;
+    width: 100%;
+    justify-items: center;
+    color: white;
+}
+.central{
+    
+    
+    height: auto;
+    margin: 20px;
+    justify-items: center;
+    color: black;
+}
+.der{
+    float: right;
+    background-color: turquoise;
+    /* height: 350px; */
+    margin: 5px;
+    justify-items: center;
+    color: white;
+}
+.prueba{
+    background-color: gainsboro;
+    border: 1px solid black;
+    
+    justify-items: center;
+}

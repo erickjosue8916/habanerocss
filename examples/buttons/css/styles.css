@@ -1,0 +1,335 @@
+:root{
+/******Start button variables******/
+  --button-display: inline-block;
+  --button-padding: 6px 20px;
+  --button-margin: 5px;
+  --button-border: 1px solid #bbb;
+  --button-font: bold 13px helvetica, sans-serif;
+  --button-txtColor: #000;
+  --button-bgcolor: #ddd;
+  --button-boderRadius:5px;
+  --button-hover-bgcolor: #eee;
+  --button-hover-txtcolor: #555;
+  --button-active-bgcolor: #e9e9e9;
+  --button-size-small: 4px 12px;
+  --button-size-medium:8px 20px;
+  --button-size-large: 12px 30px;
+  --button-size-xlarge: 20px 40px;
+  /*******************************/
+  --button-color-default1-txtcolor: rgb(39, 23, 23);
+  --button-color-default2-txtcolor: rgb(51, 51, 51);
+
+  --button-color-default-hover-txtcolor: rgb(78, 45, 45);
+
+  --button-color-success-main: #79d70f;
+  --button-color-success-hover-bgcolor: #2e8f2e;
+
+  --button-color-warning-main: #ffcd3c;
+  --button-color-warning-hover-bgcolor: #afb920;
+
+  --button-color-habanero-main: #ff9234;
+  --button-color-habanero-hover-bgcolor: #d37f12;
+
+  --button-color-purple-main: #a826c8;
+  --button-color-purple-hover-bgcolor: #751e8b;
+
+  --button-color-secondary-main: #0779e4;
+  --button-color-secondary-hover-bgcolor: #27217a;
+
+  --button-color-brown-main: #7c4d10;
+  --button-color-brown-hover-bgcolor: #52330b;
+
+  --button-color-danger-main: #ea5455;
+  --button-color-danger-hover-bgcolor: #9b2020;
+
+  --button-color-info-main: #848ccf;
+  --button-color-info-txtcolor: black;
+  --button-color-info-hover-bgcolor: #4b539c;
+  --button-color-info-hover-txtcolor: black;
+  /************************************************/
+  --button-shape-circle: 50%;
+  --button-shape-square: 0px;
+  --button-shape-trapezoid: 30px 5px;
+  /************************************************/
+
+  --button-line-main: white;
+  --button-line-secondary-main: black;
+  /************************************************/
+  --button-line-secondary-success: #57a957;
+  --button-line-secondary-warning: #ffcd3c;
+  --button-line-secondary-habanero: #ff9234;
+  --button-line-secondary-purple: #a826c8;
+  --button-line-secondary-secondary: #0779e4;
+  --button-line-secondary-brown: #7c4d10;
+  --button-line-secondary-danger: #ea5455;
+  --button-line-secondary-info: #848ccf;
+/******End button variables******/
+}
+
+/******Start button classes******/
+.button{
+  display: var(--button-display);
+  padding: var(--button-padding);
+  margin: var(--button-margin);
+  cursor: pointer;/*We change the cursor shape to the pointer*/
+  border: var(--button-border);
+  overflow: visible;/*In case the text overfloxs it will show it outside the button*/
+  font: var(--button-font);
+  text-decoration: none;/*In case an unwanted tipe of text decoration appears on the text*/
+  color: var(--button-txtColor);
+  background-color: var(--button-bgcolor);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,1)), to(rgba(255,255,255,0)));/*Adds the color gradient*/
+  transition: background-color .5s ease-out;/*States what will change, how it will change and the time it will take*/
+  background-clip: padding-box;
+  border-radius: var(--button-boderRadius);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .3), 0 2px 2px -1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .3) inset;
+  text-shadow: 0 1px 0 rgba(255,255,255, .9);
+  user-select: none;
+  min-width: auto;
+  min-height: auto;
+}
+.button:hover{/*When the cursor goes over the button*/
+  background-color: var(--button-hover-bgcolor);
+  color: var(--button-hover-txtcolor);
+}
+.button:active{/*When the cursor click the button*/
+  background: var(--button-active-bgcolor);
+  position: relative;
+  top: 1px;
+  text-shadow: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
+}
+
+/*Start types of sizes*/
+.button__small{
+  padding: var(--button-size-small);
+}
+
+.button__medium{
+  padding: var(--button-size-medium);
+}
+
+.button__large{
+  padding: var(--button-size-large);
+  text-transform: uppercase;
+}
+.button__large:active{
+  top: 2px;
+}
+
+.button__xlarge{
+  padding: var(--button-size-xlarge);
+  text-transform: uppercase;
+}
+.button__xlarge:active{
+  top: 3px;
+}
+/*End types of sizes*/
+
+/*Start Default Colors*/
+.button__success{
+  background-color: var(--button-color-success-main);
+  border-color: var(--button-color-success-main);
+  color: var(--button-color-default1-txtcolor);
+}
+.button__success:hover{
+  background-color: var(--button-color-success-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__success:active{
+  background: var(--button-color-success-main);
+}
+
+.button__warning{
+  background-color: var(--button-color-warning-main);
+  border-color: var(--button-color-warning-main);
+  color: var(--button-color-default1-txtcolor);
+}
+.button__warning:hover{
+  background-color: var(--button-color-warning-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__warning:active{
+  background: var(--button-color-warning-main);
+}
+
+.button__habanero{
+  background-color: var(--button-color-habanero-main);
+  border-color: var(--button-color-habanero-main);
+  color: var(--button-color-default1-txtcolor);
+}
+.button__habanero:hover{
+  background-color: var(--button-color-habanero-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__habanero:active{
+  background: var(--button-color-habanero-main);
+}
+
+.button__purple{
+  background-color: var(--button-color-purple-main);
+  border-color: var(--button-color-purple-main);
+  color: var(--button-color-default1-txtcolor);
+}
+.button__purple:hover{
+  background-color: var(--button-color-purple-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__purple:active{
+  background: var(--button-color-purple-main);
+}
+
+.button__secondary{
+  background-color: var(--button-color-secondary-main);
+  border-color: var(--button-color-secondary-main);
+  color: var(--button-color-default1-txtcolor);
+}
+.button__secondary:hover{
+  background-color: var(--button-color-secondary-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__secondary:active{
+  background: var(--button-color-secondary-main);
+}
+
+.button__brown{
+  background-color: var(--button-color-brown-main);
+  border-color: var(--button-color-brown-main);
+  color: var(--button-color-default2-txtcolor);
+}
+.button__brown:hover{
+  background-color: var(--button-color-brown-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__brown:active{
+  background: var(--button-color-brown-main);
+}
+
+.button__danger{
+  background-color: var(--button-color-danger-main);
+  border-color: var(--button-color-danger-main);
+  color: var(--button-color-default2-txtcolor);
+}
+.button__danger:hover{
+  background-color: var(--button-color-danger-hover-bgcolor);
+  color: var(--button-color-default-hover-txtcolor);
+}
+.button__danger:active{
+  background: var(--button-color-danger-main);
+}
+
+.button__info{
+  background-color: var(--button-color-info-main);
+  border-color: var(--button-color-info-main);
+  color: var(--button-color-info-txtcolor);
+}
+.button__info:hover{
+  background-color: var(--button-color-info-hover-bgcolor);
+  color: var(--button-color-info-hover-txtcolor);
+}
+.button__info:active{
+  background: var(--button-color-info-main);
+}
+/*End Default Colors*/
+
+/*Start Shapes*/
+.button__circle{
+  border-radius: var(--button-shape-circle);
+}
+.button__square{
+  border-radius: var(--button-shape-square);
+}
+.button__trapezoid{
+  border-radius: var(--button-shape-trapezoid);
+}
+/*End Shapes*/
+
+ /*Start Line button*/
+.button__line{
+  background-color: var(--button-line-main);
+  color: var(--button-line-secondary-main);
+  border: 1px solid var(--button-line-secondary-main);
+  box-shadow: none;
+  background-image: none;
+}
+.button__line:hover{
+  background-color: var(--button-line-secondary-main);
+  border: 1px solid var(--button-line-secondary-main);
+  color: var(--button-line-main);  
+}
+  /*Start Line Colors*/
+    .button__line__success{
+        background-color: var(--button-line-main);
+        border-color:  1px solid var(--button-line-secondary-success);
+    }
+    .button__line__success:hover{
+      background-color: var(--button-line-secondary-success);
+      border-color:  1px solid var(--button-line-secondary-success);
+    }
+    
+    .button__line__warning{
+      background-color: var(--button-line-main);
+      border-color:  1px solid var(--button-line-secondary-warning);
+    }
+    .button__line__warning:hover{
+      background-color: var(--button-line-secondary-warning);
+      border-color:  1px solid var(--button-line-secondary-warning);
+    }
+
+    .button__line__habanero{
+      background-color: var(--button-line-main);
+      border-color:  1px solid var(--button-line-secondary-habanero);
+    }
+    .button__line__habanero:hover{
+      background-color: var(--button-line-secondary-habanero);
+      border-color: 1px solid var(--button-line-secondary-habanero);
+    }
+
+    .button__line__purple{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-purple);
+    }
+    .button__line__purple:hover{
+      background-color: var(--button-line-secondary-purple);
+      border-color: 1px solid var(--button-line-secondary-purple);
+    }
+
+    .button__line__secondary{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-secondary);
+    }
+    .button__line__secondary:hover{
+      background-color: var(--button-line-secondary-secondary);
+      border-color: 1px solid var(--button-line-secondary-secondary);
+    }
+
+    .button__line__brown{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-brown);
+    }
+    .button__line__brown:hover{
+      background-color: var(--button-line-secondary-brown);
+      border-color: 1px solid var(--button-line-secondary-brown);
+    }
+
+    .button__line__danger{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-danger);
+    }
+    .button__line__danger:hover{
+      background-color: var(--button-line-secondary-danger);
+      border-color: 1px solid var(--button-line-secondary-danger);
+    }
+    .button__line__info{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-info);
+    }
+    .button__line__info:hover{
+      background-color: var(--button-line-secondary-info);
+      border-color: 1px solid var(--button-line-secondary-info);
+    }
+  /*End Line Colors*/
+
+ /*End of types of buttons*/
+/******End button classes******/
+

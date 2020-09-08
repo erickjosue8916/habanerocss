@@ -1,8 +1,17 @@
+:root{
+  --primary: rgb(102, 32, 32);
+  --navbar-size: 80px
+}
+* {
+  box-sizing: border-box;
+}
 .nav {
-    height: 50px;
+    height: var(--navbar-size);
     width: 100%;
     position: relative;
-    color: #fff;
+    color: #efefef;
+    background: var(--primary);
+    padding: 15px;
   }
   
   .nav > .nav-header {
@@ -12,9 +21,10 @@
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    
+    text-transform: uppercase;
     padding: 10px 10px 10px 10px;
   }
+  
   
   .nav > .nav-btn {
     display: none;
@@ -41,6 +51,12 @@
     display: none;
   }
   
+  .nav-header img {
+    position: relative;
+    top: 5px;
+    width: 36px;
+    height: 36px;
+  }
   @media (max-width:600px) {
     .nav > .nav-btn {
       display: inline-block;
@@ -71,7 +87,7 @@
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 50px;
+
       left: 0px;
     }
     .nav > .nav-links > a {
@@ -82,7 +98,7 @@
       height: 0px;
     }
     .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
+      /* height: calc(100vh - 50px); */
       overflow-y: auto;
     }
   }

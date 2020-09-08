@@ -1,0 +1,102 @@
+<html><head><style>body {
+   color: black;
+}
+</style></head><body><h1 id="utilizacion-de-rejillas">Utilizacion de rejillas</h1>
+<h3 id="basado-en-filas-y-columnas">Basado en filas y columnas</h3>
+<p>El posicionamiento estara formado por filas y 12 columnas, las cuales se les han sido asignados distintos tamaños, adecuado a un ancho de pantalla del 100%</p>
+<h2 id="row">Row</h2>
+<p>En el caso de las filas, se le asignan directamente el 100% del ancho de la pantalla</p>
+<h3 id="gap">Gap</h3>
+<p>Esta clase es selectora de nuestras clases <strong>col</strong> nos sirve para darle un espaciado a nuestras columnas, estan definidos tres tipos de gap:</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Medida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>gap-1</strong></td>
+<td>5px      </td>
+</tr>
+<tr>
+<td> <strong>gap-2</strong></td>
+<td>7px    </td>
+</tr>
+<tr>
+<td> <strong>gap-3</strong></td>
+<td>9px </td>
+</tr>
+</tbody>
+</table>
+<h2 id="col">Col</h2>
+<p>A cada una de las 12 columnas se le asigna un <strong>width</strong> diferente, teniendo en cuenta que, existen clases para diferentes anchuras de pantalla. Pero las medidas son las mismas para todas, el usuario sabra como adecuarlas a su preferencias</p>
+<h3 id="anchuras-de-pantalla">Anchuras de pantalla</h3>
+<pre><code>-Desktop: lg-[1-12] Este tipo <span class="hljs-keyword">de</span> clase <span class="hljs-keyword">se</span> utiliza <span class="hljs-keyword">en</span> un ancho <span class="hljs-keyword">de</span> pantalla <span class="hljs-keyword">de</span> un minimo <span class="hljs-keyword">de</span> 1024px
+
+-Tablet: md-[1-12] Este tipo <span class="hljs-keyword">de</span> clase <span class="hljs-keyword">se</span> utiliza <span class="hljs-keyword">en</span> un ancho <span class="hljs-keyword">de</span> pantalla <span class="hljs-keyword">de</span> maximo 1024px y un minimo <span class="hljs-keyword">de</span> 768px
+
+-Movil: sm-[1-12] Este tipo <span class="hljs-keyword">de</span> clase <span class="hljs-keyword">se</span> utiliza <span class="hljs-keyword">en</span> un ancho <span class="hljs-keyword">de</span> pantalla <span class="hljs-keyword">de</span> un minimo <span class="hljs-keyword">de</span> 576px
+</code></pre><p><strong>Nota:</strong> a cada clase se le debe asignar la clase predominante <strong>col</strong>, ejemplo: <strong>col lg-[ 1-12 ]</strong></p>
+<h3 id="-que-significa-un-maximo-y-un-minimo-">¿Que significa un maximo y un minimo?</h3>
+<p>Esto significa que hasta los valores que se la hayan dado ahi sera la ruptura y se aplicara el siguiente cambio que el usuario haya agregado.</p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th>Medida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <strong>[ lg,md,sm ]-1</strong></td>
+<td>8.33%       </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-2</strong></td>
+<td>16.66%      </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-3</strong></td>
+<td>24.99% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-4</strong></td>
+<td>33.32% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-5</strong></td>
+<td>41.65% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-6</strong></td>
+<td>49.98% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-7</strong></td>
+<td>58.31% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-8</strong></td>
+<td>66.64% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-9</strong></td>
+<td>74.97% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-10</strong></td>
+<td>83.30% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-11</strong></td>
+<td>91.63% </td>
+</tr>
+<tr>
+<td> <strong>[ lg,md,sm ]-12</strong></td>
+<td>99.96% </td>
+</tr>
+</tbody>
+</table>
+</body></html>

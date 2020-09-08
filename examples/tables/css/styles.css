@@ -1,0 +1,319 @@
+:root{
+    /*Start table variables*/
+    --table-body-color: #808080;
+
+    --table-style1-header-color: #fff;
+    --table-style1-header-bgcolor: #0779e4;
+    --table-style1-body-bgcolor: #ebe6fd;
+
+    --table-style2-header-color: #ea5455;
+    --table-style2-header-bgcolor: transparent;
+    --table-style2-body-borderBottom: 1px solid #f2f2f2;
+
+    --table-style3-header-color: #79d70f;
+    --table-style3-header-bgcolor: #222222;
+    --table-style3-body-bgcolor: #393939;
+
+    --table-style4-header-color: #0779e4;
+    --table-style4-header-bgcolor: #ff9b44;
+    --table-style4-body-borderBottom: 1px solid #f2f2f2;
+
+    --table-style5-header-color: #ddb335;
+    --table-style5-header-bgcolor: transparent;
+    --table-style5-body-bgcolor: #dcdff5;
+    --table-style5-body-border: solid 1px transparent;
+
+    /*End table variables*/
+}
+
+/*Start table classes*/
+/*Scroll bar*/
+.scroll {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /*Table*/
+  
+  .container__limiter {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .container__table {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 33px 30px;
+  }
+  
+  .container__wrap__table {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /*Table*/
+  .table {
+    background-color: #fff;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  .table th, td {
+    font-weight: unset;
+    padding-right: 10px;
+  }
+  
+  .table__1columns {
+    width: 90%;
+    padding-left: 40px;
+  }
+  
+  .table__2columns {
+    width: 50%;
+  }
+  
+  .table__3columns {
+    width: 33%;
+  }
+  
+  .table__4columns {
+    width: 25%;
+  }
+  
+  .table__5columns {
+    width: 20%;
+  }
+  
+  .table__head th {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  
+  .table__body td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  /*Headers*/
+  .table {
+    position: relative;
+    padding-top: 60px;
+  }
+  
+  .table__head {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .table__body {
+    max-height: 585px;
+    overflow: auto;
+  }
+  
+  
+  /*Start Style 1*/
+  
+  .table.style1 th {
+    font-size: 18px;
+    color: var(--table-style1-header-color);
+    line-height: 1.4;
+  
+    background-color: var(--table-style1-header-bgcolor);
+  }
+  
+  .table.style1 td {
+    font-size: 15px;
+    color: var(--table-body-color);
+    line-height: 1.4;
+  }
+  
+  .table.style1 .table__body tr:nth-child(even) {
+    background-color: var(--table-style1-body-bgcolor);
+  }
+
+  .table.style1 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  }
+  /*End Style 1*/
+
+  /*Start Style 2*/
+
+.table.style2 .table__head {
+    box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table.style2 th {
+    font-size: 18px;
+    color: var(--table-style2-header-color);
+    line-height: 1.4;
+  
+    background-color: var(--table-style2-header-bgcolor);
+  }
+  
+  .table.style2 td {
+    font-size: 15px;
+    color: var(--table-body-color);
+    line-height: 1.4;
+  }
+  
+  .table.style2 .table__body tr {
+    border-bottom: var(--table-style2-body-borderBottom);
+  }
+  
+  /*---------------------------------------------*/
+  
+  .table.style2 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+  }
+  /*End Style 2*/
+
+  /*Start Style 3*/
+  
+  .table.style3 {
+    background-color: var(--table-style3-header-bgcolor);
+  }
+  
+  .table.style3 th {
+    font-size: 15px;
+    color: var(--table-style3-header-color);
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: #393939;
+  }
+  
+  .table.style3 td {
+    font-size: 15px;
+    color: var(--table-body-color);
+    line-height: 1.4;
+    background-color: var(--table-style3-body-bgcolor);
+  }
+  
+  .table.style3 {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+   }
+  /*End Style 3*/
+
+  /*Start Style 4*/
+  .table.style4 {
+    margin-right: -20px;
+  }
+  
+  .table.style4 .table__head {
+    padding-right: 20px;
+  }
+  
+  .table.style4 th {
+    font-size: 18px;
+    color: var(--table-style4-header-color);
+    line-height: 1.4;
+    background-color: var(--table-style4-header-bgcolor);
+    border-bottom: 2px solid #f2f2f2;
+  }
+  
+  .table.style4 .column1 {
+    padding-left: 7px;
+  }
+  
+  .table.style4 td {
+    font-size: 15px;
+    color: var(--table-body-color);
+    line-height: 1.4;
+  }
+  
+  .table.style4 .table__body tr {
+    border-bottom: var(--table-style4-body-borderBottom);
+  }
+  
+  .table.style4 {
+    overflow: hidden;
+  }
+  
+  .table.style4 .table__body{
+    padding-right: 20px;
+  }
+  /*End Style 4*/
+
+  /*Start Style 5*/
+  .table.style5 {
+    margin-right: -30px;
+  }
+  
+  .table.style5 .table__head {
+    padding-right: 30px;
+  }
+  
+  .table.style5 th {
+    font-size: 14px;
+    color: var(--table-style5-header-color);
+    line-height: 1.4;
+    text-transform: uppercase;
+    background-color: var(--table-style5-header-bgcolor);
+  }
+  
+  .table.style5 td {
+    font-size: 15px;
+    color: var(--table-body-color);
+    line-height: 1.4;
+    background-color: var(--table-style5-body-bgcolor);
+  }
+  
+  .table.style5 .table__body tr {
+    overflow: hidden; 
+    border-bottom: 10px solid #fff;
+    border-radius: 10px;
+  }
+  
+  .table.style5 .table__body table { 
+    border-collapse: separate; 
+    border-spacing: 0 10px; 
+  }
+  .table.style5 .table__body td {
+      border: var(--table-style5-body-border);
+      border-style: solid none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .table.style5 .table__body td:first-child {
+      border-left-style: solid;
+      border-top-left-radius: 10px; 
+      border-bottom-left-radius: 10px;
+  }
+  .table.style5 .table__body td:last-child {
+      border-right-style: solid;
+      border-bottom-right-radius: 10px; 
+      border-top-right-radius: 10px; 
+  }
+  
+  .table.style5 tr:hover td {
+    background-color: #ebebeb;
+    cursor: pointer;
+  }
+  
+  .table.style5 .table__head th {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .table.style5 {
+    overflow: hidden;
+  }
+  
+  .table.style5 .table__body{
+    padding-right: 30px;
+  }
+/*End table classes*/

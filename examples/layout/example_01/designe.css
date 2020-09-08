@@ -32,3 +32,9 @@ h1{
     justify-items: center;
     color: white;
 }
+.prueba{
+    background-color: gainsboro;
+    border: 1px solid black;
+    
+    justify-items: center;
+}

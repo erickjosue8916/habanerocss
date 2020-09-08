@@ -4,6 +4,18 @@ El posicionamiento estara formado por filas y 12 columnas, las cuales se les han
 ## Row
 En el caso de las filas, se le asignan directamente el 100% del ancho de la pantalla
 
+### Gap
+Esta clase es selectora de nuestras clases **col** nos sirve para darle un espaciado a nuestras columnas, estan definidos tres tipos de gap:
+
+
+ Clase            | Medida         | 
+-------------------|---------------|
+ **gap-1**          |    5px      
+ **gap-2**          |    7px    
+ **gap-3**          |    9px 
+
+
+
 ## Col
 A cada una de las 12 columnas se le asigna un **width** diferente, teniendo en cuenta que, existen clases para diferentes anchuras de pantalla. Pero las medidas son las mismas para todas, el usuario sabra como adecuarlas a su preferencias
 

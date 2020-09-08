@@ -18,85 +18,136 @@
 /*******************************/
 --button-color-default1-txtcolor: rgb(39, 23, 23);
 --button-color-default2-txtcolor: rgb(51, 51, 51);
+
 --button-color-default-hover-txtcolor: rgb(78, 45, 45);
---button-color-green-main: #57a957;
---button-color-green-hover-bgcolor: #2e8f2e;
---button-color-yellow-main: #dae639;
---button-color-yellow-hover-bgcolor: #afb920;
---button-color-orange-main: #ee9e35;
---button-color-orange-hover-bgcolor: #d37f12;
+
+--button-color-success-main: #79d70f;
+--button-color-success-hover-bgcolor: #2e8f2e;
+
+--button-color-warning-main: #ffcd3c;
+--button-color-warning-hover-bgcolor: #afb920;
+
+--button-color-habanero-main: #ff9234;
+--button-color-habanero-hover-bgcolor: #d37f12;
+
 --button-color-purple-main: #a826c8;
 --button-color-purple-hover-bgcolor: #751e8b;
---button-color-blue-main: #4e44da;
---button-color-blue-hover-bgcolor: #27217a;
+
+--button-color-secondary-main: #0779e4;
+--button-color-secondary-hover-bgcolor: #27217a;
+
 --button-color-brown-main: #7c4d10;
 --button-color-brown-hover-bgcolor: #52330b;
---button-color-red-main: #e42c2c;
---button-color-red-hover-bgcolor: #9b2020;
---button-color-black-main: black;
---button-color-black-txtcolor: rgb(185, 185, 185);
---button-color-black-hover-bgcolor: #313131;
---button-color-black-hover-txtcolor: rgb(218, 218, 218);
+
+--button-color-danger-main: #ea5455;
+--button-color-danger-hover-bgcolor: #9b2020;
+
+--button-color-info-main: #848ccf;
+--button-color-info-txtcolor: black;
+--button-color-info-hover-bgcolor: #4b539c;
+--button-color-info-hover-txtcolor: black;
 /************************************************/
 --button-shape-circle: 50%;
 --button-shape-square: 0px;
 --button-shape-trapezoid: 30px 5px;
 /************************************************/
+
 --button-line-main: white;
---button-line-secondary-black: black;
+--button-line-secondary-main: black;
 /************************************************/
---button-line-secondary-green: #57a957;
---button-line-secondary-yellow: #dae639;
---button-line-secondary-orange: #ee9e35;
+--button-line-secondary-success: #57a957;
+--button-line-secondary-warning: #ffcd3c;
+--button-line-secondary-habanero: #ff9234;
 --button-line-secondary-purple: #a826c8;
---button-line-secondary-blue: #4e44da;
+--button-line-secondary-secondary: #0779e4;
 --button-line-secondary-brown: #7c4d10;
---button-line-secondary-red: #e42c2c;
+--button-line-secondary-danger: #ea5455;
+--button-line-secondary-info: #848ccf;
 /******End button variables******/
+
 /******Start form variables******/
 --form-box-margin: 15px;
 --form-box-padding: 10px;
-  /***************************/
+/***************************/
 --form-textObjects-border: 1px solid rgb(134, 133, 133);
 --form-textObjects-bgcolor: rgb(194, 194, 194);
 --form-textObjects-margin: 5px;
 --form-textObjects-padding: 5px;
 --form-textObjects-width: 100%;
 --form-textObjects-focusbgcolor: rgb(134, 133, 133);
-  /***************************/
---form-textObjects-color-green-bgcolor: rgb(117, 233, 111);
---form-textObjects-color-green-focusbgcolor: rgb(53, 194, 45);
---form-textObjects-color-yellow-bgcolor: rgb(240, 251, 138);
---form-textObjects-color-yellow-focusbgcolor: rgb(233, 251, 72);
---form-textObjects-color-orange-bgcolor: rgb(255, 222, 145);
---form-textObjects-color-orange-focusbgcolor: rgb(255, 207, 96);
+/***************************/
+--form-textObjects-color-success-bgcolor: #79d70f;
+--form-textObjects-color-success-focusbgcolor: rgb(39, 160, 33);
+
+--form-textObjects-color-warning-bgcolor: #ffcd3c;
+--form-textObjects-color-warning-focusbgcolor: #efb60b;
+
+--form-textObjects-color-habanero-bgcolor: #ff9234;
+--form-textObjects-color-habanero-focusbgcolor: #e57d21;
+
 --form-textObjects-color-purple-bgcolor: rgb(207, 140, 231);
 --form-textObjects-color-purple-focusbgcolor: rgb(189, 101, 221);
---form-textObjects-color-blue-bgcolor: rgb(161, 160, 255);
---form-textObjects-color-blue-focusbgcolor: rgb(111, 101, 255);
+
+--form-textObjects-color-secondary-bgcolor: #0779e4;
+--form-textObjects-color-secondary-focusbgcolor: #0960b1;
+
 --form-textObjects-color-brown-bgcolor: rgb(231, 160, 103);
 --form-textObjects-color-brown-focusbgcolor: rgb(219, 138, 72);
---form-textObjects-color-red-bgcolor: rgb(233, 145, 145);
---form-textObjects-color-red-focusbgcolor: rgb(221, 102, 102);
+
+--form-textObjects-color-danger-bgcolor: #ea5455;
+--form-textObjects-color-danger-focusbgcolor: rgb(188, 55, 55);
+
 --form-textObjects-color-white-bgcolor: rgb(234, 225, 218);
 --form-textObjects-color-white-focusbgcolor: rgb(255, 255, 255);
+
 --form-textObjects-color-black-bgcolor: rgb(0, 0, 0);
 --form-textObjects-color-black-txtcolor: white;
 --form-textObjects-color-black-focusbgcolor: rgb(39, 39, 39);
-  /***************************/
+
+--form-textObjects-color-info-bgcolor: #848ccf;
+--form-textObjects-color-info-focusbgcolor: #525dc5;
+
+/***************************/
 --form-textObjects-smallPadding: 3px;
 --form-textObjects-mediumPadding: 7px;
 --form-textObjects-largePadding: 9px;
 --form-textObjects-xlargePadding: 10px;
-  /***************************/
+/***************************/
 --form-textObjects-halfLengh: 50%;
 --form-textObjects-quarterLength: 25%;
 --form-textObjects-narrowLengh: 10%;
-  /***************************/
+/***************************/
 --form__checkObjects-block: block;
 --form__checkObjects-inline: inline;
 --form__checkObjects-inlineBlock: inline-block;
 /******End form variables******/
+
+/*Start table variables*/
+  --table-body-color: #808080;
+
+  --table-style1-header-color: #fff;
+  --table-style1-header-bgcolor: #0779e4;
+  --table-style1-body-bgcolor: #ebe6fd;
+
+  --table-style2-header-color: #ea5455;
+  --table-style2-header-bgcolor: transparent;
+  --table-style2-body-borderBottom: 1px solid #f2f2f2;
+
+  --table-style3-header-color: #79d70f;
+  --table-style3-header-bgcolor: #222222;
+  --table-style3-body-bgcolor: #393939;
+
+  --table-style4-header-color: #0779e4;
+  --table-style4-header-bgcolor: #ff9b44;
+  --table-style4-body-borderBottom: 1px solid #f2f2f2;
+
+  --table-style5-header-color: #ddb335;
+  --table-style5-header-bgcolor: transparent;
+  --table-style5-body-bgcolor: #dcdff5;
+  --table-style5-body-border: solid 1px transparent;
+/*End table variables*/
+
+
 /*Start of Variables background alerts, and border colors*/
     --bg-danger:#ea5455;
     --bg-success:#79d70f;
@@ -457,43 +508,43 @@ a{
 /*End types of sizes*/
 
 /*Start Default Colors*/
-.button__green{
-  background-color: var(--button-color-green-main);
-  border-color: var(--button-color-green-main);
+.button__success{
+  background-color: var(--button-color-success-main);
+  border-color: var(--button-color-success-main);
   color: var(--button-color-default1-txtcolor);
 }
-.button__green:hover{
-  background-color: var(--button-color-green-hover-bgcolor);
+.button__success:hover{
+  background-color: var(--button-color-success-hover-bgcolor);
   color: var(--button-color-default-hover-txtcolor);
 }
-.button__green:active{
-  background: var(--button-color-green-main);
+.button__success:active{
+  background: var(--button-color-success-main);
 }
 
-.button__yellow{
-  background-color: var(--button-color-yellow-main);
-  border-color: var(--button-color-yellow-main);
+.button__warning{
+  background-color: var(--button-color-warning-main);
+  border-color: var(--button-color-warning-main);
   color: var(--button-color-default1-txtcolor);
 }
-.button__yellow:hover{
-  background-color: var(--button-color-yellow-hover-bgcolor);
+.button__warning:hover{
+  background-color: var(--button-color-warning-hover-bgcolor);
   color: var(--button-color-default-hover-txtcolor);
 }
-.button__yellow:active{
-  background: var(--button-color-yellow-main);
+.button__warning:active{
+  background: var(--button-color-warning-main);
 }
 
-.button__orange{
-  background-color: var(--button-color-orange-main);
-  border-color: var(--button-color-orange-main);
+.button__habanero{
+  background-color: var(--button-color-habanero-main);
+  border-color: var(--button-color-habanero-main);
   color: var(--button-color-default1-txtcolor);
 }
-.button__orange:hover{
-  background-color: var(--button-color-orange-hover-bgcolor);
+.button__habanero:hover{
+  background-color: var(--button-color-habanero-hover-bgcolor);
   color: var(--button-color-default-hover-txtcolor);
 }
-.button__orange:active{
-  background: var(--button-color-orange-main);
+.button__habanero:active{
+  background: var(--button-color-habanero-main);
 }
 
 .button__purple{
@@ -509,17 +560,17 @@ a{
   background: var(--button-color-purple-main);
 }
 
-.button__blue{
-  background-color: var(--button-color-blue-main);
-  border-color: var(--button-color-blue-main);
+.button__secondary{
+  background-color: var(--button-color-secondary-main);
+  border-color: var(--button-color-secondary-main);
   color: var(--button-color-default1-txtcolor);
 }
-.button__blue:hover{
-  background-color: var(--button-color-blue-hover-bgcolor);
+.button__secondary:hover{
+  background-color: var(--button-color-secondary-hover-bgcolor);
   color: var(--button-color-default-hover-txtcolor);
 }
-.button__blue:active{
-  background: var(--button-color-blue-main);
+.button__secondary:active{
+  background: var(--button-color-secondary-main);
 }
 
 .button__brown{
@@ -535,30 +586,30 @@ a{
   background: var(--button-color-brown-main);
 }
 
-.button__red{
-  background-color: var(--button-color-red-main);
-  border-color: var(--button-color-red-main);
+.button__danger{
+  background-color: var(--button-color-danger-main);
+  border-color: var(--button-color-danger-main);
   color: var(--button-color-default2-txtcolor);
 }
-.button__red:hover{
-  background-color: var(--button-color-red-hover-bgcolor);
+.button__danger:hover{
+  background-color: var(--button-color-danger-hover-bgcolor);
   color: var(--button-color-default-hover-txtcolor);
 }
-.button__red:active{
-  background: var(--button-color-red-main);
+.button__danger:active{
+  background: var(--button-color-danger-main);
 }
 
-.button__black{
-  background-color: var(--button-color-black-main);
-  border-color: var(--button-color-black-main);
-  color: var(--button-color-black-txtcolor);
+.button__info{
+  background-color: var(--button-color-info-main);
+  border-color: var(--button-color-info-main);
+  color: var(--button-color-info-txtcolor);
 }
-.button__black:hover{
-  background-color: var(--button-color-black-hover-bgcolor);
-  color: var(--button-color-black-hover-txtcolor);
+.button__info:hover{
+  background-color: var(--button-color-info-hover-bgcolor);
+  color: var(--button-color-info-hover-txtcolor);
 }
-.button__black:active{
-  background: var(--button-color-black-main);
+.button__info:active{
+  background: var(--button-color-info-main);
 }
 /*End Default Colors*/
 
@@ -577,42 +628,42 @@ a{
  /*Start Line button*/
 .button__line{
   background-color: var(--button-line-main);
-  color: var(--button-line-secondary-black);
-  border: 1px solid var(--button-line-secondary-black);
+  color: var(--button-line-secondary-main);
+  border: 1px solid var(--button-line-secondary-main);
   box-shadow: none;
   background-image: none;
 }
 .button__line:hover{
-  background-color: var(--button-line-secondary-black);
-  border: 1px solid var(--button-line-secondary-black);
+  background-color: var(--button-line-secondary-main);
+  border: 1px solid var(--button-line-secondary-main);
   color: var(--button-line-main);  
 }
   /*Start Line Colors*/
-    .button__line__green{
+    .button__line__success{
         background-color: var(--button-line-main);
-        border-color:  1px solid var(--button-line-secondary-green);
+        border-color:  1px solid var(--button-line-secondary-success);
     }
-    .button__line__green:hover{
-      background-color: var(--button-line-secondary-green);
-      border-color:  1px solid var(--button-line-secondary-green);
+    .button__line__success:hover{
+      background-color: var(--button-line-secondary-success);
+      border-color:  1px solid var(--button-line-secondary-success);
     }
     
-    .button__line__yellow{
+    .button__line__warning{
       background-color: var(--button-line-main);
-      border-color:  1px solid var(--button-line-secondary-yellow);
+      border-color:  1px solid var(--button-line-secondary-warning);
     }
-    .button__line__yellow:hover{
-      background-color: var(--button-line-secondary-yellow);
-      border-color:  1px solid var(--button-line-secondary-yellow);
+    .button__line__warning:hover{
+      background-color: var(--button-line-secondary-warning);
+      border-color:  1px solid var(--button-line-secondary-warning);
     }
 
-    .button__line__orange{
+    .button__line__habanero{
       background-color: var(--button-line-main);
-      border-color:  1px solid var(--button-line-secondary-orange);
+      border-color:  1px solid var(--button-line-secondary-habanero);
     }
-    .button__line__orange:hover{
-      background-color: var(--button-line-secondary-orange);
-      border-color: 1px solid var(--button-line-secondary-orange);
+    .button__line__habanero:hover{
+      background-color: var(--button-line-secondary-habanero);
+      border-color: 1px solid var(--button-line-secondary-habanero);
     }
 
     .button__line__purple{
@@ -624,13 +675,13 @@ a{
       border-color: 1px solid var(--button-line-secondary-purple);
     }
 
-    .button__line__blue{
+    .button__line__secondary{
       background-color: var(--button-line-main);
-      border-color: 1px solid var(--button-line-secondary-blue);
+      border-color: 1px solid var(--button-line-secondary-secondary);
     }
-    .button__line__blue:hover{
-      background-color: var(--button-line-secondary-blue);
-      border-color: 1px solid var(--button-line-secondary-blue);
+    .button__line__secondary:hover{
+      background-color: var(--button-line-secondary-secondary);
+      border-color: 1px solid var(--button-line-secondary-secondary);
     }
 
     .button__line__brown{
@@ -642,13 +693,21 @@ a{
       border-color: 1px solid var(--button-line-secondary-brown);
     }
 
-    .button__line__red{
+    .button__line__danger{
       background-color: var(--button-line-main);
-      border-color: 1px solid var(--button-line-secondary-red);
+      border-color: 1px solid var(--button-line-secondary-danger);
     }
-    .button__line__red:hover{
-      background-color: var(--button-line-secondary-red);
-      border-color: 1px solid var(--button-line-secondary-red);
+    .button__line__danger:hover{
+      background-color: var(--button-line-secondary-danger);
+      border-color: 1px solid var(--button-line-secondary-danger);
+    }
+    .button__line__info{
+      background-color: var(--button-line-main);
+      border-color: 1px solid var(--button-line-secondary-info);
+    }
+    .button__line__info:hover{
+      background-color: var(--button-line-secondary-info);
+      border-color: 1px solid var(--button-line-secondary-info);
     }
   /*End Line Colors*/
 
@@ -685,28 +744,28 @@ a{
       box-shadow: 0 1px 1px rgba(0, 0, 0, .3) inset;
   }
 
-  .form__textObjects__green{
-      border: 1px solid var(--form-textObjects-color-green-focusbgcolor);
-      background-color: var(--form-textObjects-color-green-bgcolor);
+  .form__textObjects__success{
+      border: 1px solid var(--form-textObjects-color-success-focusbgcolor);
+      background-color: var(--form-textObjects-color-success-bgcolor);
   }
-  .form__textObjects__green:focus{
-      background-color: var(--form-textObjects-color-green-focusbgcolor);
-  }
-
-  .form__textObjects__yellow{
-      border: 1px solid var(--form-textObjects-color-yellow-focusbgcolor);
-      background-color: var(--form-textObjects-color-yellow-bgcolor);
-  }
-  .form__textObjects__yellow:focus{
-      background-color: var(--form-textObjects-color-yellow-focusbgcolor);
+  .form__textObjects__success:focus{
+      background-color: var(--form-textObjects-color-success-focusbgcolor);
   }
 
-  .form__textObjects__orange{
-      border: 1px solid var(--form-textObjects-color-orange-focusbgcolor);
-      background-color: var(--form-textObjects-color-orange-bgcolor);
+  .form__textObjects__warning{
+      border: 1px solid var(--form-textObjects-color-warning-focusbgcolor);
+      background-color: var(--form-textObjects-color-warning-bgcolor);
   }
-  .form__textObjects__orange:focus{
-      background-color: var(--form-textObjects-color-orange-focusbgcolor);
+  .form__textObjects__warning:focus{
+      background-color: var(--form-textObjects-color-warning-focusbgcolor);
+  }
+
+  .form__textObjects__habanero{
+      border: 1px solid var(--form-textObjects-color-habanero-focusbgcolor);
+      background-color: var(--form-textObjects-color-habanero-bgcolor);
+  }
+  .form__textObjects__habanero:focus{
+      background-color: var(--form-textObjects-color-habanero-focusbgcolor);
   }
 
   .form__textObjects__purple{
@@ -717,12 +776,12 @@ a{
       background-color: var(--form-textObjects-color-purple-focusbgcolor);
   }
 
-  .form__textObjects__blue{
-      border: 1px solid var(--form-textObjects-color-blue-focusbgcolor);
-      background-color: var(--form-textObjects-color-blue-bgcolor);
+  .form__textObjects__secondary{
+      border: 1px solid var(--form-textObjects-color-secondary-focusbgcolor);
+      background-color: var(--form-textObjects-color-secondary-bgcolor);
   }
-  .form__textObjects__blue:focus{
-      background-color: var(--form-textObjects-color-blue-focusbgcolor);
+  .form__textObjects__secondary:focus{
+      background-color: var(--form-textObjects-color-secondary-focusbgcolor);
   }
 
   .form__textObjects__brown{
@@ -733,12 +792,12 @@ a{
       background-color: var(--form-textObjects-color-brown-focusbgcolor);
   }
 
-  .form__textObjects__red{
-      border: 1px solid var(--form-textObjects-color-red-focusbgcolor);
-      background-color: var(--form-textObjects-color-red-bgcolor);
+  .form__textObjects__danger{
+      border: 1px solid var(--form-textObjects-color-danger-focusbgcolor);
+      background-color: var(--form-textObjects-color-danger-bgcolor);
   }
-  .form__textObjects__red:focus{
-      background-color: var(--form-textObjects-color-red-focusbgcolor);
+  .form__textObjects__danger:focus{
+      background-color: var(--form-textObjects-color-danger-focusbgcolor);
   }
 
   .form__textObjects__white{
@@ -756,6 +815,14 @@ a{
   }
   .form__textObjects__black:focus{
       background-color: var(--form-textObjects-color-black-focusbgcolor);
+  }
+
+  .form__textObjects__info{
+      border: 1px solid var(--form-textObjects-color-info-focusbgcolor);
+      background-color: var(--form-textObjects-color-info-bgcolor);
+  }
+  .form__textObjects__info:focus{
+      background-color: var(--form-textObjects-color-info-focusbgcolor);
   }
   /*End Default Colors*/
 
@@ -1031,3 +1098,295 @@ a{
 
 }
 /*END CARDS*/
+
+/*Start table classes*/
+/*Scroll bar*/
+.scroll {
+  position: relative;
+  overflow: hidden;
+}
+
+/*Table*/
+
+.container__limiter {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container__table {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 33px 30px;
+}
+
+.container__wrap__table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/*Table*/
+.table {
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+}
+
+.table th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.table__1columns {
+  width: 90%;
+  padding-left: 40px;
+}
+
+.table__2columns {
+  width: 50%;
+}
+
+.table__3columns {
+  width: 33%;
+}
+
+.table__4columns {
+  width: 25%;
+}
+
+.table__5columns {
+  width: 20%;
+}
+
+.table__head th {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.table__body td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/*Headers*/
+.table {
+  position: relative;
+  padding-top: 60px;
+}
+
+.table__head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.table__body {
+  max-height: 585px;
+  overflow: auto;
+}
+
+
+/*Start Style 1*/
+
+.table.style1 th {
+  font-size: 18px;
+  color: var(--table-style1-header-color);
+  line-height: 1.4;
+
+  background-color: var(--table-style1-header-bgcolor);
+}
+
+.table.style1 td {
+  font-size: 15px;
+  color: var(--table-body-color);
+  line-height: 1.4;
+}
+
+.table.style1 .table__body tr:nth-child(even) {
+  background-color: var(--table-style1-body-bgcolor);
+}
+
+.table.style1 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+/*End Style 1*/
+
+/*Start Style 2*/
+
+.table.style2 .table__head {
+  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.table.style2 th {
+  font-size: 18px;
+  color: var(--table-style2-header-color);
+  line-height: 1.4;
+
+  background-color: var(--table-style2-header-bgcolor);
+}
+
+.table.style2 td {
+  font-size: 15px;
+  color: var(--table-body-color);
+  line-height: 1.4;
+}
+
+.table.style2 .table__body tr {
+  border-bottom: var(--table-style2-body-borderBottom);
+}
+
+/*---------------------------------------------*/
+
+.table.style2 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+/*End Style 2*/
+
+/*Start Style 3*/
+
+.table.style3 {
+  background-color: var(--table-style3-header-bgcolor);
+}
+
+.table.style3 th {
+  font-size: 15px;
+  color: var(--table-style3-header-color);
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: #393939;
+}
+
+.table.style3 td {
+  font-size: 15px;
+  color: var(--table-body-color);
+  line-height: 1.4;
+  background-color: var(--table-style3-body-bgcolor);
+}
+
+.table.style3 {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+ }
+/*End Style 3*/
+
+/*Start Style 4*/
+.table.style4 {
+  margin-right: -20px;
+}
+
+.table.style4 .table__head {
+  padding-right: 20px;
+}
+
+.table.style4 th {
+  font-size: 18px;
+  color: var(--table-style4-header-color);
+  line-height: 1.4;
+  background-color: var(--table-style4-header-bgcolor);
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.table.style4 .column1 {
+  padding-left: 7px;
+}
+
+.table.style4 td {
+  font-size: 15px;
+  color: var(--table-body-color);
+  line-height: 1.4;
+}
+
+.table.style4 .table__body tr {
+  border-bottom: var(--table-style4-body-borderBottom);
+}
+
+.table.style4 {
+  overflow: hidden;
+}
+
+.table.style4 .table__body{
+  padding-right: 20px;
+}
+/*End Style 4*/
+
+/*Start Style 5*/
+.table.style5 {
+  margin-right: -30px;
+}
+
+.table.style5 .table__head {
+  padding-right: 30px;
+}
+
+.table.style5 th {
+  font-size: 14px;
+  color: var(--table-style5-header-color);
+  line-height: 1.4;
+  text-transform: uppercase;
+  background-color: var(--table-style5-header-bgcolor);
+}
+
+.table.style5 td {
+  font-size: 15px;
+  color: var(--table-body-color);
+  line-height: 1.4;
+  background-color: var(--table-style5-body-bgcolor);
+}
+
+.table.style5 .table__body tr {
+  overflow: hidden; 
+  border-bottom: 10px solid #fff;
+  border-radius: 10px;
+}
+
+.table.style5 .table__body table { 
+  border-collapse: separate; 
+  border-spacing: 0 10px; 
+}
+.table.style5 .table__body td {
+    border: var(--table-style5-body-border);
+    border-style: solid none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table.style5 .table__body td:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 10px; 
+    border-bottom-left-radius: 10px;
+}
+.table.style5 .table__body td:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.table.style5 tr:hover td {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.table.style5 .table__head th {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.table.style5 {
+  overflow: hidden;
+}
+
+.table.style5 .table__body{
+  padding-right: 30px;
+}
+/*End table classes*/

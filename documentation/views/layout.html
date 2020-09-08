@@ -35,26 +35,57 @@
       <main class="container">
         <section class="section">
           <div class="section__title">
-            Instalacion
+            Sistema de rejilla
           </div>
           <hr>
           <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
-            <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
+            Utiliza nuestra cuadricula de rejillas para crear excelentes diseños y adaptarlos 
+            a distintas pantallas, con 12 columnas. <br><br>
+            <b>¿Como funciona?</b><br>
+            Utiliza una serie de filas y columnas para tener un mejor alineamiento del contenido.
+            Nos permite crear nuestro proyecto de manera <b>responsive.</b><br>
+            A continuacion se muestran unos ejemplos:
           </div>
+
+          <div class="container">
+            <div class="row gap-3">
+                 <div class="col lg-2" style="border: 1px solid black; background-color: rgb(250, 160, 178); padding: 15px;">
+                col lg-2
+              </div>
+              <div class="col lg-7" style="border: 1px solid black; background-color: rgb(250, 160, 178); padding: 15px;">
+                col lg-7
+              </div>
+              <div class="col lg-2" style="border: 1px solid black; background-color: rgb(250, 160, 178); padding: 15px;">
+                col lg-2
+              </div>
+             
+            </div>
+           </div>
+        </div>
+
+
+
+
+
+
           <div class="section__body">
           <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./css/habanero.min.css"</span>&gt;</span>]
-    ...
-  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.min.css"</span>&gt;</span><span class="handlebars"><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row gap-3"</span>&gt;</span>  
+     
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col lg-2"</span>&gt;</span> 
+                col lg-2
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col lg-7"</span>&gt;</span> 
+                col lg-7
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col lg-2"</span>&gt;</span> 
+                col lg-2
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></span>
             </code></pre>
           </code></pre>
           </div>

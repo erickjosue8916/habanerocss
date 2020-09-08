@@ -185,12 +185,6 @@
 
 }
 
-
-
-
-
-
-
 /* Start grid styles*/
 *{
     margin: 0;
@@ -223,7 +217,6 @@
 
  /*large*/
  @media screen and (min-width: 1024px){
-     
     .col.lg-1 {width: 8.33%;}
     .col.lg-2 {width: 16.66%;}
     .col.lg-3 {width: 24.99%;}
@@ -236,6 +229,7 @@
     .col.lg-10 {width: 83.30%;}
     .col.lg-11 {width: 91.63%;}
     .col.lg-12 {width: 99.96%;}
+
 }
 
 /*medium*/
@@ -986,20 +980,31 @@ a{
 
 /* Start navbar styles */
 .nav {
-  height: 50px;
+  height: 55px;
   width: 100%;
   position: relative;
   color: #fff;
 }
 
 .nav > .nav-header {
-  display: inline;
+  display: block;
+  position: relative;
+  left: 5px;
 }
 
+.nav-header > img  {
+  display: block;
+  float: left;
+  width: 23px;
+  height: 36px;
+  position: relative;
+  top: 3px;
+}
 .nav > .nav-header > .nav-title {
-  display: inline-block;
+  display:block;
+  text-transform: uppercase;
   font-size: 22px;
-  
+  float: left;
   padding: 10px 10px 10px 10px;
 }
 
@@ -1008,14 +1013,14 @@ a{
 }
 
 .nav > .nav-links {
-  display: inline;
+  display: block;
   float: right;
   font-size: 18px;
 }
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 13px 10px 13px 10px;
+  padding: 14.5px 10px 15.5px 10px;
   text-decoration: none;
   color: #efefef;
   text-align: center;
@@ -1038,8 +1043,8 @@ a{
   }
   .nav > .nav-btn > label {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     padding: 13px;
   }
   .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
@@ -1059,7 +1064,7 @@ a{
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 50px;
+    top: 55px;
     left: 0px;
   }
   .nav > .nav-links > a {

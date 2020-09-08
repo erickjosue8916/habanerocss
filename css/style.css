@@ -185,6 +185,26 @@
     width: 100%;
     height: auto;
 }
+/*Espaciado entre columnas*/
+.gap-1 > .col{
+  margin-right:5px
+}
+.gap-2 > .col{
+  margin-right:7px
+}
+.gap-3 > .col{
+  margin-right:9px
+}
+/*Seleccion de elementos menos el ultimo*/
+.gap-1 > .col:last-child{
+  margin-right: 0px;
+}
+.gap-2 > .col:last-child{
+  margin-right: 0px;
+}
+.gap-3 > .col:last-child{
+  margin-right: 0px;
+}
 [class*="col"] 
     {
         display: grid;

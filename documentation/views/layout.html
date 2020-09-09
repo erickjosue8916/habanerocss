@@ -53,7 +53,7 @@
             contenedor para tener un mejor orden de nuestras rejillas. <br><br>
             A continuacion se muestran unos ejemplos:
           </div>
-
+          
           <div class="container">
             <div class="row  mb-1">
                 <div class="col lg-2 md-4">
@@ -128,6 +128,7 @@
   
           </div>
         </section>
+
         <section class="section">
           <div class="section__title">Espacio entre columnas</div>
           <hr>
@@ -141,17 +142,17 @@
             <div class="row  mb-1 gap-1">
                 <div class="col lg-2 md-4">
                  <div class="content bd-default-solid pa-1">
-                    hola
+                  col lg-2 md-4
                  </div>
               </div>
               <div class="col lg-8 md-8" >
                 <div class="content bd-default-solid pa-1">
-                    hola
+                  col lg-8 md-8
                  </div>
               </div>
               <div class="col lg-2">
                 <div class="content bd-default-solid pa-1">
-                    hola
+                  col lg-2
                  </div>
               </div>
               
@@ -164,17 +165,17 @@
               &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row  mb-1 gap-1"</span>&gt;
                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-2 md-4"</span>&gt;
                    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
-                      hola
+                   col lg-2 md-4
                    &lt;/<span class="hljs-keyword">div</span>&gt;
                 &lt;/<span class="hljs-keyword">div</span>&gt;
                 &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-8 md-8"</span> &gt;
                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
-                      hola
+                  col lg-8 md-8
                    &lt;/<span class="hljs-keyword">div</span>&gt;
                 &lt;/<span class="hljs-keyword">div</span>&gt;
                 &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-2"</span>&gt;
                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
-                      hola
+                  col lg-2
                    &lt;/<span class="hljs-keyword">div</span>&gt;
                 &lt;/<span class="hljs-keyword">div</span>&gt;
   
@@ -296,6 +297,11 @@
                 col lg-7 md-4
                </div>
             </div>
+            <div class="col lg-2 md-2">
+              <div class="content bd-default-solid pa-1">
+                col lg-2 md-2
+              </div>
+            </div>
           </div>
           </div>
           <div class="section__body">
@@ -350,6 +356,158 @@
   
           </div>
           </div>
+        </section>
+        <section class="section">
+          <div class="section__title">Mover columnas a al derecha</div>
+          <hr>
+          <br>
+          <section class="sectio__body">
+            Tienen un <b>margin left</b> igual que el tamaño de las columnas y estan numerados de esa manera del 1 al 12.
+            creadas con una clase llamada <b>offset</b> <br><br>
+            <b>Ejemplos: </b><br>
+            offset-lg-2 movera 2 columnas a la derecha en una pantalla grande. <br>
+            offset-md-2 movera 2 columnas a la derecha en una pantalla mediana. <br><br>
+            Te mostramos unos ejemplos aplicando el offset. <br><br>
+          </section>
+          <div class="container">
+            <div class="row  mb-1 gap-2">
+                <div class="col lg-4">
+                 <div class="content bd-default-solid pa-1">
+                  col lg-4
+                 </div>
+              </div>
+              <div class="col lg-5 offset-lg-2 " >
+                <div class="content bd-default-solid pa-1">
+                  col lg-5 offset-lg-2 
+                 </div>
+              </div>
+              <div class="col lg-3 ">
+                <div class="content bd-default-solid pa-1">
+                  col lg-3 
+                 </div>
+              </div>
+              <div class="col lg-2 offset-lg-4">
+                <div class="content bd-default-solid pa-1">
+                  col lg-2 offset-lg-4
+                 </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <section class="section__body">
+            <pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row  mb-1 gap-2"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-4"</span>&gt;
+                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-4</span>
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-5 offset-lg-2 "</span> &gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-5</span> <span class="hljs-built_in">offset</span>-lg<span class="hljs-number">-2</span> 
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-3 "</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-3</span> 
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-2 offset-lg-4"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-2</span> <span class="hljs-built_in">offset</span>-lg<span class="hljs-number">-4</span>
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+  
+              &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+  </code></pre>
+  
+          </section>
+          <section class="section__body">
+            Ejemplo para una pantalla mediana, teniendo en cuenta que el cmabio se va a ver 
+            cuando este en el tamaño adecuado.
+          </section>
+          <div class="container">
+            <div class="row  mb-1 gap-2">
+                <div class="col lg-4 md-6 offset-md-2">
+                 <div class="content bd-default-solid pa-1">
+                  col lg-4 md-6 offset-md-2
+                 </div>
+              </div>
+              <div class="col lg-5 md-3  " >
+                <div class="content bd-default-solid pa-1">
+                  col lg-5 md-3 
+                 </div>
+              </div>
+              <div class="col lg-3 md-4  offset-md-3">
+                <div class="content bd-default-solid pa-1">
+                  col lg-3 md-4  offset-md-3
+                 </div>
+              </div>
+              <div class="col lg-2 md-3">
+                <div class="content bd-default-solid pa-1">
+                  col lg-2 md-3
+                 </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <section class="section__body">
+            <pre><code class="lang-html"> &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row  mb-1 gap-2"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-4 md-6 offset-md-2"</span>&gt;
+                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-4</span> md<span class="hljs-number">-6</span> <span class="hljs-built_in">offset</span>-md<span class="hljs-number">-2</span>
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-5 md-3  "</span> &gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-5</span> md<span class="hljs-number">-3</span> 
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-3 md-4  offset-md-3"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-3</span> md<span class="hljs-number">-4</span>  <span class="hljs-built_in">offset</span>-md<span class="hljs-number">-3</span>
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-2 md-3"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content bd-default-solid pa-1"</span>&gt;
+                    col lg<span class="hljs-number">-2</span> md<span class="hljs-number">-3</span>
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+  
+              &lt;/<span class="hljs-keyword">div</span>&gt;
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+  </code></pre>
+          </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
       </main>
 </body>

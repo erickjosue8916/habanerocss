@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/habanero.css">
-    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="nav bg-primary text-morado">
@@ -33,12 +33,11 @@
       </div>
       
       <main class="container">
-        <section class="section">
-          <div class="section__title">
+        <section class="section row">
+          <div class="section__title col sm-12">
             Botones
           </div>
-          <hr>
-          <div class="section__body">
+          <div class="section__body col sm-12 md-12">
             <p>Habanero incluye dos estilos principales de botones.</p>
             <p>*El &quot;default&quot; el cual emplea un gradiente y tiene las acciones &quot;hover&quot; y &quot;active&quot; para que este se vea más dinámico </p>
             <p>*El &quot;line&quot; el cual consta de fondo blanco y al hacer &quot;hover&quot; el color de fondo cambia dependiendo de la clase que se le asigne.</p>
@@ -55,7 +54,6 @@
           <div class="section__title">
             Colores para el botón default
           </div>
-          <hr>
           <div class="section__body">
             <div>
               <button type="button" class="button button__success">success</button>
@@ -92,7 +90,6 @@
           <div class="section__title">
             Botones Line
           </div>
-          <hr>
           <div class="section__body">
             <div class="separator">
               <center><button type="button" class="button button__line">Line</button></center>
@@ -104,11 +101,10 @@
           </div>
         </section>
 
-        <section class="section">
+        <section class="section ">
           <div class="section__title">
             Colores para el botón Line
           </div>
-          <hr>
           <div class="section__body">
             <div>
               <button type="button" class="button button__line button__line__success">success</button>
@@ -164,7 +160,6 @@
           <div class="section__title">
             Tamaños
           </div>
-          <hr>
           <div class="section__body">
             <p>Este framework incluye 5 tamaños predeterminados de botones (pequeño, mediano, largo, extra largo y el predeterminado).</p>
             <div class="separator">
@@ -193,7 +188,6 @@
           <div class="section__title">
             Formas
           </div>
-          <hr>
           <div class="section__body">
             <p>Existen formas predefinidas para los botones las cuales son:</p>
             <div class="separator">
@@ -209,6 +203,176 @@
             </code></pre>
           </div>
         </section>
+        <section class="section">
+          <div class="section__title">
+            Tarjetas
+          </div>
+          <div class="section__body">
+           Las Tarjetas, son contenedores que nos ayudan a tener elementos importantes
+           mas ordenados y felxibles. Siendo mas notorios por una pequeña transicion que 
+           hace resaltar la tarjeta
+           <br><br>
+            Mostraremos un ejemplo de una tarjeta basica con contenido mixto:
+          </div>
+          <div class="container">
+            <div class="card">
+                <img class="card-img-top" src="../../img/habanero-2.svg" alt="">
+                <div class="card-body pa-1">
+                    <h2 class="card-title">Ejemplo 1</h2>
+                    <p class="card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Magni totam distinctio itaque? Nihil repudiandae dolor cupiditate vero 
+        
+                    </p>
+                    <a href="#" class="button button__habanero">Boton</a>
+                </div>
+            </div>
+        </div>
+        <section class="section__body">
+          <pre><code class="lang-html">          &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container"</span>&gt;
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-img-top"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"..."</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body pa-1"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title"</span>&gt;</span>Ejemplo 1<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                     Magni totam distinctio itaque? Nihil repudiandae dolor cupiditate vero 
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button__habanero"</span>&gt;</span>Boton<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+
+        </section>
+        <section class="section__title">Tipos de tarjeta</section>
+        
+        <section class="section__body">
+          Ejemplo de una tarjeta de texto
+        </section>
+        <div class="container">
+          <div class="card">
+              <div class="card-body pa-1">
+                  Este es un ejemplo de una tarjeta de solo texto.
+              </div>
+          </div>
+      </div>
+
+      <section class="section__body">
+        <pre><code class="lang-html">  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+          &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"card"</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"card-body pa-1"</span>&gt;
+                  Este es un ejemplo de una tarjeta de solo texto.
+              &lt;/<span class="hljs-keyword">div</span>&gt;
+          &lt;/<span class="hljs-keyword">div</span>&gt;
+      &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+      </section>
+
+      <section class="section__body">
+        Ejemplo de una tarjeta de imagen
+      </section>
+      <div class="container">
+        <div class="card">
+          <img class="card-img-top" src="../../img/habanero-2.svg" alt="">
+            <div class="card-body pa-1">
+                Este es un ejemplo de una tarjeta de imagen, con descripcion de texto.
+            </div>
+        </div>
+    </div>
+    <section class="section__body">
+      <pre><code class="lang-html"> &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"card"</span>&gt;
+          &lt;img <span class="hljs-built_in">class</span>=<span class="hljs-string">"card-img-top"</span> src=<span class="hljs-string">"..."</span> alt=<span class="hljs-string">""</span>&gt;
+            &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"card-body pa-1"</span>&gt;
+                Este es un ejemplo de una tarjeta de imagen, con descripcion de texto.
+            &lt;/<span class="hljs-keyword">div</span>&gt;
+        &lt;/<span class="hljs-keyword">div</span>&gt;
+    &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+    </section>
+
+    <section class="section__body">
+      Ejemplo de tarjeta con encabezado
+    </section>
+    <div class="container">
+      <div class="card bg-primary text-white">
+        <div class="card-body  pa-1">
+        <h3 class="card-title">Titulo</h3>
+          
+           <p class="card-text">Este es un ejemplo de tarjeta con encabezado, </p> 
+           <a href="#" class="button button-line-secondary-secondary">Ejemplo</a>
+           </div>
+          </div>
+      </div>
+    </div>
+    <div class="section__body">
+      <pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card bg-primary text-white"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-body  pa-1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-title"</span>&gt;</span>Titulo<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card-text"</span>&gt;</span>Este es un ejemplo de tarjeta con encabezado, <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> 
+      <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button button-line-secondary-secondary"</span>&gt;</span>Ejemplo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+    </div>
+    </section>
+    <section class="section__body">
+      <div class="section__title">
+        Navbar
+      </div>
+    </section>
+    <section class="section__body">
+      <div class="nav bg-primary text-morado">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <img src="../../img/habanero-2.svg" class="brand" alt="chile habanero">
+          <div class="nav-title">
+            Habanerocss
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <div class="nav-links">
+          <a href="#"class="active">link 1</a>
+          <a href="#">link 2</a>
+          <a href="#">link 3</a>
+        </div>
+    </div>
+    <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"nav bg-primary text-morado"</span>&gt;
+      <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"nav-check"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-header"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../img/habanero-2.svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"brand"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"chile habanero"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-title"</span>&gt;</span>
+          Habanerocss
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-btn"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"nav-check"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nav-links"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span><span class="hljs-attr">class</span>=<span class="hljs-string">"active"</span>&gt;</span>link 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>link 2<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>link 3<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+</code></pre>
+
+    </section>
       </main>
 </body>
 </html>

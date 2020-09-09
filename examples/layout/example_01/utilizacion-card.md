@@ -1,0 +1,2 @@
+## Utilizacion de card
+Las cards o tarjetas, nos pueden ayudar a tener informacion mas ordenada y resaltante, su utilizaion puede implementarse como para la presentacion de un lugar, datos personales, entre otros

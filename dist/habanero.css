@@ -1125,6 +1125,7 @@ a{
   overflow: hidden;
   margin: 20px;
   transition: all 0.25s;
+  padding: 10px;
   
 }
 .card:hover{
@@ -1134,7 +1135,6 @@ a{
 .card-body{
   text-align: center;
   height: auto;
-  
 
   
 }
@@ -1142,7 +1142,7 @@ a{
   width: 330px;
   height: 220px;
 }
-.card-tittle{
+.card-title{
   font-weight: 600;
   margin: 20px;
 }
@@ -1451,9 +1451,11 @@ table {
 /* Start utils classes */
 .section {
   padding-top: 30px;
+  max-width: 100%;
 }
 hr {
-margin-top: 5px;
+  margin-top: 5px;
+  max-width: 100%;
 }
 .section__title {
   text-transform: uppercase;
@@ -1462,6 +1464,7 @@ margin-top: 5px;
 .section__body {
 padding: 15px;
 letter-spacing: 1.5px;
+max-width: 100%;
 }
 
 pre {
@@ -1470,6 +1473,7 @@ pre {
   color: #333;
   border-radius: 5px;
   max-width: 100%;
+  overflow: scroll;
   font-style: italic;
   max-height: 500px;
   letter-spacing: 1px;
@@ -1543,7 +1547,7 @@ pre .hljs-attr, pre .hljs-built_in {
   height: 36px;
 }
 
-@media (max-width:760px) {
+@media (max-width:800px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;

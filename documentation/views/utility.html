@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../dist/habanero.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
     <title>Habanerocss</title>
 </head>
 <body>
@@ -23,42 +24,247 @@
           </label>
         </div>
         <div class="nav-links">
-          <a href="../index.html">Get Stated</a>
-          <a href="./layout.html">Layout</a>
-          <a href="./tiphography.html">tipograohy</a>
-          <a href="#" class="active">Utility</a>
-          <a href="./forms.html">Forms</a>
-          <a href="./components.html">Components</a>
+          <a href="../index.html">Empezemos!</a>
+          <a href="./layout.html">Diseño</a>
+          <a href="./tiphography.html">Tipografía</a>
+          <a href="#" class="active">Utilidades</a>
+          <a href="./forms.html">Formularios</a>
+          <a href="./components.html">Componentes</a>
         </div>
-      </div>
+    </div>
       
-      <main class="container">
+    <main class="container">
         <section class="section">
-          <div class="section__title">
-            Instalacion
-          </div>
-          <hr>
-          <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
-            <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
-          </div>
-          <div class="section__body">
-          <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./css/habanero.min.css"</span>&gt;</span>]
-    ...
-  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.min.css"</span>&gt;</span><span class="handlebars"><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></span>
-            </code></pre>
-          </code></pre>
-          </div>
-        </section>
-      </main>
+			<div class="section__title">
+				Alertas
+			</div>
+			<hr>
+			<div class="section__body">
+				Existen 5 tipos de alertas creadas para cualquier escenario posible, estan configuradas con un alto automatico que se adapta 
+				al contenido que se presente en la alerta, estas tambien toman todo el ancho del contenedor donde se coloquen. 
+				Las alertas tienen la posibilidad de ser cerradas, para ello necesitaras hacer referencia al archivo <b>habanero.js</b>
+			</div>
+			<div class="section__body">
+				<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+            	</code></pre>
+          	</div>
+
+			<div class="section__body">
+				Los iconos que contienen estas alertas se cargan desde la libreria de iconos Fontawesome, por lo que en el head de tu
+				archivo html tendras que colocar la etiqueta siguiente:
+			</div>
+			<div class="section__body">
+				<pre><code class="lang-html">
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://use.fontawesome.com/releases/v5.8.1/css/all.css"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+            	</code></pre>
+		  	</div>
+	
+			<section class="section">
+				<div class="section__body">
+					Disponemos de alertas en las siguientes variaciones:
+				</div>
+				<div class="section__body">
+					<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Alerta de Error  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-danger"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-times-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description-header"</span>&gt;</span>Error<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esto es una alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-window-close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					</code></pre>             
+				</div>
+			
+				<div class="alert alert-danger" id="alert">
+					<i class="fas fa-times-circle"></i>
+					<div class="description">
+						<p class="description-header">Error</p>
+						<p>Esto es una alerta</p>
+					</div>
+					<i class="fas fa-window-close" id="close"></i>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__body">
+					<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Alerta de Mensaje  --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-info"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-comment-alt"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description-header"</span>&gt;</span>Mensaje<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esto es una alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-window-close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					</code></pre>	
+				</div>
+			
+				<div class="alert alert-info" id="alert">
+					<i class="fas fa-comment-alt"></i>
+					<div class="description">
+						<p class="description-header">Mensaje</p>
+						<p>Esto es una alerta</p>
+					</div>
+					<i class="fas fa-window-close" id="close"></i>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__body">
+					<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Alerta de Precaucion--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-warning"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-exclamation-triangle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description-header"</span>&gt;</span>Alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esto es una alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-window-close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					</code></pre>	
+				</div>
+				<div class="alert alert-warning" id="alert">
+					<i class="fas fa-exclamation-triangle"></i>
+					<div class="description">
+						<p class="description-header">Alerta</p>
+						<p>Esto es una alerta</p>
+					</div>
+					<i class="fas fa-window-close" id="close"></i>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__body">
+					<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Alerta de Operacion exitosa--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-success"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-check-circle"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description-header"</span>&gt;</span>Operación exitosa<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esto es una alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-window-close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					</code></pre>				
+				</div>
+				<div class="alert alert-success" id="alert">
+					<i class="fas fa-check-circle"></i>
+					<div class="description">
+						<p class="description-header">Operación exitosa</p>
+						<p>Esto es una alerta</p>
+					</div>
+					<i class="fas fa-window-close" id="close"></i>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="section__body">
+					<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Alerta Informativa--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"alert alert-secondary"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"alert"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-exclamation"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"description-header"</span>&gt;</span>Información<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Esto es una alerta<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fas fa-window-close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+					</code></pre>				
+				</div>
+				<div class="alert alert-secondary" id="alert">
+					<i class="fas fa-exclamation"></i>
+					<div class="description">
+						<p class="description-header">Información</p>
+						<p>Esto es una alerta</p>
+					</div>
+					<i class="fas fa-window-close" id="close"></i>
+				</div>
+			</section>
+
+		</section>
+		
+		<section class="section">
+			<div class="section__title">
+				Backgrounds
+			</div>
+			<hr>
+			<div class="section__body">
+				Tenemos en la lista 10 distintos colores de Backgrounds para que los uses a tu disposicion, cada uno de ellos 
+				puede ser invocado de la siguiente manera:
+			</div>
+
+			<section class="section__body">
+				<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Div con background danger --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bg-danger"</span>&gt;</span>
+	
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+	</code></pre>
+	
+			</section>
+
+			<section class="section__body">
+				<div class="table style1">
+					<div class="table__head">
+						<table>
+							<thead>
+								<tr class="head">
+									<th class="table__2columns">Nombre de la clase</th>
+									<th class="table__2columns">Descripcion</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table__body scroll">
+						<table>
+							<tbody>
+								<tr class=" body text-white">
+									<td class="table__2columns text-center">bg-danger</td>
+									<td class="table__2columns text-center bg-danger">Background rojo</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-success</td>
+									<td class="table__2columns text-center bg-success">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-warning</td>
+									<td class="table__2columns text-center bg-warning">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-secondary</td>
+									<td class="table__2columns text-center bg-secondary">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-info</td>
+									<td class="table__2columns text-center bg-info">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-primary</td>
+									<td class="table__2columns text-center bg-primary">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-light</td>
+									<td class="table__2columns text-center bg-light">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-light-dark</td>
+									<td class="table__2columns text-center bg-light-dark">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-dark</td>
+									<td class="table__2columns text-center bg-dark">Boxing</td>
+								</tr>
+								<tr class=" body">
+									<td class="table__2columns text-center">bg-gray</td>
+									<td class="table__2columns text-center bg-gray">Boxing</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+                </div>
+			</section>
+		</section>
+    </main>
+
+    <script src="../../dist/habanero.js"></script>
 </body>
 </html>

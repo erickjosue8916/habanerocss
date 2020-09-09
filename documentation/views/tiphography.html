@@ -3,62 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../dist/habanero.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Habanerocss</title>
 </head>
 <body>
-    <div class="nav bg-primary text-morado">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-          <img src="../../img/habanero-2.svg" class="brand" alt="chile habanero">
-          <div class="nav-title">
-            Habanerocss
-          </div>
-        </div>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-links">
-          <a href="../index.html">Get Stated</a>
-          <a href="./layout.html">Layout</a>
-          <a href="#" class="active">tipograohy</a>
-          <a href="./utility.html">Utility</a>
-          <a href="./forms.html">Forms</a>
-          <a href="./components.html">Components</a>
-        </div>
+  <div class="nav bg-primary text-morado">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <img src="../../img/habanero-2.svg" class="brand" alt="chile habanero">
+      <div class="nav-title">
+        Habanerocss
       </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html">empecemos!</a>
+      <a href="./layout.html">diseño</a>
+      <a href="#" class="active">tipografia</a>
+      <a href="./utility.html">utilidades</a>
+      <a href="./forms.html">Formularios</a>
+      <a href="./components.html">Componentes</a>
+    </div>
+  </div>
       
       <main class="container">
         <section class="section">
-          <div class="section__title">
-            Instalacion
-          </div>
+          <div class="section__title"><h1>Tipografia</h1></div>
           <hr>
           <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
-            <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
+            Documentación y ejemplos de tipografía Habanero  incluida la configuración global, encabezados, texto del cuerpo, listas y enlaces.
+          </div>
+
+        </section>
+        <section class="section">
+          <div class="section__title">
+            Encabezados
+            <hr>
+          </div>
+        
+          <div class="section__body">
+           <p> Los encabezados tienen un formato predeterminado con fuente Montserrat estilo en negrita</p><br>
+            <div>
+              <h1>H1. Texto prueba Framework HABANERO</h1>
+              <h2>H2. Texto prueba Framework HABANERO</h2>
+              <h3>H3. Texto prueba Framework HABANERO</h3>
+              <h4>H4. Texto prueba Framework HABANERO</h4>
+              <h5>H5. Texto prueba Framework HABANERO</h5>
+              <h6>H6. Texto prueba Framework HABANERO</h6><br>
+            </div>
+            
+            <pre><code class="lang-html">
+              <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>H1. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>H2. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>H3. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>H4. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>H5. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>H6. Texto prueba Framework HABANERO<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+            </code></pre>
+            <br><br>
+        </section>
+        <section class="section">
+          <div class="section__title">
+            Tamaños de texto</div>
+          <hr>
+          <div class="section__body">
+            <p>Se presenta tamaños de texto en los siguientes estandares: pequeño, mediano, grande y extra grande</p><br>
+            <div class="tamExGrande">Texto en tamaño Extra Grande</div>
+            <div class="tamGrande">Texto en tamaño Grande</div>
+            <div class="tamMediano">Texto en tamaño Mediano</div>
+            <div class="tamPequeño">Texto en tamaño Pequeño</div>
           </div>
           <div class="section__body">
-          <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./css/habanero.min.css"</span>&gt;</span>]
-    ...
-  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.min.css"</span>&gt;</span><span class="handlebars"><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></span>
-            </code></pre>
-          </code></pre>
+            <pre><code class="lang-html">
+           &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"section__body"</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"tamExGrande"</span>&gt;Texto en tamaño Extra Grande&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"tamGrande"</span>&gt;Texto en tamaño Grande&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"tamMediano"</span>&gt;Texto en tamaño Mediano&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"tamPequeño"</span>&gt;Texto en tamaño Pequeño&lt;/<span class="hljs-keyword">div</span>&gt;
+           &lt;/<span class="hljs-keyword">div</span>&gt;
+           </code></pre>
+  
           </div>
         </section>
+        <section class="section">
+          <div class="section__title">
+            Colores de texto </div>
+            
+          <hr>
+          <div class="section__body">
+            <p>A continuacion se muestra texto con colores utilizado atraves de clases:</p><br>
+            <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-rojo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-amarillo">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-verdelimon">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-verde">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-azul">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-morado">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p class="text-rosa">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>          
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"section__body"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-white"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-black"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-rojo"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-amarillo"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-verdelimon"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-verde"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-azul"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-morado"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-rosa"</span>&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>          
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          </code></pre>
+  
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__title">
+            Subrayado de texto </div>
+          <hr>
+          <p>A continuacion se presenta formato de subrayado para aplicar al texto: </p><br>
+          <div class="section__body">
+            <p class="sub-lineaDebajo">Subrayado Debajo del texto.</p>
+            <p class="sub-lineaArriba">Subrayado encima del texto.</p>
+            <p class="sub-lineaAtravez">Linea atraves del texto.</p>
+            <p class="sub-none">Ninguna linea.</p>
+            <p class="sub-ArribaDebajo">Linea encima y debajo del texto</p>
+            </div>
+          <div class="section__body">
+          <pre><code class="lang-html">
+            &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"sub-lineaDebajo"</span>&gt;Subrayado Debajo <span class="hljs-selector-tag">del</span> texto.&lt;/p&gt;
+            &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"sub-lineaArriba"</span>&gt;Subrayado encima <span class="hljs-selector-tag">del</span> texto.&lt;/p&gt;
+            &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"sub-lineaAtravez"</span>&gt;Linea atraves <span class="hljs-selector-tag">del</span> texto.&lt;/p&gt;
+            &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"sub-none"</span>&gt;Ninguna linea.&lt;/p&gt;
+            &lt;<span class="hljs-selector-tag">p</span> class=<span class="hljs-string">"sub-ArribaDebajo"</span>&gt;Linea encima y debajo <span class="hljs-selector-tag">del</span> texto&lt;/p&gt;
+          </code></pre>
+  
+          </div>
+        </section>
+        <section class="section">
+          <div class="section__title">
+            Alineacion de texto </div>
+          <hr>
+          <div class="section__body">
+            <p>Alineacion del texto mediante clases, las cuales son: alineacion a la izquierda (text-left), alineacion al centro (text-center) y 
+              alineacion a la derecha (text-right). A continuacion se presenta un ejemplo de su aplicacion.
+            </p>
+                    
+            </div>
+
+            <div class="container">
+              <div class="row  mb-1">
+                  <div class="col lg-4 md-4>">
+                   <div class="content border-rounded-xs bd-default-solid pa-1 text-left">
+                    Alineacion a la izquierda
+                   </div>
+                </div>
+                <div class="col lg-4 md-4" >
+                  <div class="content border-rounded-xs bd-default-solid pa-1 text-center">
+                    Alineacion al centro
+                   </div>
+                </div>
+                <div class="col lg-4 md-4">
+                  <div class="content border-rounded-xs bd-default-solid pa-1 text-right">
+                    Alineacion a la derecha
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+          <div class="section__body">
+            <pre><code class="lang-html">
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"container"</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"row  mb-1"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-4 md-4&gt;"</span>&gt;
+                   &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content border-rounded-xs bd-default-solid pa-1 text-left"</span>&gt;
+                    Alineacion a la izquierda
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-4 md-4"</span> &gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content border-rounded-xs bd-default-solid pa-1 text-center"</span>&gt;
+                    Alineacion al centro
+                   &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"col lg-4 md-4"</span>&gt;
+                  &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"content border-rounded-xs bd-default-solid pa-1 text-right"</span>&gt;
+                    Alineacion a la derecha
+                  &lt;/<span class="hljs-keyword">div</span>&gt;
+                &lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;/<span class="hljs-keyword">div</span>&gt;
+           &lt;/<span class="hljs-keyword">div</span>&gt;
+</code></pre>
+
+          </div>
+        </section>
+        <section>
+          <div class="section__title">
+           LISTAS
+           <hr>
+           <h4>LISTAS ORDENADAS</h4>
+          </div>
+          <div class="section__body">
+            <p>A continuacion se van a ver las siguientes listas ordenadas. La lista a la izquierda tiene un formato predeterminado enumerada con digitos, en el centro es una lista
+            ordenada expresada por numeros romanos en letras mayusculas y a la derecha esta expresada por numeros romanos en minusculas
+              <p><br>
+            <div class="container">
+              <div class="row  mb-1">
+                <div class="col lg-12 md-4>">
+                  <div class="content  bd-default-solid pa-1 text-center">
+                  LISTAS ORDENADAS
+                  </div>
+               </div>
+                  <div class="col lg-4 md-4>">
+                   <div class="content bd-default-solid pa-1 ">
+                    <ol>
+                      <li>Julio</li>
+                      <li>Carmen</li>
+                      <li>Ignacio</li>
+                      <li>Elena</li>
+                  </ol>
+                   </div>
+                </div>
+                <div class="col lg-4 md-4" >
+                  <div class="content bd-default-solid pa-1 ">
+                    <ol class="romanos_mayuscula">
+                      <li>Julio</li>
+                      <li>Carmen</li>
+                      <li>Ignacio</li>
+                      <li>Elena</li>
+                  </ol>
+                   </div>
+                </div>
+                <div class="col lg-4 md-4">
+                  <div class="content bd-default-solid pa-1 ">
+                    <ol class="romanos_minuscula">
+                      <li>Julio</li>
+                      <li>Carmen</li>
+                      <li>Ignacio</li>
+                      <li>Elena</li>
+                  </ol>
+                  </div>
+                </div>
+              </div>
+           </div>
+          <div class="section__body">
+            <pre><code class="lang-html"><span class="hljs-tag">
+              &lt;<span class="hljs-name">ol</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Julio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Carmen<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ignacio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Elena<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+             
+             <span class="hljs-tag">
+              &lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"romanos_mayuscula"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Julio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Carmen<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ignacio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Elena<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+             
+             <span class="hljs-tag">&lt;<span class="hljs-name">ol</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"romanos_minuscula"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Julio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Carmen<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ignacio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Elena<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+             </code></pre>
+             
+          </div>
+          </div>
+          <br>
+          <h4>LISTAS DESORDENADAS</h4>
+          <div class="section__body">
+
+            <div class="container">
+              <p>En este apartado del lado izquiedo se presenta una lista desordenada con formato prederminado donde sus items son circulos y al lado derecho se presenta
+                una lasta desordenado que su formato esta establecido a traves de una clase la cual sus items se presentan como cuadrados.
+              </p><br>
+              <div class="row  mb-1">
+                <div class="col lg-12 md-4>">
+                  <div class="content  bd-default-solid pa-1 text-center">
+                  LISTAS DESORDENADAS
+                  </div>
+               </div>
+               
+                  <div class="col lg-6 md-4>">
+                   <div class="content bd-default-solid pa-1 ">
+                    <ul>
+                      <li>Julio</li>
+                      <li>Carmen</li>
+                      <li>Ignacio</li>
+                      <li>Elena</li>
+                  </ul>
+                   </div>
+                </div>
+                <div class="col lg-6 md-4" >
+                  <div class="content bd-default-solid pa-1 ">
+                    <ul class="l-cuadrado">
+                      <li>Julio</li>
+                      <li>Carmen</li>
+                      <li>Ignacio</li>
+                      <li>Elena</li>
+                    </ul>
+                   </div>
+                </div>
+              </div>
+           </div>
+
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">
+              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Julio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Carmen<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ignacio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Elena<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+             
+              <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"l-cuadrado"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Julio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Carmen<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Ignacio<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Elena<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+            </code></pre>
+            
+          </div>
+        </section>
+        <section>
+          <div class="section__title">
+           ENLACES<hr>
+          </div>
+          <div class="section__body">
+            <p> A continuacion se presenta ejemplos de formato de enlace.</p><br>
+            <a href="#">Enlace con formato predeterminado</a><br>
+            <a class="negrita" href="#">Enlace con negrita</a><br>
+            <a class="cursiva" href="#">Enlace con cursiva</a><br>
+            <a class="nc" href="#">Enlace con negrita y cursiva</a><br>
+            <a class="sub-lineaDebajo" href="#">Enlace con subrayado</a>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html"> 
+              <span class="hljs-tag">
+              &lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Enlace con formato predeterminado<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"negrita"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Enlace con negrita<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"cursiva"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Enlace con cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"nc"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Enlace con negrita y cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sub-lineaDebajo"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Enlace con subrayado<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             </code></pre>
+             
+          </div>
+        </section>
+        <section>
+          <div class="section__title">
+           <h1>FUENTES Y ESTILOS</h1> 
+           <hr>
+          </div>
+          <div class="section__body">
+            <p>
+              Las fuentes de texto son un recurso que se emplean para darle realce del texto y a su ves tener una vista mas ordenada y esteticamente aceptable.
+              Por eso se emplearon clases de estas fuentes para su debida aplicacion.
+            </p>
+          </div>
+          <div class="section__body"></div>
+        </section>
+        <section>
+          <div class="section__title">FUENTE PREDETERMINADA
+           <hr>
+           
+          </div>
+          <div class="section__body">
+            <p>La fuente predeterminada para este programa es PT sans que es declarado en el body. Para la aplicacion de esta fuente es necesario 
+              un link . A continuacion se presenta un ejemplo de su aplicacion.</p><br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sunt rerum quidem labore illo esse 
+              quaerat assumenda temporibus quasi deserunt, 
+              quis laudantium ullam saepe velit totam fugiat accusamus necessitatibus nam?</p>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">
+              <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=PT+Sans&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem sunt rerum quidem labore illo esse 
+                            quaerat assumenda temporibus quasi deserunt, 
+                            quis laudantium ullam saepe velit totam fugiat accusamus necessitatibus nam?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+              </code></pre>
+              
+          </div>
+        </section>
+        <section>
+          <div class="section__title">FUENTES AUXILIARES
+           <hr>
+          </div>
+          <div class="section__body">
+            <p>Para usar las fuentes auxiliares se requiere clases definidas y tambien es necesario tener declarado los links en el head.
+              Entre las fuentes declaradas mediante clase estan: Lobster+Two, AdventPro y Montserrart.
+              A continuacion se presenta los siguientes ejemplos aplicando las fuentes anteriormente mencionadas:<br><br>
+            </p>
+            
+            <div class="text-Lobster">Texto con fuente Lobster</div>
+            <div class="text-Lobster negrita">Texto con fuente Lobster en negrita</div>
+            <div class="text-Lobster cursiva">Texto con fuente Lobster en cursiva</div>
+            <div class="text-Lobster nc">Texto con fuente Lobster en negrita y cursiva</div>
+            <br>
+          </div>
+          <div class="section__body"> 
+            <pre><code class="lang-html"><span class="hljs-tag">&lt;
+              <span class="hljs-name">html</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Lobster+Two&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Lobster"</span>&gt;</span>Texto con fuente Lobster<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Lobster negrita"</span>&gt;</span>Texto con fuente Lobster en negrita<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Lobster cursiva"</span>&gt;</span>Texto con fuente Lobster en cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Lobster nc"</span>&gt;</span>Texto con fuente Lobster en negrita y cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        
+              <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+              </code></pre>
+              
+              
+          </div>
+          <div class="section__body">
+          <div></div>
+            <div class="text-AdventPro">Texto con fuente AdventPro</div>
+            <div class="text-AdventPro negrita">Texto con fuente AdventPro en negrita</div>
+            <div class="text-AdventPro cursiva">Texto con fuente AdventPro en cursiva</div>
+            <div class="text-AdventPro nc">Texto con fuente AdventPro en negrita y cursiva</div>
+            <br>
+            <div class="section__body"> 
+              <pre><code class="lang-html">
+                <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Advent+Pro&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+                
+                <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-AdventPro"</span>&gt;</span>Texto con fuente AdventPro<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-AdventPro negrita"</span>&gt;</span>Texto con fuente AdventPro en negrita<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-AdventPro cursiva"</span>&gt;</span>Texto con fuente AdventPro en cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-AdventPro nc"</span>&gt;</span>Texto con fuente AdventPro en negrita y cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+                </code></pre>
+                
+            </div><br>
+            <div class="text-Montserrart">Texto con fuente Montserrart</div>
+            <div class="text-Montserrart negrita">Texto con fuente Montserrart en negrita</div>
+            <div class="text-Montserrart cursiva">Texto con fuente Montserrart en cursiva</div>
+            <div class="text-Montserrart nc">Texto con fuente Montserrart en negrita y cursiva</div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">
+              <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span>&gt;</span>
+              
+              <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Montserrart"</span>&gt;</span>Texto con fuente Montserrart<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Montserrart negrita"</span>&gt;</span>Texto con fuente Montserrart en negrita<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Montserrart cursiva"</span>&gt;</span>Texto con fuente Montserrart en cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+               <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-Montserrart nc"</span>&gt;</span>Texto con fuente Montserrart en negrita y cursiva<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+              </code></pre>
+          </div>
+        </section>
+        <section>
+          <div class="section__title">NEGRITA Y CURSIVA
+           <hr>
+          </div>
+          <div class="section__body">
+            <p>Se crearon clases para la uso del estilo en negrita, cursiva y ambas. Se puede observar su aplicacion en el siguiente ejemplo: </p><br>
+            <div>Texto de fuente predeterminado PT sans</div>
+            <div class="negrita">Texto de fuente predeterminado PT sans en negrita</div>
+            <div class="cursiva">Texto de fuente predeterminado PT sans en cursiva</div>
+            <div class="nc">Texto de fuente predeterminado PT sans en negrita y cursiva</div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">
+              &lt;<span class="hljs-keyword">div</span>&gt;Texto de fuente predeterminado PT sans&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"negrita"</span>&gt;Texto de fuente predeterminado PT sans en negrita&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"cursiva"</span>&gt;Texto de fuente predeterminado PT sans en cursiva&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"nc"</span>&gt;Texto de fuente predeterminado PT sans en negrita y cursiva&lt;/<span class="hljs-keyword">div</span>&gt;
+              </code></pre>
+              
+          </div>
+        </section>
+        
       </main>
 </body>
 </html>

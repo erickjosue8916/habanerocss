@@ -181,6 +181,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 .container{
@@ -301,6 +302,10 @@
     .col.sm-10 {width: 83.30%;}
     .col.sm-11 {width: 91.63%;}
     .col.sm-12 {width: 99.96%;}
+    pre {
+      
+      overflow: scroll;
+    }
 }
 /* end grid styles */
 
@@ -1058,6 +1063,7 @@ a{
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #efefef;
+  font-size: 0.8em;
   text-align: center;
 }
 
@@ -1069,7 +1075,7 @@ a{
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:760px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -1450,7 +1456,8 @@ table {
 
 /* Start utils classes */
 .section {
-  padding-top: 30px;
+  padding-top: 1em;
+  padding-left: 10px;
   max-width: 100%;
 }
 hr {
@@ -1459,7 +1466,7 @@ hr {
 }
 .section__title {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 1.3em;
 }
 .section__body {
 padding: 15px;
@@ -1468,12 +1475,15 @@ max-width: 100%;
 }
 
 pre {
+  display: block;
   background: #f3dac2;
   padding: 15px;
   color: #333;
   border-radius: 5px;
   max-width: 100%;
-  overflow: scroll;
+  max-width: 100%;
+  width: 100%;
+  overflow-y: scroll;
   font-style: italic;
   max-height: 500px;
   letter-spacing: 1px;

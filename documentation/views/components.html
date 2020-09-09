@@ -35,28 +35,178 @@
       <main class="container">
         <section class="section">
           <div class="section__title">
-            Instalacion
+            Botones
           </div>
           <hr>
           <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
-            <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
+            <p>Habanero incluye dos estilos principales de botones.</p>
+            <p>*El &quot;default&quot; el cual emplea un gradiente y tiene las acciones &quot;hover&quot; y &quot;active&quot; para que este se vea más dinámico </p>
+            <p>*El &quot;line&quot; el cual consta de fondo blanco y al hacer &quot;hover&quot; el color de fondo cambia dependiendo de la clase que se le asigne.</p>
+            <p>Además incluye diversas formas, tamaños y varios colores predeterminados los cuales se mostrarán más adelante.</p>
+            <center><button type="button" class="button">Default</button></center>
           </div>
           <div class="section__body">
-          <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./css/habanero.min.css"</span>&gt;</span>]
-    ...
-  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.min.css"</span>&gt;</span><span class="handlebars"><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></span>
+            <pre><code class="lang-html">&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button"</span>&gt; <span class="hljs-type">Default</span> &lt;/button&gt;
             </code></pre>
-          </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Colores para el botón default
+          </div>
+          <hr>
+          <div class="section__body">
+            <div>
+              <button type="button" class="button button__success">success</button>
+              <button type="button" class="button button__warning">warning</button>
+              <button type="button" class="button button__habanero">habanero</button>
+              <button type="button" class="button button__purple">Purple</button>
+              <button type="button" class="button button__secondary">secondary</button>
+              <button type="button" class="button button__brown">Brown</button>
+              <button type="button" class="button button__warning">warning</button>
+              <button type="button" class="button button__info">info</button>
+            </div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__success"</span>&gt;success&lt;/button&gt;
+
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__warning"</span>&gt;warning&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__habanero"</span>&gt;habanero&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__purple"</span>&gt;<span class="hljs-type">Purple</span>&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__secondary"</span>&gt;secondary&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__brown"</span>&gt;<span class="hljs-type">Brown</span>&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__warning"</span>&gt;warning&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__info"</span>&gt;info&lt;/button&gt;
+              </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Botones Line
+          </div>
+          <hr>
+          <div class="section__body">
+            <div class="separator">
+              <center><button type="button" class="button button__line">Line</button></center>
+            </div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">&lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line"</span>&gt;<span class="hljs-type">Line</span>&lt;/button&gt;
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Colores para el botón Line
+          </div>
+          <hr>
+          <div class="section__body">
+            <div>
+              <button type="button" class="button button__line button__line__success">success</button>
+              <button type="button" class="button button__line button__line__warning">warning</button>
+              <button type="button" class="button button__line button__line__habanero">habanero</button>
+              <button type="button" class="button button__line button__line__purple">Purple</button>
+              <button type="button" class="button button__line button__line__secondary">secondary</button>
+              <button type="button" class="button button__line button__line__brown">Brown</button>
+              <button type="button" class="button button__line button__line__warning">warning</button>
+              <button type="button" class="button button__line button__line__info">info</button>
+          </div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__success"</span>&gt;success&lt;/button&gt;
+
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__warning"</span>&gt;warning&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__habanero"</span>&gt;habanero&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__purple"</span>&gt;<span class="hljs-type">Purple</span>&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__secondary"</span>&gt;secondary&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__brown"</span>&gt;<span class="hljs-type">Brown</span>&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__warning"</span>&gt;warning&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__line button__line__info"</span>&gt;info&lt;/button&gt;
+              </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Etiquetas aplicables
+          </div>
+          <hr>
+          <div class="section__body">
+            <p>Las clases diseñadas para darle un estilo a los botones también pueden ser utilizadas en otras etiqueta, tal como divs, links o inputs, aunque en el caso de los input tienen su propio estilo disponible</p>
+            <center><div class="separator"><br>
+              <div class="button">Div</div>
+              <a class="button button__line">Link</a>
+            </div></center>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">              &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"button"</span>&gt;Div&lt;/<span class="hljs-keyword">div</span>&gt;
+              &lt;a <span class="hljs-built_in">class</span>=<span class="hljs-string">"button button__line"</span>&gt;Link&lt;/a&gt;
+              </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Tamaños
+          </div>
+          <hr>
+          <div class="section__body">
+            <p>Este framework incluye 5 tamaños predeterminados de botones (pequeño, mediano, largo, extra largo y el predeterminado).</p>
+            <div class="separator">
+              <button type="button" class="button button__small">Small size</button>
+
+              <button type="button" class="button button__medium">Medium size</button>
+              
+              <button type="button" class="button button__large">Large size</button>
+              
+              <button type="button" class="button button__xlarge">Extra Large size</button>
+            </div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__small"</span>&gt;<span class="hljs-type">Small</span> size&lt;/button&gt;
+
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__medium"</span>&gt;<span class="hljs-type">Medium</span> size&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__large"</span>&gt;<span class="hljs-type">Large</span> size&lt;/button&gt;
+              
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__xlarge"</span>&gt;<span class="hljs-type">Extra</span> <span class="hljs-type">Large</span> size&lt;/button&gt;
+              </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Formas
+          </div>
+          <hr>
+          <div class="section__body">
+            <p>Existen formas predefinidas para los botones las cuales son:</p>
+            <div class="separator">
+              <button type="button" class="button button__circle">Circle</button>
+              <button type="button" class="button button__square">Square</button>
+              <button type="button" class="button button__trapezoid">Trapezoid</button>
+            </div>
+          </div>
+          <div class="section__body">
+            <pre><code class="lang-html">              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__circle"</span>&gt;<span class="hljs-type">Circle</span>&lt;/button&gt;
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__square"</span>&gt;<span class="hljs-type">Square</span>&lt;/button&gt;
+              &lt;button <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"button"</span> <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"button button__trapezoid"</span>&gt;<span class="hljs-type">Trapezoid</span>&lt;/button&gt;
+            </code></pre>
           </div>
         </section>
       </main>

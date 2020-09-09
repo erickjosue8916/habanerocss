@@ -302,6 +302,7 @@
     .col.sm-10 {width: 83.30%;}
     .col.sm-11 {width: 91.63%;}
     .col.sm-12 {width: 99.96%;}
+  
 }
 /* end grid styles */
 
@@ -1145,6 +1146,7 @@ a:hover {
   transition: all 0.25s;
   
 }
+
 .card:hover{
   transform: translate(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
@@ -1153,7 +1155,12 @@ a:hover {
   text-align: center;
   height: auto;
   
-
+  
+}
+.card-header{
+  position: static;
+  align-content: center;
+  
   
 }
 .card-img-top{

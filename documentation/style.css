@@ -12,6 +12,10 @@
   .section {
       padding-top: 30px;
   }
+
+  .offset-1 {
+    margin-left: 8.33%;
+  }
   hr {
     margin-top: 5px;
   }
@@ -30,6 +34,7 @@
       color: #333;
       border-radius: 5px;
       max-width: 100%;
+      overflow: scroll;
       font-style: italic;
       max-height: 500px;
       letter-spacing: 1px;

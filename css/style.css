@@ -161,34 +161,27 @@
 /*End of Variables background alerts, and border colors*/
 
 }
-/***** Star of definicion de fuentes *****/
-/*Definiendo fuentes*/
-@font-face{
-	font-family: 'Lobster-Regular';
-	src: url(../fonts/Lobster-Regular.ttf);
-}
-@font-face{
-	font-family: 'AdventPro-Regular';
-	src:url(../fonts/AdventPro-Regular.ttf);
-}
-@font-face{
-	font-family: 'Montserrat';
-	src:url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face{
-	font-family: 'PT sans';
-	src:url(../fonts/PTSans-Regular.ttf);
-}
-/********* End of definicion de fuentes *******/
+
+
+
+/* UTILS */
+.pa-1 { padding: 15px; }
+.pl-1 { padding-left: 15px; }
+.pr-1 { padding-right: 15px; }
+
+.mb-1 { margin-bottom: 3px; }
+
+
+
+/* Utils */
+
+
 
 /* Start grid styles*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'PT sans';
-    font-size: 24px;
-    color: black;
 }
 
 .container{
@@ -203,32 +196,34 @@
     width: 100%;
     height: auto;
 }
+
 /*Espaciado entre columnas*/
 .gap-1 > .col{
-  margin-right:5px
+  padding: 0 5px 3px 0;
 }
 .gap-2 > .col{
-  margin-right:7px
+  padding: 0 7px 3px 0;
 }
 .gap-3 > .col{
-  margin-right:9px
+  padding: 0 9px 3px 0;
 }
 /*Seleccion de elementos menos el ultimo*/
 .gap-1 > .col:last-child{
-  margin-right: 0px;
+  padding: 0px ;
 }
 .gap-2 > .col:last-child{
-  margin-right: 0px;
+  padding: 0px;
 }
 .gap-3 > .col:last-child{
-  margin-right: 0px;
+  padding: 0px;
 }
 [class*="col"] 
     {
-        display: grid;
-    float: left;
-    height: auto;
-    width: 100%;
+      display: grid;
+      float: left;
+      height: auto;
+      width: 100%;
+      margin-bottom: 3px;
     /* margin: 2px; */
     /* border: 1px solid black; */
     }
@@ -248,6 +243,18 @@
     .col.lg-10 {width: 83.30%;}
     .col.lg-11 {width: 91.63%;}
     .col.lg-12 {width: 99.96%;}
+    .col.offset-lg-1 {margin-left: 8.33%;}
+    .col.offset-lg-2 {margin-left: 16.66%;}
+    .col.offset-lg-3 {margin-left: 24.99%;}
+    .col.offset-lg-4 {margin-left: 33.32%;}
+    .col.offset-lg-5 {margin-left: 41.65%;}
+    .col.offset-lg-6 {margin-left: 49.98%;}
+    .col.offset-lg-7 {margin-left: 58.31%;}
+    .col.offset-lg-8 {margin-left: 66.64%;}
+    .col.offset-lg-9 {margin-left: 74.97%;}
+    .col.offset-lg-10 {margin-left: 83.30%;}
+    .col.offset-lg-11 {margin-left: 91.63%;}
+    .col.offset-lg-12 {margin-left: 99.96%;}
     .container { max-width: 960px; }
 }
 
@@ -266,6 +273,18 @@
     .col.md-10 {width: 83.30%;}
     .col.md-11 {width: 91.63%;}
     .col.md-12 {width: 99.96%;}
+    .col.offset-md-1 {margin-left: 8.33%;}
+    .col.offset-md-2 {margin-left: 16.66%;}
+    .col.offset-md-3 {margin-left: 24.99%;}
+    .col.offset-md-4 {margin-left: 33.32%;}
+    .col.offset-md-5 {margin-left: 41.65%;}
+    .col.offset-md-6 {margin-left: 49.98%;}
+    .col.offset-md-7 {margin-left: 58.31%;}
+    .col.offset-md-8 {margin-left: 66.64%;}
+    .col.offset-md-9 {margin-left: 74.97%;}
+    .col.offset-md-10 {margin-left: 83.30%;}
+    .col.offset-md-11 {margin-left: 91.63%;}
+    .col.offset-md-12 {margin-left: 99.96%;}
 
 }
 /* // Small devices */
@@ -345,10 +364,6 @@
 .cursiva{
     font-style:italic;
 }
-.nc{
-  font-weight:bold;
-  font-style:italic;
-}
 /*TAMAÑOS*/
 .tamPequeño{
     font-size:12px;
@@ -362,8 +377,6 @@
 .tamExGrande{
     font-size:88px;
 }
-/*FIN TAMAÑOS*/
-/*Inicio subrayado**/
 .sub-lineaDebajo{
     text-decoration: underline;
 }
@@ -379,7 +392,7 @@
 .sub-ArribaDebajo {
     text-decoration: underline overline;
 }
-/**fin subrayado**/
+/*FIN TAMAÑOS*/
 /*CLASES COLORES*/
 .text-white{
     color:white;
@@ -423,6 +436,28 @@
 
 /* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
 /* ------------------INICIO DE FUENTES------------------*/
+/*Definiendo fuentes*/
+@font-face{
+	font-family: 'Lobster-Regular';
+	src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face{
+	font-family: 'AdventPro-Regular';
+	src:url(../fonts/AdventPro-Regular.ttf);
+}
+@font-face{
+	font-family: 'Montserrat';
+	src:url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face{
+	font-family: 'PT sans';
+	src:url(../fonts/PTSans-Regular.ttf);
+}
+/*FUENTE PREDETERMINADA*/
+*{
+    font-family: 'PT sans';
+}
+
 /*CLASES FUENTES*/
 .text-Lobster{
     font-family:'Lobster-Regular';
@@ -434,63 +469,35 @@
     font-family: 'Montserrat';
 }
 /*ESTABLECER ESTILO A ELEMENTOS*/
-h1,h2,h3,h4,h5,h6{
+h1{
     font-family: 'Montserrat';
     font-weight:bold;
 }
-h1{
-  font-size:36px;
-}
 h2{
-  font-size:32px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h3{
-  font-size:28px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h4{
-  font-size:24px;
+    font-family:'Montserrat';
+    font-weight:bold;
 }
 h5{
-  font-size:20px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 h6{
-  font-size:16px;
+    font-family: 'Montserrat';
+    font-weight:bold;
 }
 a{
+    font-style:italic;
     text-decoration: none;
     color:#555;
 }
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1px;
-  margin-block-end: 1px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1px;
-    margin-block-end: 1px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-a:hover {
-  color: #66bfbf;
-}
-.romanos_mayuscula{
-  list-style-type:upper-roman;
-}
-.romanos_minuscula{
-  list-style-type:lower-roman;
-}
-.l-cuadrado{
-  list-style-type:square;
-}
-
 
 /* ------------------FIN DE FUENTES------------------*/
 /* end utility styles */
@@ -938,7 +945,7 @@ a:hover {
   background-color: var(--bg-info);
 }
 .bg-primary{
-  background-color: var(--bg-primary);
+  background-color: var(--primary);
 }
 /*end backgrounds styles: backgroud colors*/
 
@@ -1470,13 +1477,13 @@ pre {
   font-weight: 500;
 }
 
-pre .hljs-tag {
+pre .hljs-tag,  pre .hljs-keyword{
   color: red;
 }
-pre .hljs-name {
+pre .hljs-name, pre .hljs-string {
   color: var(--primary);
 }
-pre .hljs-attr {
+pre .hljs-attr, pre .hljs-built_in {
   color: rgb(31, 104, 173);
 }
 

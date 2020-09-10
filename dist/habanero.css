@@ -364,149 +364,165 @@
 }
 /* ------------------INICIO DE CLASES PARA TIPOGRAFIA----------*/
 .negrita{
-    font-weight:bold;
+  font-weight:bold;
 }
 .cursiva{
-    font-style:italic;
+  font-style:italic;
+}
+.nc{
+font-weight:bold;
+font-style:italic;
 }
 /*TAMAÑOS*/
 .tamPequeño{
-    font-size:12px;
+  font-size:12px;
 }
 .tamMediano{
-    font-size:28px;
+  font-size:28px;
 }
 .tamGrande{
-    font-size:46px;
+  font-size:46px;
 }
 .tamExGrande{
-    font-size:88px;
+  font-size:68px;
 }
 .sub-lineaDebajo{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .sub-lineaArriba{
-    text-decoration: overline;
+  text-decoration: overline;
 }
 .sub-lineaAtravez {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 .sub-none {
-    text-decoration: none;
+  text-decoration: none;
 }
 .sub-ArribaDebajo {
-    text-decoration: underline overline;
+  text-decoration: underline overline;
 }
 /*FIN TAMAÑOS*/
 /*CLASES COLORES*/
 .text-white{
-    color:white;
+  color:white;
 }
 .text-black{
-    color:black;
+  color:black;
 }
 .text-rojo{
-    color:red;
+  color:red;
 }
 .text-amarillo{
-    color:yellow;
+  color:yellow;
 }
 .text-verdelimon{
-    color:greenyellow;
+  color:greenyellow;
 }
 .text-verde{
-    color: green;
+  color: green;
 }
 .text-azul{
-    color:blue;
+  color:blue;
 }
 .text-morado{
-    color:purple;
+  color:purple;
 }
 .text-rosa{
-    color:palevioletred;
+  color:palevioletred;
 }
 /*Clases para alineacion de texto*/
 .text-center {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
 .text-left {
-    text-align: left;
-  }
-  
+  text-align: left;
+}
+
 .text-right {
-    text-align: right;
-  }
+  text-align: right;
+}
 
 /* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
 /* ------------------INICIO DE FUENTES------------------*/
-/*Definiendo fuentes*/
-@font-face{
-	font-family: 'Lobster-Regular';
-	src: url(../fonts/Lobster-Regular.ttf);
-}
-@font-face{
-	font-family: 'AdventPro-Regular';
-	src:url(../fonts/AdventPro-Regular.ttf);
-}
-@font-face{
-	font-family: 'Montserrat';
-	src:url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face{
-	font-family: 'PT sans';
-	src:url(../fonts/PTSans-Regular.ttf);
-}
+
 /*FUENTE PREDETERMINADA*/
-*{
-    font-family: 'PT sans';
+body{
+font-family: 'PT Sans', sans-serif;
 }
 
 /*CLASES FUENTES*/
 .text-Lobster{
-    font-family:'Lobster-Regular';
+font-family: 'Lobster Two', cursive;;
 }
 .text-AdventPro{
-    font-family: 'AdventPro-Regular';
+font-family: 'Advent Pro', sans-serif;
 }
 .text-Montserrart{
-    font-family: 'Montserrat';
+font-family: 'Montserrat', sans-serif;
 }
 /*ESTABLECER ESTILO A ELEMENTOS*/
+h1,h2,h3,h4,h5,h6{
+font-family: 'Montserrat', sans-serif;
+
+}
 h1{
-    font-family: 'Montserrat';
-    font-weight:bold;
+font-size:36px;
 }
 h2{
-    font-family: 'Montserrat';
-    font-weight:bold;
+font-size:32px;
 }
 h3{
-    font-family: 'Montserrat';
-    font-weight:bold;
+font-size:28px;
 }
 h4{
-    font-family:'Montserrat';
-    font-weight:bold;
+font-size:24px;
 }
 h5{
-    font-family: 'Montserrat';
-    font-weight:bold;
+font-size:20px;
 }
 h6{
-    font-family: 'Montserrat';
-    font-weight:bold;
+font-size:16px;
 }
 a{
-    font-style:italic;
-    text-decoration: none;
-    color:#555;
+  text-decoration: none;
+  color:#555;
 }
+ol {
+display: block;
+list-style-type: decimal;
+margin-block-start: 1px;
+margin-block-end: 1px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+a:hover {
+color: #66bfbf;
+}
+.romanos_mayuscula{
+list-style-type:upper-roman;
+}
+.romanos_minuscula{
+list-style-type:lower-roman;
+}
+.l-cuadrado{
+list-style-type:square;
+}
+
+
 
 /* ------------------FIN DE FUENTES------------------*/
 /* end utility styles */
-
 
 
 

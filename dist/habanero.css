@@ -1,5 +1,15 @@
 :root{
   --primary: rgb(102, 32, 32);
+  --danger:#ea5455;
+  --success:#79d70f;
+  --warning:#ffcd3c;
+  --secondary:#0779e4;
+  --info:#848ccf;
+  --primary:rgb(102, 32, 32);
+  --light:#f4f4f4;
+  --light-dark:#3a3535;
+  --dark:#232020;
+  --gray:#797a7e;
   --navbar-size: 80px
 /******Start button variables******/
 --button-display: inline-block;
@@ -290,7 +300,7 @@
 }
 
 /*medium*/
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 760px) and (max-width: 1024px){
     
     .col.md-1 {width: 8.33%;}
     .col.md-2 {width: 16.66%;}
@@ -319,7 +329,7 @@
 
 }
 /* // Small devices */
-@media screen and (min-width: 576px) { 
+@media screen and (max-width: 760px) { 
     
     .col.sm-1 {width: 8.33%;}
     .col.sm-2 {width: 16.66%;}
@@ -399,6 +409,10 @@
 .cursiva{
     font-style:italic;
 }
+.nc{
+  font-weight:bold;
+  font-style:italic;
+  }
 /*TAMAÑOS*/
 .tamPequeño{
   font-size:0.6em;
@@ -472,22 +486,6 @@
 /* --------------FIN DE CLASES PARA TIPOGRAFIA----------*/
 /* ------------------INICIO DE FUENTES------------------*/
 /*Definiendo fuentes*/
-@font-face{
-	font-family: 'Lobster-Regular';
-	src: url(../fonts/Lobster-Regular.ttf);
-}
-@font-face{
-	font-family: 'AdventPro-Regular';
-	src:url(../fonts/AdventPro-Regular.ttf);
-}
-@font-face{
-	font-family: 'Montserrat';
-	src:url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face{
-	font-family: 'PT sans';
-	src:url(../fonts/PTSans-Regular.ttf);
-}
 /*FUENTE PREDETERMINADA*/
 *{
     font-family: 'PT sans';
@@ -534,10 +532,41 @@ h6{
   font-weight:bold;
   font-size: 0.5em;
 }
+
 a{
-    font-style:italic;
-    text-decoration: none;
-    color:#555;
+  font-style:italic;
+  text-decoration: none;
+  color:#555;
+}
+ol {
+display: block;
+list-style-type: decimal;
+margin-block-start: 1px;
+margin-block-end: 1px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+a:hover {
+color: #66bfbf;
+}
+.romanos_mayuscula{
+list-style-type:upper-roman;
+}
+.romanos_minuscula{
+list-style-type:lower-roman;
+}
+.l-cuadrado{
+list-style-type:square;
 }
 
 /* ------------------FIN DE FUENTES------------------*/
@@ -1081,98 +1110,7 @@ input[type="checkbox"] {
 /*end style: rounded borderd*/
 /*End of Borders Styles*/
 
-/* Start navbar styles */
-.nav {
-  height: 50px;
-  width: 100%;
-  position: relative;
-  color: #fff;
-}
 
-.nav > .nav-header {
-  display: inline;
-}
-
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
-  display: none;
-}
-
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
-}
-
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #efefef;
-  font-size: 0.8em;
-  text-align: center;
-}
-
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
-  display: none;
-}
-
-@media (max-width:760px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
-}
-/* End navbar styles */
 /*CARDS*/
 
 .card{
@@ -1553,6 +1491,99 @@ pre .hljs-attr, pre .hljs-built_in {
   color: rgb(31, 104, 173);
 }
 
+/* Start navbar styles */
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:860px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* End navbar styles */
+/* ---------------------------  */
 .nav {
   height: var(--navbar-size);
   width: 100%;
@@ -1568,7 +1599,7 @@ pre .hljs-attr, pre .hljs-built_in {
 
 .nav > .nav-header > .nav-title {
   display: inline-block;
-  font-size: 22px;
+  font-size: 1.3em;
   text-transform: uppercase;
   padding: 10px 10px 10px 10px;
 }
@@ -1599,7 +1630,7 @@ pre .hljs-attr, pre .hljs-built_in {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav > #nav-check {
+.nav > #nav-check, .nav > #nav-check-exp {
   display: none;
 }
 
@@ -1610,7 +1641,7 @@ pre .hljs-attr, pre .hljs-built_in {
   height: 36px;
 }
 
-@media (max-width:800px) {
+@media (max-width:860px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -1624,7 +1655,7 @@ pre .hljs-attr, pre .hljs-built_in {
     padding: 10px 5px;
     margin: 15px 0 0 0 ;
   }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label{
     background-color: rgba(0, 0, 0, 0.3);
   }
   .nav > .nav-btn > label > span {

@@ -1268,7 +1268,7 @@ table {
 
 .table.style1 td {
   font-size: 15px;
-  color: var(--table-body-color);
+  /*color: var(--table-body-color);*/
   line-height: 1.4;
 }
 
@@ -1299,7 +1299,7 @@ table {
 
 .table.style2 td {
   font-size: 15px;
-  color: var(--table-body-color);
+  /*color: var(--table-body-color);*/
   line-height: 1.4;
 }
 
@@ -1332,7 +1332,8 @@ table {
 
 .table.style3 td {
   font-size: 15px;
-  color: var(--table-body-color);
+  /*color: var(--table-body-color);*/
+  color: white;
   line-height: 1.4;
   background-color: var(--table-style3-body-bgcolor);
 }
@@ -1367,7 +1368,7 @@ table {
 
 .table.style4 td {
   font-size: 15px;
-  color: var(--table-body-color);
+  /*color: var(--table-body-color);*/
   line-height: 1.4;
 }
 
@@ -1403,7 +1404,7 @@ table {
 
 .table.style5 td {
   font-size: 15px;
-  color: var(--table-body-color);
+  /*color: var(--table-body-color);*/
   line-height: 1.4;
   background-color: var(--table-style5-body-bgcolor);
 }

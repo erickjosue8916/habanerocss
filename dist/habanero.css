@@ -154,14 +154,15 @@
     --bg-danger:#ea5455;
     --bg-success:#79d70f;
     --bg-warning:#ffcd3c;
-    --bg-secondary:#35d0ba;
+    --bg-secondary:#0779e4;
     --bg-info:#848ccf;
-    --bg-primary:#1b29a8;
-    
+    --bg-primary:rgb(102, 32, 32);
+    --bg-light:#f4f4f4;
+    --bg-light-dark:#3a3535;
+    --bg-dark:#232020;
+    --bg-gray:#797a7e;
 /*End of Variables background alerts, and border colors*/
-
 }
-
 
 
 /* UTILS */
@@ -350,7 +351,7 @@
     background-color: #848ccf;
 }
 .alert-secondary{
-    background-color: #35d0ba;
+    background-color: #0779e4;
 }
 .alert-success{
     background-color: #79d70f;
@@ -949,7 +950,19 @@ a{
   background-color: var(--bg-info);
 }
 .bg-primary{
-  background-color: var(--primary);
+  background-color: var(--bg-primary);
+}
+.bg-light{
+  background-color: var(--bg-light);
+}
+.bg-light-dark{
+  background-color: var(--bg-light-dark);
+}
+.bg-dark{
+  background-color: var(--bg-dark);
+}
+.bg-gray{
+  background-color: var(--bg-gray);
 }
 /*end backgrounds styles: backgroud colors*/
 

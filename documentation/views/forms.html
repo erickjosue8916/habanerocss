@@ -7,7 +7,7 @@
     <title>Habanerocss</title>
 </head>
 <body>
-    <div class="nav bg-primary text-morado">
+    <div class="nav bg-primary  text-morado">
         <input type="checkbox" id="nav-check">
         <div class="nav-header">
           <img src="../../img/habanero-2.svg" class="brand" alt="chile habanero">
@@ -32,33 +32,265 @@
         </div>
       </div>
       
-      <main class="container">
-        <section class="section">
+      <main class="container row">
+        <section class="col section">
           <div class="section__title">
-            Instalacion
+            Input Default
           </div>
           <hr>
-          <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
-            <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
+          <div class="section__body col">
+            <p>Por parte de formularios, habanero agrega muchos estilos de colores disponibles además de varios tamaños, longitudes y tipos de ancho.</p>
+            <br>
+            <input class="form__textObjects" type="text" name="txt1" id="txt1" placeholder="Default Input">
           </div>
-          <div class="section__body">
-          <pre><code class="lang-html">
-<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"./css/habanero.min.css"</span>&gt;</span>]
-    ...
-  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-    ...
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"./js/habanero.min.css"</span>&gt;</span><span class="handlebars"><span class="xml">
-  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span></span>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt1"</span> id=<span class="hljs-string">"txt1"</span>&gt;
             </code></pre>
-          </code></pre>
           </div>
         </section>
+
+        <section class="section">
+          <div class="section__title">
+            Input Box
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Existe la clase form__box, la cual se debe aplicar a el conjunto de formularios que se quieran agrupar. De esta forma lo que este fuera de la caja se le aplicara un margin y un padding para distanciar los demás objetos</p>
+            <br>
+            <div class="form__box">
+              <h1>Default:</h1>
+              <label for="txt1">Default color/shape:</label>
+              <input class="form__textObjects" type="text" name="txt1" id="txt1" placeholder="Inside the box">
+            </div>
+            <input class="form__textObjects" type="text" name="txt1" id="txt1" placeholder="Outside the box">
+          </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__box"</span>&gt;
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> 
+               name=<span class="hljs-string">"txt1"</span> id=<span class="hljs-string">"txt1"</span>&gt;
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> 
+               name=<span class="hljs-string">"txt1"</span> id=<span class="hljs-string">"txt1"</span>&gt;
+&lt;/div&gt;
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects"</span> <span class="hljs-class"><span class="hljs-keyword">type</span></span>=<span class="hljs-string">"text"</span> 
+               name=<span class="hljs-string">"txt1"</span> id=<span class="hljs-string">"txt1"</span>&gt;
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Colores para el input default
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Por parte de formularios, habanero agrega muchos estilos de colores disponibles además de varios tamaños, longitudes y tipos de ancho.</p>
+            <br>
+            <div class="form__box">
+              <label for="txt1">success:</label>
+              <input class="form__textObjects form__textObjects__success" type="text" name="txt1" id="txt1">
+              <label for="txt">warning:</label>
+              <input class="form__textObjects form__textObjects__warning" type="text" name="txt" id="txt">
+              <label for="txt">habanero:</label>
+              <input class="form__textObjects form__textObjects__habanero" type="text" name="txt" id="txt">
+              <label for="txt">Purple:</label>
+              <input class="form__textObjects form__textObjects__purple" type="text" name="txt" id="txt">
+              <label for="txt">secondary:</label>
+              <input class="form__textObjects form__textObjects__secondary" type="text" name="txt" id="txt">
+              <label for="txt">Brown:</label>
+              <input class="form__textObjects form__textObjects__brown" type="text" name="txt" id="txt">
+              <label for="txt">danger:</label>
+              <input class="form__textObjects form__textObjects__danger" type="text" name="txt" id="txt">
+              <label for="txt">White:</label>
+              <input class="form__textObjects form__textObjects__white" type="text" name="txt" id="txt">
+              <label for="txt">Black:</label>
+              <input class="form__textObjects form__textObjects__black" type="text" name="txt" id="txt">
+              <label for="txt">Info:</label>
+              <input class="form__textObjects form__textObjects__info" type="text" name="txt" id="txt">
+          </div>
+  
+          </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__box"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt1"</span>&gt;success:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects     form__textObjects__success"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt1"</span> id=<span class="hljs-string">"txt1"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;warning:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__warning"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;habanero:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__habanero"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;Purple:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__purple"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;secondary:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__secondary"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;Brown:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__brown"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;danger:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__danger"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;White:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__white"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;Black:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__black"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+              &lt;<span class="hljs-keyword">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;Info:&lt;/<span class="hljs-keyword">label</span>&gt;
+                &lt;<span class="hljs-keyword">input</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects form__textObjects__info"</span> <span class="hljs-keyword">type</span>=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+&lt;/div&gt;
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Etiquetas aplicables
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Las clases diseñadas para darle un estilo a los input son aplicables a varios tipos de campos (incluido los select)</p>
+            <br>
+            <div class="form__box">
+              <h1>Other kinds of text form objects:</h1>
+              <select class="form__textObjects">
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>D</option>
+                  <option>E</option>
+              </select>
+              <select class="form__textObjects">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+          </div>          </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;div <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__box"</span>&gt;
+              &lt;<span class="hljs-keyword">select</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects"</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;A&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;B&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;C&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;D&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;E&lt;/<span class="hljs-keyword">option</span>&gt;
+              &lt;/<span class="hljs-keyword">select</span>&gt;
+              &lt;<span class="hljs-keyword">select</span> <span class="hljs-keyword">class</span>=<span class="hljs-string">"form__textObjects"</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;<span class="hljs-number">1</span>&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;<span class="hljs-number">2</span>&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;<span class="hljs-number">3</span>&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;<span class="hljs-number">4</span>&lt;/<span class="hljs-keyword">option</span>&gt;
+                  &lt;<span class="hljs-keyword">option</span>&gt;<span class="hljs-number">5</span>&lt;/<span class="hljs-keyword">option</span>&gt;
+              &lt;/<span class="hljs-keyword">select</span>&gt;
+&lt;/div&gt;
+            </code></pre>
+            
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Tamaños
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Este framework incluye 5 tamaños predeterminados de botones (pequeño, mediano, largo, extra largo y el predeterminado).</p>
+            <br>
+            <div class="form__box">
+              <h1>Sizes:</h1>
+              <label for="txt">Small:</label>
+              <input class="form__textObjects form__textObjects__small" type="text" name="txt" id="txt">
+              <label for="txt">Medium:</label>
+              <input class="form__textObjects form__textObjects__medium" type="text" name="txt" id="txt">
+              <label for="txt">Large:</label>
+              <input class="form__textObjects form__textObjects__large" type="text" name="txt" id="txt">
+              <label for="txt">Extra large:</label>
+              <input class="form__textObjects form__textObjects__xlarge" type="text" name="txt" id="txt">
+          </div>
+            </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__box"</span>&gt;
+              &lt;label <span class="hljs-keyword">for</span>=<span class="hljs-string">"txt"</span>&gt;Small:<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__small"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+            
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Medium:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__medium"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+            
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Large:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__large"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+            
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Extra large:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__xlarge"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Ancho
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Existen anchos predefinidos para los input los cuales son:</p>
+            <br>
+            <div class="form__box">
+              <label for="txt">Half wid</label>
+              <input class="form__textObjects form__textObjects__halfLength" type="text" name="txt" id="txt">
+              <span class="separator"></span>
+              <label for="txt">Quarter:</label>
+              <input class="form__textObjects form__textObjects__quarterLength" type="text" name="txt" id="txt">
+              <span class="separator"></span>
+              <label for="txt">Narrow:</label>
+              <input class="form__textObjects form__textObjects__narrowLength" type="text" name="txt" id="txt">
+            </div>
+          </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__box"</span>&gt;
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Half wide<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__halfLength"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+            
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Quarter:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__quarterLength"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+            
+              <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"txt"</span>&gt;</span>Narrow:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span>
+              &lt;input <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"form__textObjects form__textObjects__narrowLength"</span> type=<span class="hljs-string">"text"</span> name=<span class="hljs-string">"txt"</span> id=<span class="hljs-string">"txt"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+            </code></pre>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section__title">
+            Checkboxes
+          </div>
+          <hr>
+          <div class="section__body col">
+            <p>Como parte de los imput también se ha agregado unas pocas clases para los checkboxes:</p>
+            <br>
+            <div class="form__box">
+              <div class="form__checkObjects">
+                <input  type="checkbox" name="" id="default"><label for="default">Block Checkbox</label></div>
+              <div class="form__checkObjects form__checkObjects__inline">
+                <input  type="checkbox" id="default"><label for="default">Inline Checkbox</label></div>
+              <div class="form__checkObjects form__checkObjects__inline">
+                <input  type="checkbox" id="default"><label for="default">Inline Checkbox</label></div>
+              <div class="form__checkObjects form__checkObjects__inlineBlock">
+                <input  type="checkbox" id="default"><label for="default">Inline-Block Checkbox</label></div>
+            </div>
+          </div>
+          <div class="section__body col">
+            <pre><code class="lang-html">  &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form__box"</span>&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form__checkObjects"</span>&gt;
+      &lt;<span class="hljs-selector-tag">input</span>  type=<span class="hljs-string">"checkbox"</span> name=<span class="hljs-string">""</span> id=<span class="hljs-string">"default"</span>&gt;&lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"default"</span>&gt;Block Checkbox&lt;/label&gt;&lt;/div&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form__checkObjects form__checkObjects__inline"</span>&gt;
+      &lt;<span class="hljs-selector-tag">input</span>  type=<span class="hljs-string">"checkbox"</span> id=<span class="hljs-string">"default"</span>&gt;&lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"default"</span>&gt;Inline Checkbox&lt;/label&gt;&lt;/div&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form__checkObjects form__checkObjects__inline"</span>&gt;
+      &lt;<span class="hljs-selector-tag">input</span>  type=<span class="hljs-string">"checkbox"</span> id=<span class="hljs-string">"default"</span>&gt;&lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"default"</span>&gt;Inline Checkbox&lt;/label&gt;&lt;/div&gt;
+    &lt;<span class="hljs-selector-tag">div</span> class=<span class="hljs-string">"form__checkObjects form__checkObjects__inlineBlock"</span>&gt;
+      &lt;<span class="hljs-selector-tag">input</span>  type=<span class="hljs-string">"checkbox"</span> id=<span class="hljs-string">"default"</span>&gt;&lt;<span class="hljs-selector-tag">label</span> <span class="hljs-keyword">for</span>=<span class="hljs-string">"default"</span>&gt;Inline-Block Checkbox&lt;/label&gt;&lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+</code></pre>
+
+          </div>
+        </section>
+
       </main>
 </body>
 </html>

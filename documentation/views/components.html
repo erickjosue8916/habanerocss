@@ -373,6 +373,741 @@
 </code></pre>
 
     </section>
-      </main>
+
+  <section class="col section">
+      <div class="section__title col sm-12">
+        Tablas
+      </div>
+      <p>En la sección de tablas se tienen 5 estilos predefinidos de tablas.</p>
+      <p>Las tablas se encierran en un contenedor con la clase container__table para hacer que se ajusten a la caja donde están colocados</p>
+      <p>Dentro de este se encierra cada tabla individual en un container__wrap__table el cual se encarga de darle espaciado entre tabla y tabla</p>
+      <br><br>
+  </section>
+  <section class="col section">
+      <div class="section__title col sm-12">
+        Estilo 1
+      </div>
+      <div class="section__body col sm-12 md-12">
+        <!--Start table code-->
+        <div class="container__table">
+          <div class="container__wrap__table">
+            <div class="table style1">
+              <div class="table__head">
+                <table>
+                  <thead>
+                    <tr class=" head">
+                      <th class="table__5columns">Class name</th>
+                      <th class="table__5columns">Type</th>
+                      <th class="table__5columns">Hours</th>
+                      <th class="table__5columns">Trainer</th>
+                      <th class="table__5columns">Spots</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+        
+              <div class="table__body scroll">
+                <table>
+                  <tbody>
+                    <tr class=" body">
+                      <td class="table__5columns">Like a butterfly</td>
+                      <td class="table__5columns">Boxing</td>
+                      <td class="table__5columns">9:00 AM - 11:00 AM</td>
+                      <td class="table__5columns">Aaron Chapman</td>
+                      <td class="table__5columns">10</td>
+                    </tr>
+        
+                    <tr class=" body">
+                      <td class="table__5columns">Mind & Body</td>
+                      <td class="table__5columns">Yoga</td>
+                      <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                      <td class="table__5columns">Adam Stewart</td>
+                      <td class="table__5columns">15</td>
+                    </tr>
+        
+                    <tr class=" body">
+                      <td class="table__5columns">Crit Cardio</td>
+                      <td class="table__5columns">Gym</td>
+                      <td class="table__5columns">9:00 AM - 10:00 AM</td>
+                      <td class="table__5columns">Aaron Chapman</td>
+                      <td class="table__5columns">10</td>
+                    </tr>
+        
+                    <tr class=" body">
+                      <td class="table__5columns">Wheel Pose Full Posture</td>
+                      <td class="table__5columns">Yoga</td>
+                      <td class="table__5columns">7:00 AM - 8:30 AM</td>
+                      <td class="table__5columns">Donna Wilson</td>
+                      <td class="table__5columns">15</td>
+                    </tr>
+        
+                    <tr class=" body">
+                      <td class="table__5columns">Playful Dancer's Flow</td>
+                      <td class="table__5columns">Yoga</td>
+                      <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                      <td class="table__5columns">Donna Wilson</td>
+                      <td class="table__5columns">10</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+      </div>
+        <!--End table code-->
+        <!--Start pre code-->
+        <div class="section__body">
+        <pre><code class="lang-html">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container__table"</span>&gt;
+          <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container__wrap__table"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table style1"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__head"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" head"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Class name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Hours<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Trainer<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Spots<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__body scroll"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Like a butterfly<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Boxing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 11:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Mind &amp; Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Adam Stewart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Crit Cardio<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Gym<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 10:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Wheel Pose Full Posture<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>7:00 AM - 8:30 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Playful Dancer's Flow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+      &lt;<span class="hljs-regexp">/div&gt;</span>
+    </code></pre>
+        </div>
+        <!--End pre code-->
+      </div>
+  </section>
+
+  <section class="col section">
+    <div class="section__title col sm-12">
+      Estilo 2
+    </div>
+    <div class="section__body col sm-12 md-12">
+      <!--Start table code-->
+      <div class="container__table">
+        <div class="container__wrap__table">
+          <div class="table style2">
+            <div class="table__head">
+              <table>
+                <thead>
+                  <tr class=" head">
+                    <th class="table__5columns">Class name</th>
+                    <th class="table__5columns">Type</th>
+                    <th class="table__5columns">Hours</th>
+                    <th class="table__5columns">Trainer</th>
+                    <th class="table__5columns">Spots</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+      
+            <div class="table__body scroll">
+              <table>
+                <tbody>
+                  <tr class=" body">
+                    <td class="table__5columns">Like a butterfly</td>
+                    <td class="table__5columns">Boxing</td>
+                    <td class="table__5columns">9:00 AM - 11:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Mind & Body</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Adam Stewart</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Crit Cardio</td>
+                    <td class="table__5columns">Gym</td>
+                    <td class="table__5columns">9:00 AM - 10:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Wheel Pose Full Posture</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">7:00 AM - 8:30 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Playful Dancer's Flow</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+      <!--End table code-->
+      <!--Start pre code-->
+      <div class="section__body">
+      <pre><code class="lang-html">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container__table"</span>&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container__wrap__table"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table style2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__head"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" head"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Class name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Hours<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Trainer<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Spots<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__body scroll"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Like a butterfly<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Boxing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 11:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Mind &amp; Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Adam Stewart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Crit Cardio<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Gym<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 10:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Wheel Pose Full Posture<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>7:00 AM - 8:30 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Playful Dancer's Flow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;<span class="hljs-regexp">/div&gt;</span>
+  </code></pre>
+      </div>
+      <!--End pre code-->
+    </div>
+  </section>
+
+  <section class="col section">
+    <div class="section__title col sm-12">
+      Estilo 3
+    </div>
+    <div class="section__body col sm-12 md-12">
+      <!--Start table code-->
+      <div class="container__table">
+        <div class="container__wrap__table">
+          <div class="table style3">
+            <div class="table__head">
+              <table>
+                <thead>
+                  <tr class=" head">
+                    <th class="table__5columns">Class name</th>
+                    <th class="table__5columns">Type</th>
+                    <th class="table__5columns">Hours</th>
+                    <th class="table__5columns">Trainer</th>
+                    <th class="table__5columns">Spots</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+      
+            <div class="table__body scroll">
+              <table>
+                <tbody>
+                  <tr class=" body">
+                    <td class="table__5columns">Like a butterfly</td>
+                    <td class="table__5columns">Boxing</td>
+                    <td class="table__5columns">9:00 AM - 11:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Mind & Body</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Adam Stewart</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Crit Cardio</td>
+                    <td class="table__5columns">Gym</td>
+                    <td class="table__5columns">9:00 AM - 10:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Wheel Pose Full Posture</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">7:00 AM - 8:30 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Playful Dancer's Flow</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+      <!--End table code-->
+      <!--Start pre code-->
+      <div class="section__body">
+      <pre><code class="lang-html">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container__table"</span>&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container__wrap__table"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table style3"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__head"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" head"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Class name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Hours<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Trainer<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Spots<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__body scroll"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Like a butterfly<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Boxing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 11:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Mind &amp; Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Adam Stewart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Crit Cardio<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Gym<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 10:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Wheel Pose Full Posture<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>7:00 AM - 8:30 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Playful Dancer's Flow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;<span class="hljs-regexp">/div&gt;</span>
+  </code></pre>
+      </div>
+      <!--End pre code-->
+    </div>
+  </section>
+  
+  <section class="col section">
+    <div class="section__title col sm-12">
+      Estilo 4
+    </div>
+    <div class="section__body col sm-12 md-12">
+      <!--Start table code-->
+      <div class="container__table">
+        <div class="container__wrap__table">
+          <div class="table style4">
+            <div class="table__head">
+              <table>
+                <thead>
+                  <tr class=" head">
+                    <th class="table__5columns">Class name</th>
+                    <th class="table__5columns">Type</th>
+                    <th class="table__5columns">Hours</th>
+                    <th class="table__5columns">Trainer</th>
+                    <th class="table__5columns">Spots</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+      
+            <div class="table__body scroll">
+              <table>
+                <tbody>
+                  <tr class=" body">
+                    <td class="table__5columns">Like a butterfly</td>
+                    <td class="table__5columns">Boxing</td>
+                    <td class="table__5columns">9:00 AM - 11:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Mind & Body</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Adam Stewart</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Crit Cardio</td>
+                    <td class="table__5columns">Gym</td>
+                    <td class="table__5columns">9:00 AM - 10:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Wheel Pose Full Posture</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">7:00 AM - 8:30 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Playful Dancer's Flow</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+      <!--End table code-->
+      <!--Start pre code-->
+      <div class="section__body">
+      <pre><code class="lang-html">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container__table"</span>&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container__wrap__table"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table style4"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__head"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" head"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Class name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Hours<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Trainer<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Spots<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__body scroll"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Like a butterfly<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Boxing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 11:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Mind &amp; Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Adam Stewart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Crit Cardio<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Gym<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 10:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Wheel Pose Full Posture<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>7:00 AM - 8:30 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Playful Dancer's Flow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;<span class="hljs-regexp">/div&gt;</span>
+  </code></pre>
+      </div>
+      <!--End pre code-->
+    </div>
+  </section>
+
+  <section class="col section">
+    <div class="section__title col sm-12">
+      Estilo 5
+    </div>
+    <div class="section__body col sm-12 md-12">
+      <!--Start table code-->
+      <div class="container__table">
+        <div class="container__wrap__table">
+          <div class="table style5">
+            <div class="table__head">
+              <table>
+                <thead>
+                  <tr class=" head">
+                    <th class="table__5columns">Class name</th>
+                    <th class="table__5columns">Type</th>
+                    <th class="table__5columns">Hours</th>
+                    <th class="table__5columns">Trainer</th>
+                    <th class="table__5columns">Spots</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+      
+            <div class="table__body scroll">
+              <table>
+                <tbody>
+                  <tr class=" body">
+                    <td class="table__5columns">Like a butterfly</td>
+                    <td class="table__5columns">Boxing</td>
+                    <td class="table__5columns">9:00 AM - 11:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Mind & Body</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Adam Stewart</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Crit Cardio</td>
+                    <td class="table__5columns">Gym</td>
+                    <td class="table__5columns">9:00 AM - 10:00 AM</td>
+                    <td class="table__5columns">Aaron Chapman</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Wheel Pose Full Posture</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">7:00 AM - 8:30 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">15</td>
+                  </tr>
+      
+                  <tr class=" body">
+                    <td class="table__5columns">Playful Dancer's Flow</td>
+                    <td class="table__5columns">Yoga</td>
+                    <td class="table__5columns">8:00 AM - 9:00 AM</td>
+                    <td class="table__5columns">Donna Wilson</td>
+                    <td class="table__5columns">10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+      </div>
+    </div>
+      <!--End table code-->
+      <!--Start pre code-->
+      <div class="section__body">
+      <pre><code class="lang-html">        &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span></span>=<span class="hljs-string">"container__table"</span>&gt;
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container__wrap__table"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table style5"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__head"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" head"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Class name<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Type<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Hours<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Trainer<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Spots<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__body scroll"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Like a butterfly<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Boxing<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 11:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Mind &amp; Body<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Adam Stewart<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Crit Cardio<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Gym<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>9:00 AM - 10:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Aaron Chapman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Wheel Pose Full Posture<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>7:00 AM - 8:30 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>15<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+
+                  <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">" body"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Playful Dancer's Flow<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Yoga<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>8:00 AM - 9:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>Donna Wilson<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"table__5columns"</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    &lt;<span class="hljs-regexp">/div&gt;</span>
+  </code></pre>
+      </div>
+      <!--End pre code-->
+    </div>
+  </section>
+  
+</main>
 </body>
 </html>

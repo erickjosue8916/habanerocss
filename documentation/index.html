@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=PT+Sans&family=Advent+Pro&family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist/habanero.css">
     <title>Habanerocss</title>
 </head>
@@ -23,12 +24,12 @@
           </label>
         </div>
         <div class="nav-links">
-          <a href="#"class="active">Get Stated</a>
-          <a href="./views/layout.html">Layout</a>
-          <a href="./views/tiphography.html">tipograohy</a>
-          <a href="./views/utility.html">Utility</a>
-          <a href="./views/forms.html">Forms</a>
-          <a href="./views/components.html">Components</a>
+          <a href="#"class="active">Empezemos!</a>
+          <a href="./views/layout.html">Diseño</a>
+          <a href="./views/tiphography.html">Tipografía</a>
+          <a href="./views/utility.html">Utilidades</a>
+          <a href="./views/forms.html">Formularios</a>
+          <a href="./views/components.html">Componentes</a>
         </div>
       </div>
       
@@ -39,8 +40,13 @@
           </div>
           <hr>
           <div class="section__body">
-            Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
+            Clona el repositorio, y extrae desde la carpeta dist los archivos archivo habanero.min.css y habanero.min.js, 
             <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
+          </div>
+          <div class="section__body col">
+            <pre><code class="lang-bash">
+git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/erickjosue8916/habanerocss.git
+            </code></pre>
           </div>
           <div class="col section__body">
           <pre><code class="lang-html">
@@ -59,6 +65,14 @@
           </div>
         </section>
         <section class="section">
+          <div class="section__title">Agregar fuentes</div>
+          <div class="section__body col">
+            <pre><code class="lang-html">
+<span class="hljs-params">&lt;link href="https://fonts.googleapis.com/css2?family=Lobster+Two<span class="hljs-variable">&amp;family</span>=PT+Sans<span class="hljs-variable">&amp;family</span>=Advent+Pro<span class="hljs-variable">&amp;family</span>=Montserrat<span class="hljs-variable">&amp;display</span>=swap" rel="stylesheet"&gt;</span>
+            </code></pre>
+          </div>
+        </section>
+        <section class="section">
           <div class="section__title">
             Plantilla inicial
           </div>
@@ -67,7 +81,7 @@
             Descarga el framework descomprime el archivo,  extrae el archivo habanero.min.css y habanero.min.js, 
             <br> luego pegalos en tu carpeta <b>. /css</b> y <b>. /js</b> respectivamente
           </div>
-          <div class="section__body">
+          <div class="section__body col">
             <pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
@@ -107,32 +121,6 @@
               </code></pre>
               
           </div>
-          <div class="section__body">
-            <div class="nav bg-primary text-morado">
-              <input type="checkbox" id="nav-check">
-              <div class="nav-header">
-                <img src="../img/habanero-2.svg" class="brand" alt="chile habanero">
-                <div class="nav-title">
-                  Habanerocss
-                </div>
-              </div>
-              <div class="nav-btn">
-                <label for="nav-check">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </label>
-              </div>
-              <div class="nav-links">
-                <a href="#"class="active">link 1</a>
-                <a href="#">link 2</a>
-                <a href="#">link 3</a>
-              </div>
-          </div>
-          <main class="container">
-            hello
-          </main>
-        </section>
-      </main>
+
 </body>
 </html>

@@ -2,11 +2,11 @@
 Framework CSS 
 
 # Integrantes
-- Keny Lisbeth Chavez Torres
-- Gema Emperatriz Manzano Machuca
-- Edgar Antonio Reyes Ceron
-- Carlos Enrique Cordero Linares
-- Erick Josue Saravia Aragon
+- Keny Lisbeth Chavez Torres - CT18009
+- Gema Emperatriz Manzano Machuca - 
+- Edgar Antonio Reyes Ceron - 
+- Carlos Enrique Cordero Linares - CL18030
+- Erick Josue Saravia Aragon - SA18004
 
 # Elementos
  MODULO            | CLASE         | DESCRIPCION                    | ESTADO 

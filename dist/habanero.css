@@ -1,5 +1,15 @@
 :root{
   --primary: rgb(102, 32, 32);
+  --danger:#ea5455;
+  --success:#79d70f;
+  --warning:#ffcd3c;
+  --secondary:#0779e4;
+  --info:#848ccf;
+  --primary:rgb(102, 32, 32);
+  --light:#f4f4f4;
+  --light-dark:#3a3535;
+  --dark:#232020;
+  --gray:#797a7e;
   --navbar-size: 80px
 /******Start button variables******/
 --button-display: inline-block;

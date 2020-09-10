@@ -8,25 +8,6 @@ Framework CSS
 - Carlos Enrique Cordero Linares - CL18030
 - Erick Josue Saravia Aragon - SA18004
 
-# Elementos
- MODULO            | CLASE         | DESCRIPCION                    | ESTADO 
--------------------|---------------|--------------                  |----------------
-**rejilla**        |               | sistema de rejillas adaptable  | 90%
----                | .row          | nueva fila            
---- | .col | crea una nueva columna 
---- | xs-[1-12] | modificador de tamaño solo para pantallas pequeñas 
---- | md-[1-12] | modificador de tamaño solo para pantallas medianas  
---- | lg-[1-12] | modificador de tamaño solo para pantallas grandes  
-**modificadores** | | modificadores de estilos basicos | 90%
---- | bg-primary | color de fondo primario
---- | bg-secondary | color de fondo secondary
---- | bg-info | color de fondo info
---- | bg-danger | color de fondo danger
---- | bg-warning | color de fondo warning
---- | bg-success | color de fondo success
-
-
-
 ## Como trabajar actualizaciones
 1. Siempre se debe tener una rama personal en la cual trabajar
 ```bash

@@ -948,6 +948,18 @@ a{
 .bg-primary{
   background-color: var(--bg-primary);
 }
+.bg-light{
+  background-color: var(--bg-light);
+}
+.bg-light-dark{
+  background-color: var(--bg-light-dark);
+}
+.bg-dark{
+  background-color: var(--bg-dark);
+}
+.bg-gray{
+  background-color: var(--bg-gray);
+}
 /*end backgrounds styles: backgroud colors*/
 
 /*Start of Borders Styles*/

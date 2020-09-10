@@ -409,6 +409,10 @@
 .cursiva{
     font-style:italic;
 }
+.nc{
+  font-weight:bold;
+  font-style:italic;
+  }
 /*TAMAÑOS*/
 .tamPequeño{
   font-size:0.6em;
@@ -528,10 +532,41 @@ h6{
   font-weight:bold;
   font-size: 0.5em;
 }
+
 a{
-    font-style:italic;
-    text-decoration: none;
-    color:#555;
+  font-style:italic;
+  text-decoration: none;
+  color:#555;
+}
+ol {
+display: block;
+list-style-type: decimal;
+margin-block-start: 1px;
+margin-block-end: 1px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+a:hover {
+color: #66bfbf;
+}
+.romanos_mayuscula{
+list-style-type:upper-roman;
+}
+.romanos_minuscula{
+list-style-type:lower-roman;
+}
+.l-cuadrado{
+list-style-type:square;
 }
 
 /* ------------------FIN DE FUENTES------------------*/

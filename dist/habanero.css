@@ -401,16 +401,16 @@
 }
 /*TAMAÑOS*/
 .tamPequeño{
-    font-size:12px;
+  font-size:0.6em;
 }
 .tamMediano{
-    font-size:28px;
+  font-size:0.9em;
 }
 .tamGrande{
-    font-size:46px;
+  font-size:1.3em;
 }
 .tamExGrande{
-    font-size:88px;
+  font-size:1.8em;
 }
 .sub-lineaDebajo{
     text-decoration: underline;
@@ -505,28 +505,34 @@
 }
 /*ESTABLECER ESTILO A ELEMENTOS*/
 h1{
-    font-family: 'Montserrat';
-    font-weight:bold;
+  font-family: 'Montserrat';
+  font-size: 1.5em;
+  font-weight:bold;
 }
 h2{
-    font-family: 'Montserrat';
-    font-weight:bold;
+  font-family: 'Montserrat';
+  font-weight:bold;
+  font-size: 1.3em;
 }
 h3{
-    font-family: 'Montserrat';
-    font-weight:bold;
+  font-family: 'Montserrat';
+  font-weight:bold;
+  font-size: 1.1em;
 }
 h4{
-    font-family:'Montserrat';
-    font-weight:bold;
+  font-family:'Montserrat';
+  font-weight:bold;
+  font-size: 0.9em;
 }
 h5{
-    font-family: 'Montserrat';
-    font-weight:bold;
+  font-family: 'Montserrat';
+  font-weight:bold;
+  font-size: 0.7em;
 }
 h6{
-    font-family: 'Montserrat';
-    font-weight:bold;
+  font-family: 'Montserrat';
+  font-weight:bold;
+  font-size: 0.5em;
 }
 a{
     font-style:italic;
@@ -951,6 +957,9 @@ a{
 /*End TextBoxes CSS*/
 
 /*Start CheckBoxes CSS*/
+input[type="checkbox"] {
+  margin: 5px;
+}
 .form__checkObjects{
   display: var(--form__checkObjects-block);
 }

@@ -488,7 +488,7 @@
 /*Definiendo fuentes*/
 /*FUENTE PREDETERMINADA*/
 *{
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'PT Sans';
 }
 /* 
 font-family: 'Lobster', cursive;
@@ -497,13 +497,13 @@ font-family: 'PT Sans', sans-serif;
 */
 /*CLASES FUENTES*/
 .text-Lobster{
-  font-family: 'Lobster', cursive;
+  font-family: 'Lobster';
 }
 .text-AdventPro{
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Advent Pro';
 }
 .text-Montserrart{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
 }
 /*ESTABLECER ESTILO A ELEMENTOS*/
 h1{
